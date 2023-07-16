@@ -1,4 +1,4 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Flex, Text, Image } from "@chakra-ui/react";
 import { UnifiedSideBar } from "./util";
 
 function Landing() {
@@ -18,9 +18,11 @@ function LeftBox() {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br/>
                 <br/>Neque, eaque facilis omnis perferendis harum consequuntur maxime quis libero, blanditiis ab, in eveniet sit similique pariatur maiores magni totam vero mollitia alias ex porro dicta architecto.
             </Text>
-            <Text>
-                logos
-            </Text>
+            <Flex direction={'row'} alignItems={'center'} mt='10'>
+                <Image src='../assets/Merri-bek-Logo' alt='mb-logo'/>
+                <Image src='../assets/Victoria-Logo' alt='vic-logo'/>
+                <Image src='https://placekeanu.com/50' alt='bunk-logo'/>
+            </Flex>
         </Flex>
     )
 }
