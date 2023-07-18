@@ -8,6 +8,7 @@ function Program() {
       bg="yellow"
       alignItems={"Center"}
       justifyContent={"Center"}
+      w="full"
     >
       <Text fontSize={"6xl"} fontWeight={"bold"}>
         Program
@@ -32,14 +33,36 @@ function Program() {
 
 function ProgramComponent(props) {
   return (
-    <Flex flexDirection="row" columnGap={8} maxWidth="60%">
-      <Flex flexDirection="column" maxWidth="60%" fontSize={"3xl"}>
-        <Text fontWeight={"bold"}>{props.name}</Text>
-        <Text fontWeight={"bold"}>{props.venue}</Text>
-        <Text fontWeight={"semibold"}>{props.description}</Text>
+    <Flex flexDirection="row" columnGap={8} maxWidth={"70%"} h={"full"}>
+      <Flex flexDirection="column" fontSize={"3xl"} w="65%">
+        <Text fontWeight={"black"} fontSize={"5xl"}>
+          {props.name}
+        </Text>
+        <Box
+          border={"4px"}
+          borderColor={"black"}
+          borderRadius={"full"}
+          maxWidth={"max-content"}
+          whiteSpace={"nowrap"}
+          px={4}
+        >
+          <Text fontWeight={"bold"}>{props.venue}</Text>
+        </Box>
+        <Text fontWeight={"semibold"} whiteSpace={"normal"}>
+          {props.description}
+        </Text>
       </Flex>
       <Spacer />
-      <Image src="https://placekeanu.com/200/200" alt="keanu" />
+      <Box w={"35%"} shadow="sm">
+        <Image
+          src="https://placekeanu.com/400/400"
+          alt="keanu"
+          w={"100%"}
+          height={"100%"}
+          objectFit={"cover"}
+          rounded={"sm"}
+        />
+      </Box>
     </Flex>
   );
 }
