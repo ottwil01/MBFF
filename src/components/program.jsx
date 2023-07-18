@@ -10,7 +10,7 @@ function Program() {
       justifyContent={"Center"}
       w="full"
     >
-      <Text fontSize={"6xl"} fontWeight={"bold"}>
+      <Text fontSize={"7xl"} fontWeight={"extrabold"}>
         Program
       </Text>
       <Flex
@@ -44,7 +44,7 @@ function ProgramComponent(props) {
           borderRadius={"full"}
           maxWidth={"max-content"}
           whiteSpace={"nowrap"}
-          px={4}
+          px={3}
         >
           <Text fontWeight={"bold"}>{props.venue}</Text>
         </Box>
@@ -60,7 +60,6 @@ function ProgramComponent(props) {
           w={"100%"}
           height={"100%"}
           objectFit={"cover"}
-          rounded={"sm"}
         />
       </Box>
     </Flex>
