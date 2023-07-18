@@ -33,8 +33,13 @@ function Program() {
 
 function ProgramComponent(props) {
   return (
-    <Flex flexDirection="row" columnGap={8} maxWidth={"70%"} h={"full"}>
-      <Flex flexDirection="column" fontSize={"3xl"} w="65%">
+    <Flex
+      flexDirection={["column-reverse", "column-reverse", "row"]}
+      columnGap={8}
+      maxWidth={"70%"}
+      h={"full"}
+    >
+      <Flex flexDirection="column" fontSize={"3xl"} w={["100%", "100%", "65%"]}>
         <Text fontWeight={"black"} fontSize={"5xl"}>
           {props.name}
         </Text>
@@ -53,7 +58,7 @@ function ProgramComponent(props) {
         </Text>
       </Flex>
       <Spacer />
-      <Box w={"35%"} shadow="sm">
+      <Box w={["100%", "100%", "35%"]} shadow="sm">
         <Image
           src="https://placekeanu.com/400/400"
           alt="keanu"
