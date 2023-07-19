@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'StretchPro';
+  src: local(''), url('./fonts/StretchPro.otf');
+}
+@font-face {
+  font-family: 'Faktum';
+  src: local(''), url('./fonts/Faktum-regular.otf');
+}
+@font-face {
+  font-family: 'Faktum';
+  src: local(''), url('./fonts/Faktum-bold.otf');
+}
+
+.stretchpro {
+  font-family: 'StretchPro';
+}
+.faktum {
+  font-family: 'Faktum';
+  font-weight: 400;
+}
+.faktum-bold {
+  font-family: 'Faktum';
+  font-weight: 800;
+}
