@@ -1,4 +1,6 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
+
 import {
   Flex,
   FormControl,
@@ -9,7 +11,6 @@ import {
   Text,
   Button,
 } from "@chakra-ui/react";
-import emailjs from "@emailjs/browser";
 
 function ContactForm() {
   const [email, setEmail] = useState("");
@@ -59,7 +60,7 @@ function ContactForm() {
         Contact
       </Text>
       <FormControl
-        color="form.color"
+        color="white"
         display={"flex"}
         flexDirection={"column"}
         w={["90%", "90%", "55%"]}
@@ -67,37 +68,31 @@ function ContactForm() {
         <FormLabel>Email Address</FormLabel>
         <Input
           type="email"
-          bg="form.blue"
+          bg="brand.blue"
           placeholder="From..."
           w="66%"
           size={"lg"}
           fontSize={"3xl"}
           fontWeight={"bold"}
-          _placeholder={{ color: "form.placeholder" }}
+          _placeholder={{ color: "white" }}
           value={email}
           onInput={(e) => handleInput(setEmail, e)}
         />
         <FormLabel>Message</FormLabel>
         <Textarea
           type="text"
-          bg="form.blue"
+          bg="brand.blue"
           placeholder="Type message here..."
           h={64}
           resize={"vertical"}
           fontSize={"3xl"}
           fontWeight={"bold"}
-          _placeholder={{ color: "form.placeholder" }}
+          _placeholder={{ color: "white" }}
           value={message}
           onInput={(e) => handleInput(setMessage, e)}
           mb={6}
         />
-        <Button
-          onClick={handleSubmit}
-          w="max-content"
-          fontSize={"3xl"}
-          padding={8}
-          isLoading={loading}
-        >
+        <Button onClick={handleSubmit} isLoading={loading}>
           Submit!
         </Button>
       </FormControl>
