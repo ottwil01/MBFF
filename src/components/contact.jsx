@@ -100,4 +100,6 @@ function ContactForm() {
   );
 }
 
+function validate() { return; }
+
 export default ContactForm;
