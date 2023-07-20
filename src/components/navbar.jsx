@@ -32,7 +32,6 @@ function NavSocials() {
         <Flex>
             <p>fb</p>
             <p>ig</p>
-            <p>fuck tim</p>
         </Flex>
     )
 }
