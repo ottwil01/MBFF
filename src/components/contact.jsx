@@ -98,7 +98,7 @@ function ContactForm() {
           onInput={(e) => handleInput(setMessage, e)}
           mb={6}
         />
-        <Button onClick={handleSubmit} isLoading={loading}>
+        <Button onClick={handleSubmit} isLoading={loading} isDisabled={!validInput}>
           Submit!
         </Button>
       </FormControl>
