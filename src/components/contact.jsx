@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import {
@@ -16,6 +16,7 @@ function ContactForm() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+  const [validInput, setValidInput] = useState(false)
 
   function handleInput(target, event) {
     target(event.target.value);
@@ -46,6 +47,11 @@ function ContactForm() {
     setEmail("");
     setMessage("");
   }
+
+  useEffect(() => {
+    if (validateEmail(email) && message.length > 0) { setValidInput(true) }
+    if (message.length < 1) { setValidInput(false) }
+  }, [email, message])
 
   return (
     <Flex
