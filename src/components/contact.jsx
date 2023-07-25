@@ -55,8 +55,9 @@ function ContactForm() {
       justifyContent={"center"}
       direction={"column"}
       gap={4}
+      id="contact"
     >
-      <Text fontSize={"6xl"} fontWeight={"extrabold"}>
+      <Text fontSize={"7xl"} fontWeight={"extrabold"}>
         Contact
       </Text>
       <FormControl

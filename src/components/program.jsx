@@ -1,4 +1,4 @@
-import { Flex, Spacer, Image, Text, Box, Center } from "@chakra-ui/react";
+import { Flex, Spacer, Image, Text, Box } from "@chakra-ui/react";
 import ProgramData from "../assets/program-data.json";
 
 function Program() {
@@ -9,6 +9,7 @@ function Program() {
       alignItems={"Center"}
       justifyContent={"Center"}
       w="full"
+      id="program"
     >
       <Text fontSize={"7xl"} fontWeight={"extrabold"}>
         Program
