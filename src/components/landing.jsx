@@ -3,7 +3,7 @@ import { UnifiedSideBar } from "./util";
 
 function Landing() {
     return (
-        <Flex h='calc(100vh)' w="100e%" pt={40}>
+        <Flex id="home" h='calc(100vh)' w="100e%" pt={40}>
             <LeftBox />
             <RightBox />
             <UnifiedSideBar bg="red" />
