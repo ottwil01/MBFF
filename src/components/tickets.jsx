@@ -1,16 +1,17 @@
-import {
-  Flex,
-  Box,
-  FormControl,
-  FormLabel,
-  FormHelperText,
-  Input,
-  Textarea,
-  Text,
-  Button,
-} from "@chakra-ui/react";
+import { Flex, Box, Text } from "@chakra-ui/react";
+import { LeftSideBar } from "./util";
 
-const Tickets = () => {
+
+function Tickets() {
+  return (
+    <Flex>
+      <LeftSideBar />
+      <ticketContainer />
+    </Flex>
+  )
+}
+
+function ticketContainer() {
   return (
     <Flex
           w={"full"}
@@ -20,21 +21,20 @@ const Tickets = () => {
           direction={"column"}
           gap={4}
           id="tickets"
-          bg="green"
+          bg="brand.green"
         >
-        <Text fontSize={"7xl"} fontWeight={"extrabold"} color={"white"}>
+        <Text className={"stretchpro"} fontSize={"6xl"} fontWeight={"extrabold"} color={"white"}>
         Tickets
       </Text>
         <Box
           border={"4px"}
-          // borderColor={"white"}
           borderRadius={"full"}
           maxWidth={"max-content"}
           whiteSpace={"nowrap"}
           px={3}
           color={"white"}
         >
-        Tickets
+        buy tickets
         </Box>
       </Flex>
   );

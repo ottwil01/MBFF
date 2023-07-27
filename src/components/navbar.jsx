@@ -1,16 +1,24 @@
 import React, { useState } from 'react'                           
-import { Flex, Heading, IconButton, Button, Image } from "@chakra-ui/react"
-import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons"
+import { Flex, Text, IconButton, Button, Image, Box } from "@chakra-ui/react"
 import fblogo from "../assets/fblogo.png"
 import iglogo from "../assets/iglogo.png"
 import mbffLogo from "../assets/MBFFLogo.png"
-import { Link, closeMenu } from 'react-scroll'
+import { Link } from 'react-scroll'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import { useScrollLock } from '../hooks/ScrollLock'
 
-    const NavBar = () => {
-        const [click, setClick] = useState(false)
-        const handleClick = () => setClick(!click)
+
+    function NavBar() {
         const [display, changeDisplay] = useState('none')
+        const { lockScroll, unlockScroll } = useScrollLock()
+
+        function handleMenuChange() {
+            if(display === "flex") {changeDisplay("none"); unlockScroll()} else {changeDisplay("flex"); lockScroll()}
+        }
+        function handleCloseMenu() {
+            unlockScroll()
+            handleMenuChange()
+        }
 
         return (
             <Flex
@@ -18,44 +26,49 @@ import { FaBars, FaTimes } from 'react-icons/fa'
             top="0"
             align="center"
             flexDirection={"row"}
-            bg="blue"
+            bg="#082499"
             w="100%"
             color="white"
             height="10rem"
             p="1rem"
             alignItems={"center"}
-            justifyContent={"space-between"}
+            justifyCo ntent={"space-between"}
             >
-                <Image boxSize="130px" src={mbffLogo}/>
+            <Flex>
+                <Box boxSize={"20rem"}>
+                    <Image src={mbffLogo}/>
+                </Box>
+            </Flex>
+
                 <Flex flexDirection={"column"} justifyContent={"center"}>
-                    <Heading>
+                    <Text className="stretchpro" fontSize="4xl">
                         Merri-bek Family Festival
-                    </Heading> 
-                    <Flex display={["none", "none", "flex", "flex"]}>
+                    </Text>
+                    <Flex display={["none", "none", "flex", "flex"]} justifyContent={'space-between'} className="faktum">
                         <Button variant="unstyled" >
-                            <Link to="landing" spy={true} smooth={true} offset={0} duration={500} onClick={closeMenu}>Home</Link>
+                            <Link to="landing" spy={true} smooth={true} offset={-160} duration={500}>Home</Link>
                         </Button>
                         <Button variant="unstyled" >
-                            <Link to="program" spy={true} smooth={true} offset={-160} duration={500} onClick={closeMenu}>Program</Link>
+                            <Link to="program" spy={true} smooth={true} offset={-160} duration={500}>Program</Link>
                         </Button>
                         <Button variant="unstyled" >
-                            <Link to="timetable" spy={true} smooth={true} offset={-160} duration={500} onClick={closeMenu}>Timetable</Link>
+                            <Link to="timetable" spy={true} smooth={true} offset={-160} duration={500}>Timetable</Link>
                         </Button>
                         <Button variant="unstyled" >
-                            <Link to="tickets" spy={true} smooth={true} offset={-160} duration={500} onClick={closeMenu}>Tickets</Link>
+                            <Link to="tickets" spy={true} smooth={true} offset={-160} duration={500}>Tickets</Link>
                         </Button>
                         <Button variant="unstyled" >
-                            <Link to="contact" spy={true} smooth={true} offset={-160} duration={500} onClick={closeMenu}>Contact</Link>
+                            <Link to="contact" spy={true} smooth={true} offset={-160} duration={500}>Contact</Link>
                         </Button>
                     </Flex>
                 </Flex>
                 <Flex>
                     <IconButton
                         aria-label="Open Menu"
-                        icon={<HamburgerIcon />}
+                        icon={<FaBars size={40}/>}
                         variant="unstyled"
                         justify="flex-end"
-                        onClick={() => changeDisplay("flex")}
+                        onClick={handleMenuChange}
                         display={["flex", "flex", "none", "none"]}
                     />
                 </Flex>
@@ -69,40 +82,43 @@ import { FaBars, FaTimes } from 'react-icons/fa'
                 </Flex>
                 <Flex
                 w="100%"
-                h="100%"
-                bgColor="blue"
-                zIndex={20}
+                h="100vh"
+                pos="fixed"
                 top="0"
                 left="0"
+                bgColor="brand.blue"
+                zIndex={99}
                 overflowY="auto"
                 display={display}
+                flexDirection={"column"}
                 >
-                    <Flex>
+                    <Flex flexDirection={"flex"}>
                         <IconButton
                             aria-label='Close Menu'
-                            icon={<CloseIcon />}
+                            icon={<FaTimes size={50} />}
                             mt={2}
                             mr={2}
                             color="white"
                             variant="unstyled"
-                            onClick={() => changeDisplay('none')}
+                            onClick={handleCloseMenu}
+                            justify="flex-end"
                         />
                     </Flex>
-                    <Flex flexDirection={"column"}>
+                    <Flex className="stretchpro" flexDirection={"column"} alignItems={"flex-end"} w="100%">
                         <Button variant="unstyled" >
-                            <Link to="landing" spy={true} smooth={true} offset={0} duration={500} onClick={closeMenu}>Home</Link>
+                            <Link to="landing" spy={true} smooth={true} offset={-160} duration={500} onClick={handleCloseMenu}>Home</Link>
                         </Button>
                         <Button variant="unstyled" >
-                            <Link to="program" spy={true} smooth={true} offset={-160} duration={500} onClick={closeMenu}>Program</Link>
+                            <Link to="program" spy={true} smooth={true} offset={-160} duration={500} onClick={handleCloseMenu}>Program</Link>
                         </Button>
                         <Button variant="unstyled" >
-                            <Link to="timetable" spy={true} smooth={true} offset={-160} duration={500} onClick={closeMenu}>Timetable</Link>
+                            <Link to="timetable" spy={true} smooth={true} offset={-160} duration={500} onClick={handleCloseMenu}>Timetable</Link>
                         </Button>
                         <Button variant="unstyled" >
-                            <Link to="tickets" spy={true} smooth={true} offset={-160} duration={500} onClick={closeMenu}>Tickets</Link>
+                            <Link to="tickets" spy={true} smooth={true} offset={-160} duration={500} onClick={handleCloseMenu}>Tickets</Link>
                         </Button>
                         <Button variant="unstyled" >
-                            <Link to="contact" spy={true} smooth={true} offset={-160} duration={500} onClick={closeMenu}>Contact</Link>
+                            <Link to="contact" spy={true} smooth={true} offset={-160} duration={500} onClick={handleCloseMenu}>Contact</Link>
                         </Button>
                     </Flex>
                 </Flex>
@@ -110,136 +126,3 @@ import { FaBars, FaTimes } from 'react-icons/fa'
     )
 }
 export default NavBar
-
-
-
-
-
-
-
-
-
-
-    // const NavBar = () => {
-        // const [display, changeDisplay] = useState("none")
-        // const [programY, setProgramY] = useState(0)
-        // const [contactY, setContactY] = useState(0)
-        // const [landingY, setLandingY] = useState(0)
-
-        // useEffect(() => {
-        //     const programId = document.getElementById("program")
-        //     const programY = programId.getBoundingClientRect()
-        //     setProgramY(programY.top)
-        //     const 
-        // }, [])
-
-        // function scrollToProgram() {
-        //     animateScroll.scrollTo(yPosition, {duration: 5000, smooth: true})
-
-        // }
-//         return (
-//             <Flex
-//             pos="fixed"
-//             align="center"
-//             flexDirection={"row"}
-//             bg="blue"
-//             w="100%"
-//             color="white"
-//             height="10rem"
-//             p="1rem"
-//             alignItems={"center"}
-//             justifyContent={"space-between"}
-//             >
-//                 <Image boxSize="130px" src={mbffLogo}/>
-//                 <Flex flexDirection={"column"} justifyContent={"center"}>
-//                     <Heading>
-//                         Merri-bek Family Festival
-//                     </Heading> 
-//                     <Flex display={["none", "none", "flex", "flex"]}>
-//                         <Button onClick={scrollToProgram} variant="unstyled" >
-//                         Home
-//                         </Button>
-//                             <Button variant="unstyled" >
-//                             Program
-//                             </Button>
-//                             <Button variant="unstyled" >
-//                             Timetable
-//                             </Button>
-//                             <Button variant="unstyled" >
-//                             Tickets
-//                             </Button>
-//                             <Button variant="unstyled" >
-//                             Contact
-//                             </Button>
-//                     </Flex>
-//                 </Flex>
-//                 <Flex>
-//                     <IconButton
-//                         aria-label="Open Menu"
-//                         icon={<HamburgerIcon />}
-//                         display={["flex", "flex", "none", "none"]}
-//                         variant="unstyled"
-//                         justify="flex-end"
-//                         onClick={() => changeDisplay("flex")}
-//                     />
-//                 </Flex>
-//                 <Button variant="unstyled" display={['none', 'none', 'flex', 'flex']}>
-//                     <Image src={fblogo} boxSize="40px"/>
-//                 </Button>
-//                 <Button variant="unstyled" display={['none', 'none', 'flex', 'flex']}>
-//                     <Image src={iglogo} boxSize="40px"/>
-//                 </Button>
-//                 <Flex
-//                 w="100%"
-//                 h="100%"
-//                 bgColor="blue"
-//                 zIndex={20}
-//                 pos="fixed"
-//                 top="0"
-//                 left="0"
-//                 overflowY="auto"
-//                 display={display}
-//                 >
-//                 <Flex flexDirection={"row"}>
-//                     <Flex flexDirection={"column"} align="flex-start">
-//                         <Link href="/">
-//                             <Button variant="unstyled" >
-//                             Home
-//                             </Button>
-//                         </Link>
-//                         <Link href="/">
-//                             <Button variant="unstyled" >
-//                             Program
-//                             </Button>
-//                         </Link>
-//                         <Link href="/">
-//                             <Button variant="unstyled" >
-//                             Timetable
-//                             </Button>
-//                         </Link>
-//                         <Link href="/">
-//                             <Button variant="unstyled" >
-//                             Tickets
-//                             </Button>
-//                         </Link>
-//                         <Link href="/">
-//                             <Button variant="unstyled" >
-//                             Contact
-//                             </Button>
-//                         </Link>
-//                     </Flex>
-//                         <IconButton
-//                         aria-label='Close Menu'
-//                         mt={2}
-//                         mr={2}
-//                         color="white"
-//                         variant="unstyled"
-//                         icon={<CloseIcon />}
-//                         onClick={() => changeDisplay("none")}
-//                         />
-//                 </Flex>
-//             </Flex>
-//         </Flex>
-//     )
-// }
-// export default NavBar;

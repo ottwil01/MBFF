@@ -1,32 +1,32 @@
-import {
-    Flex,
-    Box,
-    FormControl,
-    FormLabel,
-    FormHelperText,
-    Input,
-    Textarea,
-    Text,
-    Button,
-  } from "@chakra-ui/react";
-  
-  const Timetable = () => {
+import { Flex, Text, Image } from "@chakra-ui/react";
+import { LeftSideBar } from "./util";
+
+function Timetable() {
+  return (
+    <Flex>
+      <LeftSideBar />
+      <timetableContainer />
+    </Flex>
+  )
+}
+
+function timetableContainer() {
     return (
       <Flex
             w={"full"}
             minH={"100vh"}
             alignItems={"center"}
             justifyContent={"center"}
-            direction={"column"}
+            flexDirection={"column"}
             gap={4}
             id="timetable"
-            bg="red"
+            bg="brand.red"
           >
-          <Text fontSize={"7xl"} fontWeight={"extrabold"} color={"white"}>
+          <Text className={"stretchpro"} fontSize={"6xl"} fontWeight={"extrabold"} color={"white"}>
           Timetable
         </Text>
         <Flex>
-
+          <Image src={"https://placekeanu.com/700/500"} alt="timetable" />
         </Flex>
       </Flex>
     );

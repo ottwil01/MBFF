@@ -1,27 +1,38 @@
 import { Flex, Spacer, Image, Text, Box } from "@chakra-ui/react";
 import ProgramData from "../assets/program-data.json";
+import { RightSideBar } from "./util";
 
 function Program() {
   return (
+    <Flex flexDir={"row"}>
+      <Combined />
+      <RightSideBar display={["none", "none", "flex", "flex"]}/>
+    </Flex>
+  )
+}
+
+function Combined() {
+  return (
     <Flex
       flexDirection="column"
-      bg="yellow"
+      bg="brand.yellow"
       alignItems={"Center"}
       justifyContent={"Center"}
       w="full"
       id="program"
     >
-      <Text fontSize={"7xl"} fontWeight={"extrabold"}>
+      <Text className={"stretchpro"} fontSize={"6xl"} fontWeight={"extrabold"}>
         Program
       </Text>
       <Flex
         flexDirection="column"
         gap={8}
-        alignItems={"Center"}
-        justifyContent={"Center"}
+        alignItems="Center"
+        justifyContent="Center"
       >
-        {ProgramData.data.map((item) => (
+        {ProgramData.data.map((item, index) => (
           <ProgramComponent
+            key={index}
             name={item.name}
             venue={item.venue}
             description={item.description}

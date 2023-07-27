@@ -8,7 +8,7 @@ export function RightSideBar() {
 
 export function LeftSideBar() {
     return (
-        <Box w={32} h='100%' bg='grey' />
+        <Box w={32} h='100%' bg='blue' />
     )
 }
 
