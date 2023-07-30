@@ -1,11 +1,21 @@
 import React, { useState } from 'react'                           
-import { Flex, Text, IconButton, Button, Image, Box } from "@chakra-ui/react"
+import { Flex, Text, IconButton, Button, Image, Box, ButtonGroup } from "@chakra-ui/react"
 import fblogo from "../assets/fblogo.png"
 import iglogo from "../assets/iglogo.png"
 import mbffLogo from "../assets/mbfflogo.png"
 import { Link } from 'react-scroll'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { useScrollLock } from '../hooks/ScrollLock'
+
+
+
+    // function nav() {
+    //     return (
+    //         <Flex zIndex={1}>
+    //             <NavBar />
+    //         </Flex>
+    //     )
+    // }
 
 
     function NavBar() {
@@ -22,26 +32,28 @@ import { useScrollLock } from '../hooks/ScrollLock'
 
         return (
             <Flex
+            zIndex={2}
             pos="fixed"
             top="0"
             align="center"
             flexDirection={"row"}
-            bg="#082499"
+            bg="brand.blue"
             w="100%"
             color="white"
-            height="10rem"
+            h="21.39%"
             p="1rem"
+            gap="15px"
             alignItems={"center"}
-            justifyCo ntent={"space-between"}
+            justifyContent={"space-between"}
             >
             <Flex>
-                <Box boxSize={"20rem"}>
+                <Box mt="114px" boxSize={"15rem"}>
                     <Image src={mbffLogo}/>
                 </Box>
             </Flex>
 
                 <Flex flexDirection={"column"} justifyContent={"center"}>
-                    <Text className="stretchpro" fontSize="4xl">
+                    <Text className="stretchpro" fontSize="3rem">
                         Merri-bek Family Festival
                     </Text>
                     <Flex display={["none", "none", "flex", "flex"]} justifyContent={'space-between'} className="faktum">
@@ -72,14 +84,18 @@ import { useScrollLock } from '../hooks/ScrollLock'
                         display={["flex", "flex", "none", "none"]}
                     />
                 </Flex>
-                <Flex display={['none', 'none', 'flex', 'flex']}>
-                    <Button variant="unstyled">
-                        <Image src={fblogo} boxSize="40px"/>
-                    </Button>
-                    <Button variant="unstyled">
-                        <Image src={iglogo} boxSize="40px"/>
-                    </Button>
+                <Flex justifyContent={"center"} w="130px" justify="space-between" display={['none', 'none', 'flex', 'flex']}>
+                    <ButtonGroup gap="10px"variant="unstyled" boxSize={["none", "none", "40px", "45px", "50px"]}>
+                        <Button>
+                            <Image src={fblogo}/>
+                        </Button>
+                        <Button>
+                            <Image src={iglogo}/>
+                        </Button>
+                    </ButtonGroup>
+
                 </Flex>
+
                 <Flex
                 w="100%"
                 h="100vh"
@@ -101,7 +117,7 @@ import { useScrollLock } from '../hooks/ScrollLock'
                             color="white"
                             variant="unstyled"
                             onClick={handleCloseMenu}
-                            justify="flex-end"
+                            
                         />
                     </Flex>
                     <Flex className="stretchpro" flexDirection={"column"} alignItems={"flex-end"} w="100%">

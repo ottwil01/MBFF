@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import NavBar from "./components/navbar";
 import Landing from "./components/landing";
 import Program from "./components/program";
@@ -9,14 +9,14 @@ import './fonts.css'
 
 function App() {
   return (
-    <Box>
+    <Flex flexDir={"column"}>
       <NavBar />
       <Landing />
       <Program />
       <Timetable />
       <Tickets />
       <ContactForm />
-    </Box>
+    </Flex>
   );
 }
 

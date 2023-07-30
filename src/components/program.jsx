@@ -1,13 +1,13 @@
-import { Flex, Spacer, Image, Text, Box } from "@chakra-ui/react";
-import ProgramData from "../assets/program-data.json";
-import { RightSideBar } from "./util";
+import { Flex, Spacer, Image, Text, Box } from "@chakra-ui/react"
+import ProgramData from "../assets/program-data.json"
+import { RightSideBar } from "./util"
 
 function Program() {
   return (
-    <Flex flexDir={"row"}>
+    <Flex zIndex={1} flexDir={"row"}>
       <Combined />
-      <RightSideBar display={["none", "none", "flex", "flex"]}/>
-    </Flex>
+      <RightSideBar display={["none", "none", "flex", "flex"]} />
+      </Flex>
   )
 }
 
@@ -40,7 +40,7 @@ function Combined() {
         ))}
       </Flex>
     </Flex>
-  );
+  )
 }
 
 function ProgramComponent(props) {
@@ -80,7 +80,7 @@ function ProgramComponent(props) {
         />
       </Box>
     </Flex>
-  );
+  )
 }
 
-export default Program;
+export default Program

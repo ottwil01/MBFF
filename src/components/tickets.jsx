@@ -1,31 +1,39 @@
-import { Flex, Box, Text } from "@chakra-ui/react";
+import { Flex, Box, Text, Spacer } from "@chakra-ui/react";
 import { LeftSideBar } from "./util";
 
 
 function Tickets() {
   return (
-    <Flex>
-      <LeftSideBar />
-      <ticketContainer />
+    <Flex zIndex={1} flexDir={"row"}>
+      <LeftSideBar color="grey" display={["none", "none", "flex", "flex"]}/>
+      <TicketContainer />
     </Flex>
   )
 }
 
-function ticketContainer() {
+function TicketContainer() {
   return (
     <Flex
-          w={"full"}
-          minH={"100vh"}
+          w={"100%"}
+          minH={"80vh"}
           alignItems={"center"}
-          justifyContent={"center"}
+          justifyContent={"start"}
           direction={"column"}
-          gap={4}
+          gap={30}
           id="tickets"
           bg="brand.green"
         >
-        <Text className={"stretchpro"} fontSize={"6xl"} fontWeight={"extrabold"} color={"white"}>
+        <Text mt="15px" className={"stretchpro"} fontSize={"6xl"} fontWeight={"extrabold"} color={"white"}>
         Tickets
       </Text>
+      <Box color={"white"} className="faktum-bold" fontSize={"2xl"} maxW={'6xl'}>
+        <Text align={"center"}>
+        All events hosted in the library are free for all audiences.
+        <br/><br/>
+        Families can purchase low cost single-day, or weekend tickets to access all events occuring in the Town Hall, The Atrium and the Counihan Gallery.
+        </Text>
+      </Box>
+      <Spacer w="10px"/>
         <Box
           border={"4px"}
           borderRadius={"full"}
@@ -33,8 +41,11 @@ function ticketContainer() {
           whiteSpace={"nowrap"}
           px={3}
           color={"white"}
+          className={"stretchpro"}
         >
-        buy tickets
+          <Text mr="15px" ml="15px">
+            buy tickets
+          </Text>
         </Box>
       </Flex>
   );

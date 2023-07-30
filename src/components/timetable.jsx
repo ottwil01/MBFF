@@ -1,32 +1,33 @@
-import { Flex, Text, Image } from "@chakra-ui/react";
-import { LeftSideBar } from "./util";
+import { Flex, Text, Image } from "@chakra-ui/react"
+import { LeftSideBar } from "./util"
+import timetable from "../assets/timetable.png"
 
 function Timetable() {
   return (
-    <Flex>
-      <LeftSideBar />
-      <timetableContainer />
+    <Flex zIndex={1} flexDir={"row"}>
+      <LeftSideBar display={["none", "none", "none", "flex", "flex"]}/>
+      <TimetableContainer />
     </Flex>
   )
 }
 
-function timetableContainer() {
+function TimetableContainer() {
     return (
       <Flex
-            w={"full"}
-            minH={"100vh"}
+            w={"100%"}
+            minH={"80vh"}
             alignItems={"center"}
-            justifyContent={"center"}
+            justifyContent={"start"}
             flexDirection={"column"}
-            gap={4}
+            gap={10}
             id="timetable"
             bg="brand.red"
           >
-          <Text className={"stretchpro"} fontSize={"6xl"} fontWeight={"extrabold"} color={"white"}>
+          <Text mt="15px" className={"stretchpro"} fontSize={"6xl"} fontWeight={"extrabold"} color={"white"}>
           Timetable
         </Text>
-        <Flex>
-          <Image src={"https://placekeanu.com/700/500"} alt="timetable" />
+        <Flex maxW={"6xl"}>
+          <Image src={timetable} alt="timetable" />
         </Flex>
       </Flex>
     );
