@@ -1,5 +1,5 @@
 import React, { useState } from 'react'                           
-import { Flex, Text, IconButton, Button, Image, Box, ButtonGroup } from "@chakra-ui/react"
+import { Flex, Text, IconButton, Button, Image, Box, ButtonGroup, Spacer } from "@chakra-ui/react"
 import fblogo from "../assets/fblogo.png"
 import iglogo from "../assets/iglogo.png"
 import mbffLogo from "../assets/mbfflogo.png"
@@ -40,23 +40,19 @@ import { useScrollLock } from '../hooks/ScrollLock'
             bg="brand.blue"
             w="100%"
             color="white"
-            h="21.39%"
+            h={["70px", "70px", "140px"]}
             p="1rem"
-            gap="15px"
             alignItems={"center"}
             justifyContent={"space-between"}
             >
-            <Flex>
-                <Box mt="114px" boxSize={"15rem"}>
+                <Flex minW={["90px", "90px", "205px"]} w={["90px", "90px", "205px"]}>
                     <Image src={mbffLogo}/>
-                </Box>
-            </Flex>
-
+                </Flex>
                 <Flex flexDirection={"column"} justifyContent={"center"}>
-                    <Text className="stretchpro" fontSize="3rem">
+                    <Text align={[ "normal", "normal", "center" ]} className="stretchpro">
                         Merri-bek Family Festival
                     </Text>
-                    <Flex display={["none", "none", "flex", "flex"]} justifyContent={'space-between'} className="faktum">
+                    <Flex display={[ "none", "none", "flex", "flex" ]} justifyContent={'space-between'} className="faktum">
                         <Button variant="unstyled" >
                             <Link to="landing" spy={true} smooth={true} offset={-160} duration={500}>Home</Link>
                         </Button>
@@ -85,7 +81,7 @@ import { useScrollLock } from '../hooks/ScrollLock'
                     />
                 </Flex>
                 <Flex justifyContent={"center"} w="130px" justify="space-between" display={['none', 'none', 'flex', 'flex']}>
-                    <ButtonGroup gap="10px"variant="unstyled" boxSize={["none", "none", "40px", "45px", "50px"]}>
+                    <ButtonGroup gap="10px"variant="unstyled" boxSize={["none", "none", "40px", "60px", "90px"]}>
                         <Button>
                             <Image src={fblogo}/>
                         </Button>
@@ -93,32 +89,39 @@ import { useScrollLock } from '../hooks/ScrollLock'
                             <Image src={iglogo}/>
                         </Button>
                     </ButtonGroup>
-
                 </Flex>
-
                 <Flex
                 w="100%"
                 h="100vh"
                 pos="fixed"
                 top="0"
                 left="0"
-                bgColor="brand.blue"
+                p="4"
+                bg="brand.blue"
                 zIndex={99}
                 overflowY="auto"
                 display={display}
                 flexDirection={"column"}
                 >
-                    <Flex flexDirection={"flex"}>
-                        <IconButton
-                            aria-label='Close Menu'
-                            icon={<FaTimes size={50} />}
-                            mt={2}
-                            mr={2}
-                            color="white"
-                            variant="unstyled"
-                            onClick={handleCloseMenu}
-                            
-                        />
+                <Flex flexDir={"row"} justifyContent={"space-between"}>
+                    <Box w={"10rem"}>
+                        <Image src={mbffLogo}/>
+                    </Box>
+                    <Flex>
+                    <IconButton
+                        aria-label='Close Menu'
+                        icon={<FaTimes size={50} />}
+                        color="white"
+                        variant="unstyled"
+                        onClick={handleCloseMenu}
+                        gap="10"
+                    />
+                    </Flex>
+                </Flex>
+                    <Flex mb="70px">
+                        <Text className="stretchpro" fontSize={"x-large"}>
+                            Merri-bek<br/>Family Festival
+                        </Text>
                     </Flex>
                     <Flex className="stretchpro" flexDirection={"column"} alignItems={"flex-end"} w="100%">
                         <Button variant="unstyled" >

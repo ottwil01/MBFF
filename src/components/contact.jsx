@@ -40,8 +40,8 @@ function ContactForm() {
   return (
     <Flex
       zIndex={1}
-      w={"full"}
-      minH={"80vh"}
+      w={"100vw"}
+      h={"80vh"}
       alignItems={"center"}
       justifyContent={"center"}
       direction={"column"}

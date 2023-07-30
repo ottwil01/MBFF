@@ -75,7 +75,7 @@ function ProgramComponent(props) {
           src="https://placekeanu.com/400/400"
           alt="keanu"
           w={"100%"}
-          height={"100%"}
+          h={"100%"}
           objectFit={"cover"}
         />
       </Box>

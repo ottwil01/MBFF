@@ -11,7 +11,7 @@ const things = ["Theatre", "Music", "Dance", "Workshops", "Installations", "VR"]
 
 function Landing() {
   return (
-    <Flex zIndex={1} flexDir={["column", null, "row-reverse"]} height="1px" minH="calc(100vh)" overflowX={"clip"} id="landing" mt="10rem">
+    <Flex zIndex={1} flexDir={["column", null, "row-reverse"]} height="1px" minH="calc(100vh)" overflowX={"clip"} id="landing" mt={["70px", "70px", "140px"]}>
       <RightSideBar display={["none", "none", "flex", "flex"]} />
       <ImageBox />
       <InfoBox />
@@ -38,7 +38,7 @@ function ImageBox() {
 
 function InfoBox() {
   return (
-    <Flex w={["100%", null, "40%"]} height="100%" bg='brand.green' flexDir={"column"} color="white" px={8} py={16} alignItems={"center"} gap={4} fontSize={["xl", null, "1xl", "1.5vw"]}>
+    <Flex w={["100%", null, "40%"]} h="100%" bg='brand.green' flexDir={"column"} color="white" px={8} py={16} alignItems={"center"} gap={4} fontSize={["xl", null, "1xl", "1.5vw"]}>
       <Text verticalAlign={"top"} className="faktum-bold" maxW={'2xl'}>
       High quality art for the whole family, and either low-cost or free!
       <br/><br/>
