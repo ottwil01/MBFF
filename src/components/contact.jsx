@@ -1,11 +1,22 @@
-import { useState } from "react"
-import emailjs from "@emailjs/browser"
-import { Flex, FormControl, FormLabel, Input, Textarea, Text, Button } from "@chakra-ui/react"
+import { useEffect, useState } from "react";
+import emailjs from "@emailjs/browser";
+
+import {
+  Flex,
+  FormControl,
+  FormLabel,
+  FormHelperText,
+  Input,
+  Textarea,
+  Text,
+  Button,
+} from "@chakra-ui/react";
 
 function ContactForm() {
-  const [email, setEmail] = useState("")
-  const [message, setMessage] = useState("")
-  const [loading, setLoading] = useState(false)
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [validInput, setValidInput] = useState(false)
 
   function handleInput(target, event) {
     target(event.target.value);
@@ -36,6 +47,11 @@ function ContactForm() {
     setEmail("")
     setMessage("")
   }
+
+  useEffect(() => {
+    if (validateEmail(email) && message.length > 0) { setValidInput(true) }
+    if (message.length < 1) { setValidInput(false) }
+  }, [email, message])
 
   return (
     <Flex
@@ -84,12 +100,33 @@ function ContactForm() {
           onInput={(e) => handleInput(setMessage, e)}
           mb={6}
         />
-        <Button onClick={handleSubmit} isLoading={loading}>
+        <Button onClick={handleSubmit} isLoading={loading} isDisabled={!validInput}>
           Submit!
         </Button>
       </FormControl>
     </Flex>
   );
 }
+
+function validate(email) {
+  if (email.length < 1) {
+    return false
+  }
+
+  if (validateEmail(email) === false) {
+    return false
+  }
+  if (validateEmail(email) === null) {
+    return false
+  }
+  return true
+}
+
+function validateEmail(email) {
+  const validReg = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  return String(email).toLowerCase().match(validReg)
+}
+
 
 export default ContactForm;
