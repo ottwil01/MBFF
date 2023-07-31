@@ -1,8 +1,8 @@
 import React, { useState } from 'react'                           
 import { Flex, Text, IconButton, Button, Image, Box, ButtonGroup } from "@chakra-ui/react"
-import fblogo from "../assets/fblogo.png"
-import iglogo from "../assets/iglogo.png"
-import mbffLogo from "/src/assets/mbfflogo.png"
+import Fblogo from "../assets/Fblogo.png"
+import Iglogo from "../assets/Iglogo.png"
+import Mbfflogo from "../assets/mbfflogo.png"
 import { Link } from 'react-scroll'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { useScrollLock } from '../hooks/ScrollLock'
@@ -46,7 +46,7 @@ import { useScrollLock } from '../hooks/ScrollLock'
             justifyContent={"space-between"}
             >
                 <Flex minW={["90px", "90px", "205px"]} w={["90px", "90px", "205px"]}>
-                    <Image src={mbffLogo}/>
+                    <Image src={Mbfflogo}/>
                 </Flex>
                 <Flex flexDirection={"column"} justifyContent={"center"}>
                     <Text align={[ "normal", "normal", "center" ]} className="stretchpro">
@@ -83,10 +83,10 @@ import { useScrollLock } from '../hooks/ScrollLock'
                 <Flex justifyContent={"center"} w="130px" justify="space-between" display={['none', 'none', 'flex', 'flex']}>
                     <ButtonGroup gap="10px"variant="unstyled" boxSize={["none", "none", "40px", "60px", "90px"]}>
                         <Button>
-                            <Image src={fblogo}/>
+                            <Image src={Fblogo}/>
                         </Button>
                         <Button>
-                            <Image src={iglogo}/>
+                            <Image src={Iglogo}/>
                         </Button>
                     </ButtonGroup>
                 </Flex>
@@ -105,7 +105,7 @@ import { useScrollLock } from '../hooks/ScrollLock'
                 >
                 <Flex flexDir={"row"} justifyContent={"space-between"}>
                     <Box w={"10rem"}>
-                        <Image src={mbffLogo}/>
+                        <Image src={Mbfflogo}/>
                     </Box>
                     <Flex>
                     <IconButton
