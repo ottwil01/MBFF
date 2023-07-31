@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Flex, Text, IconButton, Button, Image, Box, ButtonGroup } from "@chakra-ui/react"
 import fblogo from "../assets/fblogo.png"
 import iglogo from "../assets/iglogo.png"
-import mbffLogo from "../assets/mbfflogo.png"
+import mbffLogo from "/src/assets/mbfflogo.png"
 import { Link } from 'react-scroll'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { useScrollLock } from '../hooks/ScrollLock'
