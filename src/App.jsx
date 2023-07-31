@@ -1,5 +1,4 @@
-import { Box, Flex } from "@chakra-ui/react";
-import NavBar from "./components/navbar";
+import { Flex } from "@chakra-ui/react";
 import Landing from "./components/landing";
 import Program from "./components/program";
 import Timetable from "./components/timetable";
