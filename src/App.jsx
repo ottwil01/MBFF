@@ -1,4 +1,5 @@
 import { Flex } from "@chakra-ui/react";
+import NavBar from "./components/navbar";
 import Landing from "./components/landing";
 import Program from "./components/program";
 import Timetable from "./components/timetable";
@@ -9,6 +10,7 @@ import './fonts.css'
 function App() {
   return (
     <Flex flexDir={"column"}>
+      <NavBar />
       <Landing />
       <Program />
       <Timetable />
