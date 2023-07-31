@@ -1,8 +1,8 @@
 import React, { useState } from 'react'                           
 import { Flex, Text, IconButton, Button, Image, Box, ButtonGroup } from "@chakra-ui/react"
-import Fblogo from "../assets/Fblogo.png"
-import Iglogo from "../assets/Iglogo.png"
-import Mbfflogo from "../assets/Mbfflogo.png"
+import Fblogo from "../assets/fblogo.png"
+import Iglogo from "../assets/iglogo.png"
+import Mbfflogo from "../assets/mbfflogo.png"
 import { Link } from 'react-scroll'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { useScrollLock } from '../hooks/ScrollLock'
