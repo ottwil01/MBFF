@@ -1,5 +1,5 @@
 import { Flex, Spacer, Image, Text, Box } from "@chakra-ui/react"
-import ProgramData from "../assets/program-data.json"
+import ProgramData from "../program-data.json"
 import { RightSideBar } from "./util"
 
 function Program() {

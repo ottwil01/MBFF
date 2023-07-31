@@ -1,9 +1,9 @@
 import { Flex, Text, Image, Box } from "@chakra-ui/react"
-import mbLogo from "../assets/merri-bek1.png"
-import vicLogo from "../assets/vic-gov1.png"
-import bunk from "../assets/bunk-puppets1.png"
-import redStar from "../assets/red-star.png"
-import puppet from "../assets/puppet-crop.png"
+import mbLogo from "/merri-bek1.png"
+import vicLogo from "/vic-gov1.png"
+import bunk from "/bunk-puppets1.png"
+import redStar from "/red-star.png"
+import puppet from "/puppet-crop.png"
 import { RightSideBar } from "./util"
 
 const logos = [mbLogo, vicLogo, bunk]

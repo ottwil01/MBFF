@@ -1,6 +1,6 @@
 import { Flex, Text, Image } from "@chakra-ui/react"
 import { LeftSideBar } from "./util"
-import timetable from "../assets/timetable.png"
+import timetable from "/timetable.png"
 
 function Timetable() {
   return (
