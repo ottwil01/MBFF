@@ -28,7 +28,7 @@ function ImageBox() {
         })}
         <Box pos={"relative"} boxSize={["160px", null, "300px"]} display="flex">
           <Image src={redStar} />
-          <Text className="faktum" fontSize={"xl"} align="center" pos={"absolute"} mt="98px" ml="100px" transform={"rotate(-15deg)"} >You won't<br/>believe your<br/>eyes</Text>
+          <Text className="faktum" fontSize={"xl"} align="center" pos={"absolute"} mt="98px" ml="100px" transform={"rotate(-15deg)"} >You won't<br/>believe yourhello<br/>eyes</Text>
         </Box>
       </Flex>
       <Image src={puppet} boxSize={"750px"} objectFit={"contain"} mt="80px" />
