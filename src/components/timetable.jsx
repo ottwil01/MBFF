@@ -27,7 +27,7 @@ function TimetableContainer() {
           Timetable
         </Text>
         <Flex maxW={"6xl"}>
-          <Image src={timetable} alt="timetable" />
+          {/* <Image src={timetable} alt="timetable" /> */}
         </Flex>
       </Flex>
     );

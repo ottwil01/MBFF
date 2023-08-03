@@ -5,7 +5,7 @@ import { LeftSideBar } from "./util";
 function Tickets() {
   return (
     <Flex zIndex={1} flexDir={"row"}>
-      <LeftSideBar color="grey" display={["none", "none", "flex", "flex"]}/>
+      <LeftSideBar display={["none", "none", "none", "flex", "flex"]}/>
       <TicketContainer />
     </Flex>
   )
@@ -33,8 +33,8 @@ function TicketContainer() {
         Families can purchase low cost single-day, or weekend tickets to access all events occuring in the Town Hall, The Atrium and the Counihan Gallery.
         </Text>
       </Box>
-      <Spacer w="10px"/>
         <Box
+        mt={["25%", "25%", "25%"]}
           border={"4px"}
           borderRadius={"full"}
           maxWidth={"max-content"}
@@ -43,7 +43,7 @@ function TicketContainer() {
           color={"white"}
           className={"stretchpro"}
         >
-          <Text mr="15px" ml="15px">
+          <Text mx="15px">
             buy tickets
           </Text>
         </Box>

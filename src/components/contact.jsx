@@ -77,7 +77,7 @@ function ContactForm() {
         <Input
           type="email"
           bg="brand.blue"
-          placeholder="From:"
+          placeholder="Your email address:"
           w="66%"
           size={"lg"}
           fontSize={"3xl"}
