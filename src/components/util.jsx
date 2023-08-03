@@ -1,17 +1,17 @@
 import { Box, Flex } from "@chakra-ui/react";
 
-export function RightSideBar() {
+export function RightSideBar(props) {
     return (
-        <Flex>
-        <Box w={32} h='100%' bg='brand.red' />
+        <Flex display={props.display}>
+        <Box w={24} h='100%' bg='brand.red' />
         </Flex>
     )
 }
 
-export function LeftSideBar() {
+export function LeftSideBar(props) {
     return (
-        <Flex>
-        <Box w={32} h='100%' bg='#b3b3b3' />
+        <Flex display={props.display}>
+        <Box w={24} h='100%' bg='brand.grey' />
         </Flex>
     )
 }
