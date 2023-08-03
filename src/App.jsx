@@ -12,10 +12,10 @@ function App() {
     <Flex flexDir={"column"}>
       <NavBar />
       <Landing />
-      <Program />
-      <Timetable />
-      <Tickets />
-      <ContactForm />
+      {/* <Program /> */}
+      {/* <Timetable /> */}
+      {/* <Tickets /> */}
+      {/* <ContactForm /> */}
     </Flex>
   );
 }

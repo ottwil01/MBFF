@@ -11,34 +11,36 @@ const things = ["Theatre", "Music", "Dance", "Workshops", "Installations", "VR"]
 
 function Landing() {
   return (
-    <Flex zIndex={1} flexDir={["column", null, "row-reverse"]} height="1px" minH="calc(100vh)" overflowX={"clip"} id="landing" mt={["70px", "70px", "140px"]}>
-      <RightSideBar display={["none", "none", "flex", "flex"]} />
+    <Flex zIndex={1} flexDir={["column", null, "row-reverse"]} minH="calc(100vh)" overflowX={"clip"} id="landing" mt={["70px", "70px", "140px"]}>
+      {/* <RightSideBar display={["none", "none", "flex", "flex"]} /> */}
       <ImageBox />
-      <InfoBox />
+      {/* <InfoBox /> */}
     </Flex>
   )
 }
 
 function ImageBox() {
   return (
-    <Flex w={["100%", null, "60%"]} h="100%" bg="black" px={8} py={6} alignItems={"center"} justifyContent={"space-between"}>
-      <Flex flexDir={"column"} color="white" alignItems={"start"} justifyContent={"center"}>
+    <Flex w={["100%", "100%", "60%"]} h={["35vh", "42vh", "90vh"]} bg="black" px={4} pt={["0", "10"]} alignItems={"center"} justifyContent={"space-between"}>
+      <Flex flexDir={"column"} h={["35vh", "42vh", "90vh"]} color="white" alignItems={"start"} justifyContent={"center"}>
         {things.map((thing, index) => {
-          return <Text key={index} className="stretchpro" fontSize={['xl', null, "2xl", "4xl", "5xl"]} color="brand.yellow">{thing}</Text>
+          return <Text key={index} className="stretchpro" fontWeight="bold" fontSize={["3.3vh", null, "2xl", "4xl", "5xl"]} color="brand.yellow" h="23px">{thing}</Text>
         })}
-        <Box pos={"relative"} boxSize={["160px", null, "300px"]} display="flex">
+        <Flex pos={"relative"} alignSelf={"center"} boxSize={["17.5vh", "16vh", "300px"]}>
           <Image src={redStar} />
-          <Text className="faktum" fontSize={"xl"} align="center" pos={"absolute"} mt="98px" ml="100px" transform={"rotate(-15deg)"} >You won't<br/>believe your<br/>eyes</Text>
-        </Box>
+          <Text className="faktum" fontSize={["1.5vh", "lg", "xl"]} align="center" pos={"absolute"} mt="5.5vh" ml="5vh" transform={"rotate(-15deg)"} >You won't<br/>believe your<br/>eyes</Text>
+        </Flex>
       </Flex>
-      <Image src={puppet} boxSize={"750px"} objectFit={"contain"} mt="80px" />
+      <Flex >
+      <Image src={puppet} boxSize={["34vh", "34vh", "82vh", "82vh"]} objectFit={"contain"} mt={["-8", "none"]} />
+      </Flex>
     </Flex>
   )
 }
 
 function InfoBox() {
   return (
-    <Flex w={["100%", null, "40%"]} h="100%" bg='brand.green' flexDir={"column"} color="white" px={8} py={16} alignItems={"center"} gap={4} fontSize={["xl", null, "1xl", "1.5vw"]}>
+    <Flex w={["100%", null, "40%"]} h={["55%", "48%", "100%"]} bg='brand.green' flexDir={"column"} color="white" px={8} py={16} alignItems={"center"} gap={4} fontSize={["xl", null, "1xl", "1.5vw"]}>
       <Text verticalAlign={"top"} className="faktum-bold" maxW={'2xl'}>
       High quality art for the whole family, and either low-cost or free!
       <br/><br/>
