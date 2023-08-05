@@ -1,4 +1,4 @@
-import { Flex, Text, Image, Box } from "@chakra-ui/react"
+import { Flex, Text, Image } from "@chakra-ui/react"
 import mbLogo from "/merri-bek1.png"
 import vicLogo from "/vic-gov1.png"
 import bunk from "/bunk-puppets1.png"

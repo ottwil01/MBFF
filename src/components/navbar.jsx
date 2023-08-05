@@ -8,16 +8,6 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import { useScrollLock } from '../hooks/ScrollLock'
 
 
-
-    // function nav() {
-    //     return (
-    //         <Flex zIndex={1}>
-    //             <NavBar />
-    //         </Flex>
-    //     )
-    // }
-
-
     function NavBar() {
         const [display, changeDisplay] = useState('none')
         const { lockScroll, unlockScroll } = useScrollLock()
