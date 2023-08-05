@@ -5,7 +5,7 @@ import { LeftSideBar } from "./util";
 function Tickets() {
   return (
     <Flex zIndex={1} flexDir={"row"}>
-      <LeftSideBar color="grey" display={["none", "none", "flex", "flex"]}/>
+      <LeftSideBar display={["none", "none", "none", "flex", "flex"]}/>
       <TicketContainer />
     </Flex>
   )
@@ -19,7 +19,6 @@ function TicketContainer() {
           alignItems={"center"}
           justifyContent={"start"}
           direction={"column"}
-          gap={30}
           id="tickets"
           bg="brand.green"
         >
@@ -32,8 +31,9 @@ function TicketContainer() {
         <br/><br/>
         Families can purchase low cost single-day, or weekend tickets to access all events occuring in the Town Hall, The Atrium and the Counihan Gallery.
         </Text>
+      <Spacer />
       </Box>
-      <Spacer w="10px"/>
+      <Flex h="100%" alignItems={"center"} justifyContent={"center"}>
         <Box
           border={"4px"}
           borderRadius={"full"}
@@ -47,6 +47,7 @@ function TicketContainer() {
             buy tickets
           </Text>
         </Box>
+      </Flex>
       </Flex>
   );
 }
