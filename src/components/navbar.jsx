@@ -41,8 +41,8 @@ const socials = [{Fblogo}, {Iglogo}]
                 <Flex minW={["100px", "100px", "205px"]} w={["100px", "100px", "205px"]}>
                     <Image src={Mbfflogo} href="#"/>
                 </Flex>
-                <Flex px="0.3em" maxW={["1100px"]} flexDirection={"column"} justifyContent={"center"}>
-                    <Text fontSize={["4.7vw", "24", "45", "34"]} textAlign="start" className="stretchpro">
+                <Flex px="0.3em" flexDirection={"column"} justifyContent={"center"}>
+                    <Text fontSize={["4.7vw", "24", "45", "3vw"]} textAlign="start" className="stretchpro">
                         Merri-bek Family Festival
                     </Text>
                     <Flex justifyContent={"space-between"} display={[ "none", "none", "none", "flex", "flex" ]}  className="faktum">
