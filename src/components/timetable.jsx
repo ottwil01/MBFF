@@ -20,7 +20,7 @@ function TimetableContainer() {
             justifyContent={"start"}
             flexDirection={"column"}
             gap={10}
-            id="timetable"
+            id="Timetable"
             bg="brand.red"
           >
           <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight={"extrabold"} color={"white"}>

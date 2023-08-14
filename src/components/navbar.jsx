@@ -1,5 +1,5 @@
 import React, { useState } from 'react'                           
-import { Flex, Text, IconButton, Button, Image, Box } from "@chakra-ui/react"
+import { Flex, Text, IconButton, Button, Image, Box, LinkBox } from "@chakra-ui/react"
 import Fblogo from "/fblogo.png"
 import Iglogo from "/iglogo.png"
 import Mbfflogo from "/mbfflogo.png"
@@ -28,17 +28,16 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
             top="0"
             left="0"
             align="center"
-            flexDirection={"row"}
+            flexDirection="row"
             bg="brand.blue"
             w="100%"
             color="white"
             h={["70px", "70px", "140px"]}
-            p="0.6em"
+            p="0.9em"
             justifyContent={"space-between"}
-            overflow="hidden"
             >
-                <Flex minW={["100px", "100px", "205px"]} w={["100px", "100px", "205px"]}>
-                    <Image src={Mbfflogo} href="#"/>
+                <Flex minW={["100px", "100px", "205px"]} w={["100px", "100px", "210px"]}>
+                    <Image src={Mbfflogo} alt="mbff logo"/>
                 </Flex>
                 <Flex px="0.3em" flexDirection={"column"} justifyContent={"center"}>
                     <Text fontSize={["4.7vw", "24", "45", "3vw"]} textAlign="start" className="stretchpro">
@@ -46,7 +45,7 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                     </Text>
                     <Flex justifyContent={"space-between"} display={[ "none", "none", "none", "flex", "flex" ]}  className="faktum">
                         {links.map((link, index) => {
-                            return <Button fontSize="20" key={index} variant="unstyled" >
+                            return <Button fontSize="1.7vw" key={index} variant="unstyled" >
                                         <Link to={link} spy={true} smooth={true} offset={-160} duration={500}>{link}</Link>
                                     </Button>
                         })}

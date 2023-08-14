@@ -8,7 +8,7 @@ import {
   Input,
   Textarea,
   Text,
-  Button,
+  Box
 } from "@chakra-ui/react";
 
 function ContactForm() {
@@ -55,21 +55,21 @@ function ContactForm() {
   return (
     <Flex
       zIndex={1}
-      w={"100%"}
-      h={"80vh"}
-      alignItems={"center"}
-      justifyContent={"start"}
-      direction={"column"}
+      w="100%"
+      h="85vh"
+      alignItems="center"
+      justifyContent="start"
+      direction="column"
       gap={4}
-      id="contact"
+      id="Contact"
     >
-      <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight={"extrabold"}>
+      <Text textAlign="center" w="100%" mt="15px" className="stretchpro" fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight="extrabold">
         Contact
       </Text>
       <FormControl
         color="white"
-        display={"flex"}
-        flexDirection={"column"}
+        display="flex"
+        flexDirection="column"
         w={["90%", "90%", "55%"]}
       >
         <FormLabel>Email Address</FormLabel>
@@ -78,9 +78,9 @@ function ContactForm() {
           bg="brand.blue"
           placeholder="Your email address:"
           w="66%"
-          size={"lg"}
-          fontSize={"3xl"}
-          fontWeight={"bold"}
+          size="lg"
+          fontSize={["3.9vw", "3.7vw", "3.3vw", "3xl"]}
+          fontWeight="bold"
           _placeholder={{ color: "white" }}
           value={email}
           onInput={(e) => handleInput(setEmail, e)}
@@ -91,17 +91,17 @@ function ContactForm() {
           bg="brand.blue"
           placeholder="Type message here...."
           h={64}
-          resize={"vertical"}
-          fontSize={"3xl"}
-          fontWeight={"bold"}
+          resize="vertical"
+          fontSize={["3.9vw", "3.7vw", "3.3vw", "3xl"]}
+          fontWeight="bold"
           _placeholder={{ color: "white" }}
           value={message}
           onInput={(e) => handleInput(setMessage, e)}
-          mb={6}
+          mb={5}
         />
-        <Button onClick={handleSubmit} isLoading={loading} isDisabled={!validInput}>
+        <Box as="button" ml="3.5" alignSelf="baseline" textColor="brand.blue" fontSize={["3.9vw", "3.7vw", "3.3vw", "3xl"]} fontWeight="bold" onClick={handleSubmit} isLoading={loading} isDisabled={!validInput}>
           Submit!
-        </Button>
+        </Box>
       </FormControl>
     </Flex>
   );

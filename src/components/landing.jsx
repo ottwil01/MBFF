@@ -71,7 +71,7 @@ const things = ["Theatre", "Music", "Dance", "Workshops", "Installations", "VR"]
 
 function Landing() {
   return (
-    <Flex zIndex={1} flexDir={["column", null, "row-reverse"]} height="1px" minH="calc(100vh)" overflowX={"clip"} id="landing" mt={["70px", "70px", "140px"]}>
+    <Flex zIndex={1} flexDir={["column", null, "row-reverse"]} height="1px" minH="calc(100vh)" overflowX={"clip"} id="Home" mt={["70px", "70px", "140px"]}>
       <RightSideBar display={["none", "none", "flex", "flex"]} />
       <ImageBox />
       <InfoBox />

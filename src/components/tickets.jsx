@@ -19,7 +19,7 @@ function TicketContainer() {
           alignItems={"center"}
           justifyContent={"start"}
           direction={"column"}
-          id="tickets"
+          id="Tickets"
           bg="brand.green"
         >
         <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight={"extrabold"} color={"white"}>
@@ -43,7 +43,7 @@ function TicketContainer() {
           className={"stretchpro"}
           w="100%"
         >
-          <Text mx="15px">
+          <Text mt="2px" mx="15px">
             buy tickets
           </Text>
         </Button>

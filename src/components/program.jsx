@@ -19,7 +19,7 @@ function Combined() {
       alignItems={"Center"}
       justifyContent={"Center"}
       w="full"
-      id="program"
+      id="Program"
     >
       <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight={"extrabold"}>
         Program
