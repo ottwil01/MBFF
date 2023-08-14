@@ -7,6 +7,8 @@ import { Link } from 'react-scroll'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { useScrollLock } from '../hooks/ScrollLock'
 
+const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
+const socials = [{Fblogo}, {Iglogo}]
 
     function NavBar() {
         const [display, changeDisplay] = useState('none')
@@ -25,60 +27,54 @@ import { useScrollLock } from '../hooks/ScrollLock'
             zIndex={2}
             pos="fixed"
             top="0"
+            left="0"
             align="center"
             flexDirection={"row"}
             bg="brand.blue"
             w="100%"
             color="white"
             h={["70px", "70px", "140px"]}
-            p="1rem"
-            alignItems={"center"}
+            p="0.6em"
             justifyContent={"space-between"}
+            overflow="hidden"
             >
-                <Flex minW={["90px", "90px", "205px"]} w={["90px", "90px", "205px"]}>
-                    <Image src={Mbfflogo}/>
+                <Flex minW={["100px", "100px", "205px"]} w={["100px", "100px", "205px"]}>
+                    <Image src={Mbfflogo} href="#"/>
                 </Flex>
-                <Flex flexDirection={"column"} justifyContent={"center"}>
-                    <Text align={[ "normal", "normal", "center" ]} className="stretchpro">
+                <Flex px="0.3em" maxW={["1100px"]} flexDirection={"column"} justifyContent={"center"}>
+                    <Text fontSize={["4.7vw", "24", "45", "34"]} textAlign="start" className="stretchpro">
                         Merri-bek Family Festival
                     </Text>
-                    <Flex display={[ "none", "none", "flex", "flex" ]} justifyContent={'space-between'} className="faktum">
-                        <Button variant="unstyled" >
-                            <Link to="landing" spy={true} smooth={true} offset={-160} duration={500}>Home</Link>
-                        </Button>
-                        <Button variant="unstyled" >
-                            <Link to="program" spy={true} smooth={true} offset={-160} duration={500}>Program</Link>
-                        </Button>
-                        <Button variant="unstyled" >
-                            <Link to="timetable" spy={true} smooth={true} offset={-160} duration={500}>Timetable</Link>
-                        </Button>
-                        <Button variant="unstyled" >
-                            <Link to="tickets" spy={true} smooth={true} offset={-160} duration={500}>Tickets</Link>
-                        </Button>
-                        <Button variant="unstyled" >
-                            <Link to="contact" spy={true} smooth={true} offset={-160} duration={500}>Contact</Link>
-                        </Button>
+                    <Flex justifyContent={"space-between"} display={[ "none", "none", "none", "flex", "flex" ]}  className="faktum">
+                        {links.map((link, index) => {
+                            return <Button fontSize="20" key={index} variant="unstyled" >
+                                        <Link to={link} spy={true} smooth={true} offset={-160} duration={500}>{link}</Link>
+                                    </Button>
+                        })}
                     </Flex>
                 </Flex>
-                <Flex>
+                <Flex mr="12px" display={["flex", "flex", "flex", "none", "none"]}>
                     <IconButton
                         aria-label="Open Menu"
                         icon={<FaBars size={40}/>}
                         variant="unstyled"
                         justify="flex-end"
                         onClick={handleMenuChange}
-                        display={["flex", "flex", "none", "none"]}
                     />
                 </Flex>
-                <Flex justifyContent={"center"} w="130px" justify="space-between" display={['none', 'none', 'flex', 'flex']}>
-                    <ButtonGroup gap="10px"variant="unstyled" boxSize={["none", "none", "40px", "60px", "90px"]}>
-                        <Button>
-                            <Image src={Fblogo}/>
-                        </Button>
-                        <Button>
-                            <Image src={Iglogo}/>
-                        </Button>
-                    </ButtonGroup>
+                <Flex  display={['none', 'none', "none", 'flex', 'flex']}>
+                    <IconButton 
+                    aria-label="fb-logo"
+                    icon={<Image boxSize="60px" src={Fblogo} href="/"/>}
+                    isRound={true}
+                    > 
+                    </IconButton>
+                    <IconButton
+                    aria-label="ig-logo"
+                    icon={<Image boxSize="60px" src={Iglogo} href="/"/>}
+                    isRound={true}
+                    >
+                    </IconButton>
                 </Flex>
                 <Flex
                 w="100%"
@@ -89,7 +85,6 @@ import { useScrollLock } from '../hooks/ScrollLock'
                 p="4"
                 bg="brand.blue"
                 zIndex={99}
-                overflowY="auto"
                 display={display}
                 flexDirection={"column"}
                 >
@@ -104,7 +99,6 @@ import { useScrollLock } from '../hooks/ScrollLock'
                         color="white"
                         variant="unstyled"
                         onClick={handleCloseMenu}
-                        gap="10"
                     />
                     </Flex>
                 </Flex>
@@ -114,22 +108,21 @@ import { useScrollLock } from '../hooks/ScrollLock'
                         </Text>
                     </Flex>
                     <Flex className="stretchpro" flexDirection={"column"} alignItems={"flex-end"} w="100%">
-                        <Button variant="unstyled" >
-                            <Link to="landing" spy={true} smooth={true} offset={-160} duration={500} onClick={handleCloseMenu}>Home</Link>
+                    {links.map((link, index) => {
+                            return <Button key={index} variant="unstyled" >
+                            <Link to={link} spy={true} smooth={true} offset={-160} duration={500} onClick={handleCloseMenu}>{link}</Link>
                         </Button>
-                        <Button variant="unstyled" >
-                            <Link to="program" spy={true} smooth={true} offset={-160} duration={500} onClick={handleCloseMenu}>Program</Link>
-                        </Button>
-                        <Button variant="unstyled" >
-                            <Link to="timetable" spy={true} smooth={true} offset={-160} duration={500} onClick={handleCloseMenu}>Timetable</Link>
-                        </Button>
-                        <Button variant="unstyled" >
-                            <Link to="tickets" spy={true} smooth={true} offset={-160} duration={500} onClick={handleCloseMenu}>Tickets</Link>
-                        </Button>
-                        <Button variant="unstyled" >
-                            <Link to="contact" spy={true} smooth={true} offset={-160} duration={500} onClick={handleCloseMenu}>Contact</Link>
-                        </Button>
+                        })}
                     </Flex>
+                    <Flex w="100%" mt="50px">
+                        <IconButton aria-label="fb-logo">
+                            <Image boxSize="60px" src={Fblogo} href="/"/>
+                        </IconButton>
+                        <IconButton href="/" aria-label="ig-logo">
+                            <Image boxSize="60px" src={Iglogo} href="/"/>
+                        </IconButton>
+                    </Flex>
+
                 </Flex>
             </Flex>
     )

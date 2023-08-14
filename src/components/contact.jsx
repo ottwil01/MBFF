@@ -55,7 +55,7 @@ function ContactForm() {
   return (
     <Flex
       zIndex={1}
-      w={"100vw"}
+      w={"100%"}
       h={"80vh"}
       alignItems={"center"}
       justifyContent={"center"}
@@ -63,7 +63,7 @@ function ContactForm() {
       gap={4}
       id="contact"
     >
-      <Text className={"stretchpro"} fontSize={"6xl"} fontWeight={"extrabold"}>
+      <Text textAlign="center" w="100%" className={"stretchpro"} fontSize={"6xl"} fontWeight={"extrabold"}>
         Contact
       </Text>
       <FormControl

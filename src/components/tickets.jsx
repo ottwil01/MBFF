@@ -22,11 +22,11 @@ function TicketContainer() {
           id="tickets"
           bg="brand.green"
         >
-        <Text mt="15px" className={"stretchpro"} fontSize={"6xl"} fontWeight={"extrabold"} color={"white"}>
+        <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={"6xl"} fontWeight={"extrabold"} color={"white"}>
         Tickets
       </Text>
-      <Box color={"white"} className="faktum-bold" fontSize={"2xl"} maxW={'6xl'}>
-        <Text align={"center"}>
+      <Box w="100%" color={"white"} className="faktum-bold" fontSize={"2xl"} maxW={'6xl'}>
+        <Text textAlign={"center"}>
         All events hosted in the library are free for all audiences.
         <br/><br/>
         Families can purchase low cost single-day, or weekend tickets to access all events occuring in the Town Hall, The Atrium and the Counihan Gallery.
@@ -42,6 +42,7 @@ function TicketContainer() {
           px={3}
           color={"white"}
           className={"stretchpro"}
+          w="100%"
         >
           <Text mr="15px" ml="15px">
             buy tickets

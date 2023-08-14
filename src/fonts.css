@@ -13,11 +13,14 @@
 
 .stretchpro {
   font-family: 'StretchPro';
+  font-variant: none;
 }
+
 .faktum {
   font-family: 'Faktum';
   font-weight: 400;
 }
+
 .faktum-bold {
   font-family: 'Faktum';
   font-weight: 800;

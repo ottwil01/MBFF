@@ -7,7 +7,7 @@ import puppet from "/puppet-crop.png"
 import { RightSideBar } from "./util"
 
 const logos = [mbLogo, vicLogo, bunk]
-const things = ["Theatre", "Music", "Dance", "Workshops", "Installations", "VR"]
+const things = ["Theatre", "Music", "Projections", "Workshops", "Installations", "VR"]
 
 function Landing() {
   return (
@@ -24,7 +24,7 @@ function ImageBox() {
     <Flex w={["100%", "100%", "60%"]} h={["35vh", "42vh", "90vh"]} bg="black" px={4} pt={["0", "10"]} alignItems={"center"} justifyContent={"space-between"}>
       <Flex flexDir={"column"} h={["35vh", "42vh", "90vh"]} color="white" alignItems={"start"} justifyContent={"center"}>
         {things.map((thing, index) => {
-          return <Text key={index} className="stretchpro" fontWeight="bold" fontSize={["3.3vh", null, "2xl", "4xl", "5xl"]} color="brand.yellow" h="23px">{thing}</Text>
+          return <Text key={index} className="stretchpro" fontWeight="bold" fontSize={["3.3vh", null, "2xl", "4xl", "5xl"]} color="brand.yellow" h={["23px", "50px"]}>{thing}</Text>
         })}
         <Flex pos={"relative"} alignSelf={"center"} boxSize={["17.5vh", "16vh", "300px"]}>
           <Image src={redStar} />
