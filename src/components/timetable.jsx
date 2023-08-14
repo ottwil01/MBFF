@@ -23,7 +23,7 @@ function TimetableContainer() {
             id="timetable"
             bg="brand.red"
           >
-          <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={"6xl"} fontWeight={"extrabold"} color={"white"}>
+          <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight={"extrabold"} color={"white"}>
           Timetable
         </Text>
         <Flex maxW={"6xl"}>

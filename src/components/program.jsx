@@ -21,7 +21,7 @@ function Combined() {
       w="full"
       id="program"
     >
-      <Text textAlign="center" w="100%" className={"stretchpro"} fontSize={"6xl"} fontWeight={"extrabold"}>
+      <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight={"extrabold"}>
         Program
       </Text>
       <Flex

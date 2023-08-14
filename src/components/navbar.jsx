@@ -1,5 +1,5 @@
 import React, { useState } from 'react'                           
-import { Flex, Text, IconButton, Button, Image, Box, ButtonGroup } from "@chakra-ui/react"
+import { Flex, Text, IconButton, Button, Image, Box } from "@chakra-ui/react"
 import Fblogo from "/fblogo.png"
 import Iglogo from "/iglogo.png"
 import Mbfflogo from "/mbfflogo.png"
@@ -8,7 +8,6 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import { useScrollLock } from '../hooks/ScrollLock'
 
 const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
-const socials = [{Fblogo}, {Iglogo}]
 
     function NavBar() {
         const [display, changeDisplay] = useState('none')
@@ -92,7 +91,7 @@ const socials = [{Fblogo}, {Iglogo}]
                     <Box w={"10rem"}>
                         <Image src={Mbfflogo}/>
                     </Box>
-                    <Flex>
+                    <Flex mt={["-5px", "-5px", "29px"]}>
                     <IconButton
                         aria-label='Close Menu'
                         icon={<FaTimes size={50} />}

@@ -1,4 +1,4 @@
-import { Flex, Box, Text, Spacer } from "@chakra-ui/react";
+import { Flex, Box, Text, Spacer, Button} from "@chakra-ui/react";
 import { LeftSideBar } from "./util";
 
 
@@ -22,10 +22,10 @@ function TicketContainer() {
           id="tickets"
           bg="brand.green"
         >
-        <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={"6xl"} fontWeight={"extrabold"} color={"white"}>
+        <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight={"extrabold"} color={"white"}>
         Tickets
       </Text>
-      <Box w="100%" color={"white"} className="faktum-bold" fontSize={"2xl"} maxW={'6xl'}>
+      <Box px="1vw" w="100%" color={"white"} className="faktum-bold" fontSize={["2xl", "3xl", "4xl"]} maxW={"1200px"}>
         <Text textAlign={"center"}>
         All events hosted in the library are free for all audiences.
         <br/><br/>
@@ -33,23 +33,22 @@ function TicketContainer() {
         </Text>
       <Spacer />
       </Box>
-      <Flex h="100%" alignItems={"center"} justifyContent={"center"}>
-        <Box
+      <Flex h="50%" alignItems={"center"} justifyContent={"center"}>
+        <Button
           border={"4px"}
           borderRadius={"full"}
-          maxWidth={"max-content"}
           whiteSpace={"nowrap"}
           px={3}
           color={"white"}
           className={"stretchpro"}
           w="100%"
         >
-          <Text mr="15px" ml="15px">
+          <Text mx="15px">
             buy tickets
           </Text>
-        </Box>
+        </Button>
       </Flex>
-      </Flex>
+    </Flex>
   );
 }
 
