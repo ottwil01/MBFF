@@ -63,7 +63,7 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                 <Flex  display={['none', 'none', "none", 'flex', 'flex']}>
                     <IconButton 
                     aria-label="fb-logo"
-                    icon={<Image boxSize="60px" src={Fblogo} href="/"/>}
+                    icon={<Image boxSize="60px" src={Fblogo} href="#"/>}
                     isRound={true}
                     > 
                     </IconButton>

@@ -6,7 +6,7 @@ function Program() {
   return (
     <Flex zIndex={1} flexDir={"row"}>
       <Combined />
-      <RightSideBar display={["none", "none", "flex", "flex"]} />
+      <RightSideBar display={["none", "none", "none", "flex", "flex"]} />
       </Flex>
   )
 }
