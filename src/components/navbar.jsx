@@ -1,9 +1,9 @@
 import React, { useState } from 'react'                           
 import { Flex, Text, IconButton, Button, Image, Box } from "@chakra-ui/react"
-import { Link as Linkchakra} from "@chakra-ui/react"
 import Fblogo from "/fblogo.png"
 import Iglogo from "/iglogo.png"
 import Mbfflogo from "/mbfflogo.png"
+import Mbff from "/mbfflogo-fix.png"
 import { Link } from 'react-scroll'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { useScrollLock } from '../hooks/ScrollLock'
@@ -34,7 +34,7 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
             w="100%"
             color="white"
             h={["70px", "70px", "140px"]}
-            p="0.9em"
+            p="1.5em"
             justifyContent={"space-between"}
             >
                 <IconButton
@@ -42,12 +42,12 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                 aria-label="logo"
                 minW={["100px", "100px", "205px"]}
                 w={["100px", "100px", "210px"]} display="flex"
-                icon={<Image src={Mbfflogo} alt="mbff logo"/>}
+                icon={<Image src={Mbff} alt="mbff logo"/>}
                 variant="unstyled"
                 href={"/"}
                 />
                 <Flex px="0.3em" flexDirection={"column"} justifyContent={"center"}>
-                    <Text fontSize={["4.5vw", "24", "45", "3vw"]} textAlign="start" className="stretchpro">
+                    <Text fontSize={["4.1vw", "25", "43", "3vw"]} textAlign="start" className="stretchpro">
                         Merri-bek Family Festival
                     </Text>
                     <Flex justifyContent={"space-between"} display={[ "none", "none", "none", "flex", "flex" ]}  className="faktum">
@@ -70,18 +70,22 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                 <Flex display={['none', 'none', "none", 'flex', 'flex']}>
                     <IconButton
                         as="a"
+                        boxSize={"60px"}
                         aria-label="fb-logo"
                         icon={<Image boxSize="60px" src={Fblogo}/>}
                         isRound={true}
+                        mr="5px"
                         variant="unstyled"
                         target="_blank"
                         href={"https://www.instagram.com/mbff.au/"}
                     />
                     <IconButton
                         as="a"
+                        boxSize={"60px"}
                         aria-label="ig-logo"
                         icon={<Image boxSize="60px" src={Iglogo}/>}
                         isRound={true}
+                        ml="5px"
                         variant="unstyled"
                         target="_blank"
                         href={"https://www.instagram.com/mbff.au/"}
@@ -103,7 +107,7 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                     <Box w={"10rem"}>
                         <Image src={Mbfflogo}/>
                     </Box>
-                    <Flex mt={["-5px", "-5px", "30px"]} mr={["5px", "5px", "5px"]}>
+                    <Flex mt={["-5px", "-5px", "30px"]} mr="15px">
                     <IconButton
                         aria-label='Close Menu'
                         icon={<FaTimes size={50} />}
@@ -125,15 +129,29 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                         </Button>
                         })}
                     </Flex>
-                    <Flex w="100%" mt="50px">
-                        <IconButton
-                            aria-label="fb-logo"
-                            icon={<Image boxSize="60px" src={Fblogo}/>}
-                        />
-                        <IconButton
-                            aria-label="ig-logo"
-                            icon={<Image boxSize="60px" src={Iglogo}/>}
-                        />
+                    <Flex w="100%">
+                    <IconButton
+                        as="a"
+                        boxSize={"60px"}
+                        aria-label="fb-logo"
+                        icon={<Image boxSize="60px" src={Fblogo}/>}
+                        isRound={true}
+                        mr="5px"
+                        variant="unstyled"
+                        target="_blank"
+                        href={"https://www.instagram.com/mbff.au/"}
+                    />
+                    <IconButton
+                        as="a"
+                        boxSize={"60px"}
+                        aria-label="ig-logo"
+                        icon={<Image boxSize="60px" src={Iglogo}/>}
+                        isRound={true}
+                        ml="5px"
+                        variant="unstyled"
+                        target="_blank"
+                        href={"https://www.instagram.com/mbff.au/"}
+                    />
                     </Flex>
 
                 </Flex>

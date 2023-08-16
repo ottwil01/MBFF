@@ -89,7 +89,7 @@ function ProgramComponent(props) {
         >
           <Text fontSize={"xl"} fontWeight={"bold"}>{props.venue}</Text>
         </Box>
-        <Text fontWeight={"semibold"} whiteSpace={"normal"}>
+        <Text py="20px" fontWeight={"semibold"} whiteSpace={"normal"}>
           {props.description}
         </Text>
       </Flex>
