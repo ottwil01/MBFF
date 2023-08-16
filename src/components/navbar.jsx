@@ -37,9 +37,15 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
             p="0.9em"
             justifyContent={"space-between"}
             >
-                <Flex minW={["100px", "100px", "205px"]} w={["100px", "100px", "210px"]}>
-                    <Image src={Mbfflogo} alt="mbff logo"/>
-                </Flex>
+                <IconButton
+                as="a"
+                aria-label="logo"
+                minW={["100px", "100px", "205px"]}
+                w={["100px", "100px", "210px"]} display="flex"
+                icon={<Image src={Mbfflogo} alt="mbff logo"/>}
+                variant="unstyled"
+                href={"/"}
+                />
                 <Flex px="0.3em" flexDirection={"column"} justifyContent={"center"}>
                     <Text fontSize={["4.5vw", "24", "45", "3vw"]} textAlign="start" className="stretchpro">
                         Merri-bek Family Festival
@@ -63,10 +69,13 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                 </Flex>
                 <Flex display={['none', 'none', "none", 'flex', 'flex']}>
                     <IconButton
+                        as="a"
                         aria-label="fb-logo"
                         icon={<Image boxSize="60px" src={Fblogo}/>}
                         isRound={true}
                         variant="unstyled"
+                        target="_blank"
+                        href={"https://www.instagram.com/mbff.au/"}
                     />
                     <IconButton
                         as="a"
