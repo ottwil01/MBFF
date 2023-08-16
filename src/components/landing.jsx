@@ -81,7 +81,7 @@ function Landing() {
 
 function ImageBox() {
   return (
-    <Flex w={["100%", "100%", "60%"]} h="100%" bg="black" px={8} py={6} alignItems={"center"} justifyContent={"space-between"}>
+    <Flex w={["100%", "100%", "60%"]} minH="100%" bg="black" px={8} py={6} alignItems={"center"} justifyContent={"space-between"}>
       <Flex flexDir={"column"} color="white" alignItems={"start"} justifyContent={"center"}>
         {things.map((thing, index) => {
           return <Text key={index} className="stretchpro" fontSize={['xl', null, "2xl", "4xl", "5xl"]} color="brand.yellow">{thing}</Text>
@@ -98,7 +98,7 @@ function ImageBox() {
 
 function InfoBox() {
   return (
-    <Flex w={["100%", "100%", "40%"]} h="100%" bg='brand.green' flexDir={"column"} color="white" px={8} pt={14} justifyContent={"space-between"} gap={4} fontSize={["14","1.8vw"]}>
+    <Flex w={["100%", "100%", "40%"]} minH="100%" bg='brand.green' flexDir={"column"} color="white" px={8} pt={14} justifyContent={"space-between"} gap={4} fontSize={["14","1.8vw"]}>
       <Text verticalAlign={"top"} className="faktum-bold" w="100%">
         High quality art for the whole family, and either low-cost or free!
         <br/><br/>

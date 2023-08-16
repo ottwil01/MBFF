@@ -1,6 +1,20 @@
 import { Flex, Spacer, Image, Text, Box } from "@chakra-ui/react"
 import ProgramData from "../program-data.json"
 import { RightSideBar } from "./util"
+import ssbb from "/ssbb.png"
+import fritz from "/ssbb.png"
+
+
+const image = [
+  {
+    alt: "ssbb",
+    src: ssbb
+  },
+  {
+    alt: "fritz",
+    src: fritz
+  }
+]
 
 function Program() {
   return (
@@ -30,12 +44,18 @@ function Combined() {
         alignItems="Center"
         justifyContent="Center"
       >
-        {ProgramData.data.map((item, index) => (
+
+        {ProgramData.data.map((item, i) => (
           <ProgramComponent
-            key={index}
+            image={image.map((imageItem) => 
+              <ImageComponent
+              {...imageItem.src}
+              />
+            )}
+            key={i}
             name={item.name}
             venue={item.venue}
-            description={item.description}
+            description={<Text whiteSpace="pre-wrap">{item.description}</Text>}
           />
         ))}
       </Flex>
@@ -70,15 +90,18 @@ function ProgramComponent(props) {
         </Text>
       </Flex>
       <Spacer />
-      <Box w={["100%", "100%", "35%"]} shadow="sm">
-        <Image
-          src="https://placekeanu.com/400/400"
-          alt="keanu"
-          w={"100%"}
-          h={"100%"}
-          objectFit={"cover"}
-        />
-      </Box>
+    </Flex>
+  )
+}
+
+function ImageComponent(props) {
+  return (
+    <Flex w={["100%", "35%", "35%"]} shadow="sm">
+    <Image
+      src={props.src}
+      alt={props.alt}
+      w={["100%", "100%", "50%", "100%"]}
+    />
     </Flex>
   )
 }
