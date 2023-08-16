@@ -41,13 +41,13 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                     <Image src={Mbfflogo} alt="mbff logo"/>
                 </Flex>
                 <Flex px="0.3em" flexDirection={"column"} justifyContent={"center"}>
-                    <Text fontSize={["4.7vw", "24", "45", "3vw"]} textAlign="start" className="stretchpro">
+                    <Text fontSize={["4.5vw", "24", "45", "3vw"]} textAlign="start" className="stretchpro">
                         Merri-bek Family Festival
                     </Text>
                     <Flex justifyContent={"space-between"} display={[ "none", "none", "none", "flex", "flex" ]}  className="faktum">
                         {links.map((link, index) => {
                             return <Button fontSize="1.7vw" key={index} variant="unstyled" >
-                                        <Link to={link} spy={true} smooth={true} offset={-160} duration={500}>{link}</Link>
+                                        <Link to={link} spy={true} smooth={true} offset={-140} duration={500}>{link}</Link>
                                     </Button>
                         })}
                     </Flex>
@@ -61,19 +61,22 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                         onClick={handleMenuChange}
                     />
                 </Flex>
-                <Flex  display={['none', 'none', "none", 'flex', 'flex']}>
-                    <IconButton 
-                    aria-label="fb-logo"
-                    icon={<Image boxSize="60px" src={Fblogo}/>}
-                    isRound={true}
-                    > 
-                    </IconButton>
+                <Flex display={['none', 'none', "none", 'flex', 'flex']}>
                     <IconButton
-                    aria-label="ig-logo"
-                    icon={<Image boxSize="60px" src={Iglogo} href="/"/>}
-                    isRound={true}
-                    >
-                    </IconButton>
+                        aria-label="fb-logo"
+                        icon={<Image boxSize="60px" src={Fblogo}/>}
+                        isRound={true}
+                        variant="unstyled"
+                    />
+                    <IconButton
+                        as="a"
+                        aria-label="ig-logo"
+                        icon={<Image boxSize="60px" src={Iglogo}/>}
+                        isRound={true}
+                        variant="unstyled"
+                        target="_blank"
+                        href={"https://www.instagram.com/mbff.au/"}
+                    />
                 </Flex>
                 <Flex
                 w="100%"
@@ -91,7 +94,7 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                     <Box w={"10rem"}>
                         <Image src={Mbfflogo}/>
                     </Box>
-                    <Flex mt={["-5px", "-5px", "29px"]}>
+                    <Flex mt={["-5px", "-5px", "30px"]} mr={["5px", "5px", "5px"]}>
                     <IconButton
                         aria-label='Close Menu'
                         icon={<FaTimes size={50} />}
@@ -109,17 +112,19 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                     <Flex className="stretchpro" flexDirection={"column"} alignItems={"flex-end"} w="100%">
                     {links.map((link, index) => {
                             return <Button key={index} variant="unstyled" >
-                            <Link to={link} spy={true} smooth={true} offset={-160} duration={500} onClick={handleCloseMenu}>{link}</Link>
+                            <Link to={link} spy={true} smooth={true} offset={-70} duration={500} onClick={handleCloseMenu}>{link}</Link>
                         </Button>
                         })}
                     </Flex>
                     <Flex w="100%" mt="50px">
-                        <IconButton aria-label="fb-logo">
-                            <Image boxSize="60px" src={Fblogo} href="/"/>
-                        </IconButton>
-                        <IconButton href="/" aria-label="ig-logo">
-                            <Image boxSize="60px" src={Iglogo} href="/"/>
-                        </IconButton>
+                        <IconButton
+                            aria-label="fb-logo"
+                            icon={<Image boxSize="60px" src={Fblogo}/>}
+                        />
+                        <IconButton
+                            aria-label="ig-logo"
+                            icon={<Image boxSize="60px" src={Iglogo}/>}
+                        />
                     </Flex>
 
                 </Flex>

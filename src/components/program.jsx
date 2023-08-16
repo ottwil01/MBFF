@@ -54,6 +54,7 @@ function Combined() {
             )}
             key={i}
             name={item.name}
+            date={item.date}
             venue={item.venue}
             description={<Text whiteSpace="pre-wrap">{item.description}</Text>}
           />
@@ -71,9 +72,12 @@ function ProgramComponent(props) {
       maxWidth={"70%"}
       h={"full"}
     >
-      <Flex flexDirection="column" fontSize={"3xl"} w={["100%", "100%", "65%"]}>
-        <Text fontWeight={"black"} fontSize={"5xl"}>
+      <Flex flexDirection="column" fontSize={"2xl"} w={["100%", "100%", "65%"]}>
+        <Text fontWeight={"black"} fontSize={"4xl"}>
           {props.name}
+        </Text>
+        <Text fontWeight={"black"} fontSize={"4xl"}>
+          {props.date}
         </Text>
         <Box
           border={"4px"}
@@ -83,7 +87,7 @@ function ProgramComponent(props) {
           whiteSpace={"nowrap"}
           px={3}
         >
-          <Text fontWeight={"bold"}>{props.venue}</Text>
+          <Text fontSize={"xl"} fontWeight={"bold"}>{props.venue}</Text>
         </Box>
         <Text fontWeight={"semibold"} whiteSpace={"normal"}>
           {props.description}

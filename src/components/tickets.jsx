@@ -1,5 +1,5 @@
-import { Flex, Box, Text, Spacer, Button, Link} from "@chakra-ui/react";
-import { LeftSideBar } from "./util";
+import { Flex, Box, Text, Spacer, Button, Link} from "@chakra-ui/react"
+import { LeftSideBar } from "./util"
 
 
 function Tickets() {
@@ -14,18 +14,18 @@ function Tickets() {
 function TicketContainer() {
   return (
     <Flex
-          w={"100%"}
-          minH={"80vh"}
-          alignItems={"center"}
-          justifyContent={"start"}
-          direction={"column"}
-          id="Tickets"
-          bg="brand.green"
-        >
-        <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight={"extrabold"} color={"white"}>
-        Tickets
+      w={"100%"}
+      minH={["calc(100vh - 70px)", "calc(100vh - 70px)", "calc(100vh - 140px)", "calc(100vh - 140px)"]}
+      alignItems={"center"}
+      justifyContent={"start"}
+      direction={"column"}
+      id="Tickets"
+      bg="brand.green"
+    >
+      <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight={"extrabold"} color={"white"}>
+      Tickets
       </Text>
-      <Box px="1vw" w="80%" color={"white"} className="faktum-bold" fontSize={["2xl", "3xl", "4xl"]} maxW={"1200px"}>
+      <Box px="1vw" w="80%" color={"white"} className="faktum-bold" fontSize={["20", "23", "25"]} maxW={"1200px"}>
         <Text textAlign={"center"}>
         All events hosted in the library are free for all audiences.
         <br/><br/>
@@ -33,22 +33,22 @@ function TicketContainer() {
         </Text>
       <Spacer />
       </Box>
-      <Flex h="50%" alignItems={"center"} justifyContent={"center"}>
-      <Link href="https://events.humanitix.com/mbff" isExternal>
-      <Button
-          border={"4px"}
-          borderRadius={"full"}
-          whiteSpace={"nowrap"}
-          px={3}
-          color={"white"}
-          className={"stretchpro"}
-          w="100%"
-        >
-          <Text mt="2px" mx="15px">
-            buy tickets
-          </Text>
-        </Button>
-      </Link>
+      <Flex my="10px" h="50%" alignItems={"center"} justifyContent={"center"}>
+        <Link href="https://events.humanitix.com/mbff" isExternal>
+        <Button
+            border={"4px"}
+            borderRadius={"full"}
+            whiteSpace={"nowrap"}
+            px={3}
+            color={"white"}
+            className={"stretchpro"}
+            w="100%"
+          >
+            <Text mt="2px" mx="15px">
+              Get Tickets
+            </Text>
+          </Button>
+        </Link>
       </Flex>
     </Flex>
   );

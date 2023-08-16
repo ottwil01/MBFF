@@ -1,4 +1,4 @@
-import { Flex, Box } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import NavBar from "./components/navbar";
 import Landing from "./components/landing";
 import Program from "./components/program";
@@ -12,8 +12,8 @@ function App() {
     <Flex flexDir={"column"}>
       <Flex>
         <NavBar />
-      </Flex>
         <Landing />
+      </Flex>
         <Program />
         <Timetable />
         <Tickets />

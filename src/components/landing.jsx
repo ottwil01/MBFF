@@ -81,15 +81,17 @@ function Landing() {
 
 function ImageBox() {
   return (
-    <Flex w={["100%", "100%", "60%"]} minH="100%" maxH="100%" bg="black" px={8} py={6} alignItems={"center"} justifyContent={"space-between"}>
-      <Flex flexDir={"column"} color="white" alignItems={"start"} justifyContent={"center"}>
+    <Flex w={["100%", "100%", "60%"]} maxH="100%" bg="black" px={8} py={6} alignItems={"center"} justifyContent={"space-between"}>
+      <Flex flexDir={"column"} color="white">
+        <Flex w="100%" flexDirection={"column"} justifyContent={"space-between"}>
         {things.map((thing, index) => {
-          return <Text key={index} className="stretchpro" fontSize={['5vw', "5.4vw", "3vw", "3vw"]} color="brand.yellow">{thing}</Text>
-        })}
-        <Box pos={"relative"} alignSelf="center" boxSize={["160px", "200px", "200px", "250px"]} display="flex">
+            return <Text key={index} className="stretchpro" fontSize={['5vw', "5.4vw", "3vw", "3vw"]} color="brand.yellow">{thing}</Text>
+          })}
+        </Flex>
+        <Flex pos={"relative"} alignSelf="center" boxSize={["160px", "230px", "200px", "250px"]}>
           <Image src={redStar} />
-          <Text className="faktum" fontSize={["12", "16", "16", "21"]} align="center" pos={"absolute"} mt={["53px", "64px", "64px", "81px"]} ml={["48px", "56px", "56px", "69px"]} transform={"rotate(-15deg)"} >You won't<br/>believe your<br/>eyes</Text>
-        </Box>
+          <Text className="faktum" fontSize={["12", "18", "16", "21"]} align="center" pos={"absolute"} mt={["53px", "74px", "64px", "81px"]} ml={["48px", "64px", "56px", "69px"]} transform={"rotate(-15deg)"} >You won't<br/>believe your<br/>eyes</Text>
+        </Flex>
       </Flex>
       <Image src={puppet} h={["88vw", "90vw", "60vw", "55vw"]} objectFit={"contain"}/>
     </Flex>
@@ -98,7 +100,7 @@ function ImageBox() {
 
 function InfoBox() {
   return (
-    <Flex w={["100%", "100%", "40%"]} minH="100%" maxH="100%" bg='brand.green' flexDir={"column"} color="white" px={8} pt={14} justifyContent={"space-between"} gap={4} fontSize={["4vw","4vw", "2vw"]}>
+    <Flex w={["100%", "100%", "40%"]} maxH="100%" bg='brand.green' flexDir={"column"} color="white" px={8} pt={14} justifyContent={"space-between"} gap={4} fontSize={["4vw","4vw", "2vw"]}>
       <Text verticalAlign={"top"} className="faktum-bold" w="100%">
         High quality art for the whole family, and either low-cost or free!
         <br/><br/>

@@ -11,7 +11,7 @@ export function RightSideBar(props) {
 export function LeftSideBar(props) {
     return (
         <Flex display={props.display}>
-        <Box w={24} minH='100%' bg='brand.grey' />
+        <Box w={24} h='100%' bg='brand.grey' />
         </Flex>
     )
 }

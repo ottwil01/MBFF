@@ -56,7 +56,7 @@ function ContactForm() {
     <Flex
       zIndex={1}
       w="100%"
-      h="85vh"
+      h={["calc(100vh - 70px)", "calc(100vh - 70px)", "calc(100vh - 140px)", "calc(100vh - 140px)"]}
       alignItems="center"
       justifyContent="start"
       direction="column"
