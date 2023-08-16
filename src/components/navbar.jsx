@@ -1,5 +1,6 @@
 import React, { useState } from 'react'                           
-import { Flex, Text, IconButton, Button, Image, Box, LinkBox } from "@chakra-ui/react"
+import { Flex, Text, IconButton, Button, Image, Box } from "@chakra-ui/react"
+import { Link as Linkchakra} from "@chakra-ui/react"
 import Fblogo from "/fblogo.png"
 import Iglogo from "/iglogo.png"
 import Mbfflogo from "/mbfflogo.png"

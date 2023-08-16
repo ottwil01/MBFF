@@ -3,7 +3,7 @@ import { Box, Flex } from "@chakra-ui/react";
 export function RightSideBar(props) {
     return (
         <Flex display={props.display}>
-        <Box w={24} minH='100%' bg='brand.red' />
+        <Box w={24} h='100%' bg='brand.red' />
         </Flex>
     )
 }

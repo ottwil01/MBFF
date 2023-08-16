@@ -81,7 +81,7 @@ function Landing() {
 
 function ImageBox() {
   return (
-    <Flex w={["100%", "100%", "60%"]} minH="100%" bg="black" px={8} py={6} alignItems={"center"} justifyContent={"space-between"}>
+    <Flex w={["100%", "100%", "60%"]} minH="100%" maxH="100%" bg="black" px={8} py={6} alignItems={"center"} justifyContent={"space-between"}>
       <Flex flexDir={"column"} color="white" alignItems={"start"} justifyContent={"center"}>
         {things.map((thing, index) => {
           return <Text key={index} className="stretchpro" fontSize={['xl', null, "2xl", "4xl", "5xl"]} color="brand.yellow">{thing}</Text>
@@ -91,14 +91,14 @@ function ImageBox() {
           <Text className="faktum" fontSize={["12", "16", "24"]} align="center" pos={"absolute"} mt={["53px", "64px", "98px"]} ml={["48px", "56px", "89px"]} transform={"rotate(-15deg)"} >You won't<br/>believe your<br/>eyes</Text>
         </Box>
       </Flex>
-      {/* <Image src={puppet} boxSize={"750px"} objectFit={"contain"} mt="80px" /> */}
+      <Image src={puppet} boxSize={"750px"} objectFit={"contain"} mt="80px" />
     </Flex>
   )
 }
 
 function InfoBox() {
   return (
-    <Flex w={["100%", "100%", "40%"]} minH="100%" bg='brand.green' flexDir={"column"} color="white" px={8} pt={14} justifyContent={"space-between"} gap={4} fontSize={["14","1.8vw"]}>
+    <Flex w={["100%", "100%", "40%"]} minH="100%" maxH="100%" bg='brand.green' flexDir={"column"} color="white" px={8} pt={14} justifyContent={"space-between"} gap={4} fontSize={["14","1.8vw"]}>
       <Text verticalAlign={"top"} className="faktum-bold" w="100%">
         High quality art for the whole family, and either low-cost or free!
         <br/><br/>
