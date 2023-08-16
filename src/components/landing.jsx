@@ -84,21 +84,21 @@ function ImageBox() {
     <Flex w={["100%", "100%", "60%"]} minH="100%" maxH="100%" bg="black" px={8} py={6} alignItems={"center"} justifyContent={"space-between"}>
       <Flex flexDir={"column"} color="white" alignItems={"start"} justifyContent={"center"}>
         {things.map((thing, index) => {
-          return <Text key={index} className="stretchpro" fontSize={['xl', null, "2xl", "4xl", "5xl"]} color="brand.yellow">{thing}</Text>
+          return <Text key={index} className="stretchpro" fontSize={['5vw', "5.4vw", "3vw", "3vw"]} color="brand.yellow">{thing}</Text>
         })}
-        <Box pos={"relative"} boxSize={["160px", "200px", "300px"]} display="flex">
+        <Box pos={"relative"} alignSelf="center" boxSize={["160px", "200px", "200px", "250px"]} display="flex">
           <Image src={redStar} />
-          <Text className="faktum" fontSize={["12", "16", "24"]} align="center" pos={"absolute"} mt={["53px", "64px", "98px"]} ml={["48px", "56px", "89px"]} transform={"rotate(-15deg)"} >You won't<br/>believe your<br/>eyes</Text>
+          <Text className="faktum" fontSize={["12", "16", "16", "21"]} align="center" pos={"absolute"} mt={["53px", "64px", "64px", "81px"]} ml={["48px", "56px", "56px", "69px"]} transform={"rotate(-15deg)"} >You won't<br/>believe your<br/>eyes</Text>
         </Box>
       </Flex>
-      <Image src={puppet} boxSize={"750px"} objectFit={"contain"} mt="80px" />
+      <Image src={puppet} h={["88vw", "90vw", "60vw", "55vw"]} objectFit={"contain"}/>
     </Flex>
   )
 }
 
 function InfoBox() {
   return (
-    <Flex w={["100%", "100%", "40%"]} minH="100%" maxH="100%" bg='brand.green' flexDir={"column"} color="white" px={8} pt={14} justifyContent={"space-between"} gap={4} fontSize={["14","1.8vw"]}>
+    <Flex w={["100%", "100%", "40%"]} minH="100%" maxH="100%" bg='brand.green' flexDir={"column"} color="white" px={8} pt={14} justifyContent={"space-between"} gap={4} fontSize={["4vw","4vw", "2vw"]}>
       <Text verticalAlign={"top"} className="faktum-bold" w="100%">
         High quality art for the whole family, and either low-cost or free!
         <br/><br/>
@@ -106,7 +106,7 @@ function InfoBox() {
         <br/><br/>
         The Merri-bek Family Festival is the latest endeavour from local theatre company Bunk Puppets, supported by Merri-bek City Council and the State Government.
       </Text>
-      <Flex w="100%" ml="1.1em" mt="65px" alignSelf={"center"}>
+      <Flex w="100%" ml="1.1em" alignSelf={"center"}>
         {logos.map((logo, index) => {
           return <Image key={index} src={logo} w={1 / 3} />
         })}
