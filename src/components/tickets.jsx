@@ -25,7 +25,7 @@ function TicketContainer() {
         <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight={"extrabold"} color={"white"}>
         Tickets
       </Text>
-      <Box px="1vw" w="100%" color={"white"} className="faktum-bold" fontSize={["2xl", "3xl", "4xl"]} maxW={"1200px"}>
+      <Box px="1vw" w="80%" color={"white"} className="faktum-bold" fontSize={["2xl", "3xl", "4xl"]} maxW={"1200px"}>
         <Text textAlign={"center"}>
         All events hosted in the library are free for all audiences.
         <br/><br/>
