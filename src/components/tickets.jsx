@@ -1,4 +1,4 @@
-import { Flex, Box, Text, Spacer, Button} from "@chakra-ui/react";
+import { Flex, Box, Text, Spacer, Button, Link} from "@chakra-ui/react";
 import { LeftSideBar } from "./util";
 
 
@@ -34,7 +34,8 @@ function TicketContainer() {
       <Spacer />
       </Box>
       <Flex h="50%" alignItems={"center"} justifyContent={"center"}>
-        <Button
+      <Link href="https://events.humanitix.com/mbff" isExternal>
+      <Button
           border={"4px"}
           borderRadius={"full"}
           whiteSpace={"nowrap"}
@@ -47,6 +48,7 @@ function TicketContainer() {
             buy tickets
           </Text>
         </Button>
+      </Link>
       </Flex>
     </Flex>
   );

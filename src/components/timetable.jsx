@@ -1,6 +1,6 @@
 import { Flex, Text, Image } from "@chakra-ui/react"
 import { LeftSideBar } from "./util"
-import timetable from "/timetable.png"
+import comingsoon from "/coming-soon.png"
 
 function Timetable() {
   return (
@@ -27,7 +27,7 @@ function TimetableContainer() {
           Timetable
         </Text>
         <Flex maxW={"6xl"}>
-          <Image src={timetable} alt="timetable" />
+          <Image src={comingsoon} alt="timetable" />
         </Flex>
       </Flex>
     );

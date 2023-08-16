@@ -91,7 +91,7 @@ function ImageBox() {
           <Text className="faktum" fontSize={["12", "16", "24"]} align="center" pos={"absolute"} mt={["53px", "64px", "98px"]} ml={["48px", "56px", "89px"]} transform={"rotate(-15deg)"} >You won't<br/>believe your<br/>eyes</Text>
         </Box>
       </Flex>
-      {/* <Image src={puppet} boxSize={"750px"} objectFit={"contain"} mt="80px" /> */}
+      <Image src={puppet} boxSize={"750px"} objectFit={"contain"} mt="80px" />
     </Flex>
   )
 }
