@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { Flex, Text, IconButton, Button, Image, Box } from "@chakra-ui/react"
 import Fblogo from "/fblogo.png"
 import Iglogo from "/iglogo.png"
-import Mbfflogo from "/mbfflogo.png"
 import Mbff from "/mbfflogo-fix.png"
 import { Link } from 'react-scroll'
 import { FaBars, FaTimes } from 'react-icons/fa'
@@ -129,7 +128,7 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                             Merri-bek<br/>Family Festival
                         </Text>
                     </Flex>
-                    <Flex my="40px" className="stretchpro" flexDirection={"column"} alignItems={"flex-end"} w="100%">
+                    <Flex my="10px" className="stretchpro" flexDirection={"column"} alignItems={"flex-end"} w="100%">
                     {links.map((link, index) => {
                             return <Button fontSize={["23", "23", "40"]} h={["50px", "50px", "80px"]} key={index} variant="unstyled" >
                             <Link to={link} spy={true} smooth={true} offset={-70} duration={500} onClick={handleCloseMenu}>{link}</Link>

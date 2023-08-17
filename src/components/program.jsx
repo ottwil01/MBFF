@@ -1,20 +1,16 @@
-import { Flex, Spacer, Image, Text, Box } from "@chakra-ui/react"
+import { Flex, Image, Text, Box } from "@chakra-ui/react"
 import ProgramData from "../program-data.json"
 import { SideBar } from "./util"
+import sg from "/strange-garden.png"
+import bvp from "/brunswick-village-publisher.png"
+import eaa from "/everyones-absurd-adventure.png"
+import fritz from "/fritz.png"
 import ssbb from "/ssbb.png"
-import fritz from "/ssbb.png"
+import beasties from "/beasties.png"
 
 
-const image = [
-  {
-    alt: "ssbb",
-    src: ssbb
-  },
-  {
-    alt: "fritz",
-    src: fritz
-  }
-]
+
+
 
 function Program() {
   return (
@@ -26,6 +22,14 @@ function Program() {
 }
 
 function Combined() {
+  const images = {
+    "Strange Garden": sg,
+    "Brunswick Village Publisher": bvp,
+    "Everyones Absurd Adventure": eaa,
+    "FRITZ": fritz,
+    "Sticks Stones Broken Bones": ssbb,
+    "Beasties": beasties
+  }
   return (
     <Flex
       flexDirection="column"
@@ -47,16 +51,16 @@ function Combined() {
 
         {ProgramData.data.map((item, i) => (
           <ProgramComponent
-            image={image.map((imageItem) => 
-              <ImageComponent
-              {...imageItem.src}
-              />
-            )}
             key={i}
+            image={images[item.name]}
             name={item.name}
+            type={item.type}
             date={item.date}
             venue={item.venue}
-            description={<Text whiteSpace="pre-wrap">{item.description}</Text>}
+            description={item.description}
+            age={item.age}
+            presenter={item.presenter}
+            website={item.website}
           />
         ))}
       </Flex>
@@ -71,12 +75,16 @@ function ProgramComponent(props) {
       maxWidth={"70%"}
       h={"full"}
       pt={4}
+      whiteSpace={"pre-wrap"}
     >
       <Flex gap={4} flexDirection="column" w={["100%", "100%", "50%", "50%"]}>
         <Text className="stretchpro" fontSize={["6.7vw", "6.7vw", "3.3vw", "30"]}>
           {props.name}
         </Text>
-        <Text className="faktum-bold" fontSize={["4.2vw", "5vw", "2.6vw", "23"]}>
+        <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
+          {props.type}
+        </Text>
+        <Text  className="faktum-bold" fontWeight={"ex"} fontSize={["4.2vw", "5vw", "2.6vw", "23"]}>
           {props.date}
         </Text>
           <Box
@@ -89,23 +97,27 @@ function ProgramComponent(props) {
           >
             <Text fontSize={["3.3vw", "4vw", "2vw", "18"]} className="stretchpro">{props.venue}</Text>
           </Box>
-          <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum" whiteSpace={"normal"}>
+          <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
             {props.description}
           </Text>
+          <Text fontStyle="italic" fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
+          {props.age}
+        </Text>
+        <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
+          {props.presenter}
+        </Text>
+        <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
+          {props.website}
+        </Text>
       </Flex>
-      <Spacer />
-    </Flex>
-  )
-}
-
-function ImageComponent(props) {
-  return (
-    <Flex w={["100%", "35%", "35%"]} shadow="sm">
-    <Image
-      src={props.src}
-      alt={props.alt}
-      w={["100%", "100%", "50%", "100%"]}
-    />
+      <Box w={["100%", "100%", "35%"]} shadow="sm">
+        <Image
+          src={props.image}
+          alt="thumbnail"
+          w="100%"
+          objectFit={"cover"}
+        />
+      </Box>
     </Flex>
   )
 }

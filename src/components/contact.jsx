@@ -17,7 +17,7 @@ function ContactForm() {
     setLoading(true)
 
     const params = {
-      to_name: "mbffcontact@gmail.com",
+      to_name: "merribekfamilyfestival@gmail.com",
       from_name: email,
       message: message,
     };
@@ -51,7 +51,7 @@ function ContactForm() {
       // h={["calc(100vh - 70px)", "calc(100vh - 70px)", "calc(100vh - 140px)", "calc(100vh - 140px)"]}
       alignItems="center"
       justifyContent="start"
-      direction="column"
+      flexDir="column"
       gap={4}
       id="Contact"
     >

@@ -28,9 +28,19 @@ function TicketContainer() {
       </Text>
       <Box px="1vw" w="80%" color={"white"} className="faktum-bold" fontSize={["20", "23", "25"]} maxW={"1200px"}>
         <Text textAlign={"center"}>
-        All events hosted in the library are free for all audiences.
-        <br/><br/>
-        Families can purchase low cost single-day, or weekend tickets to access all events occuring in the Town Hall, The Atrium and the Counihan Gallery.
+          Except for our Town Hall Program, all activities and workshops at the Merri-bek Family Festival are completely free!
+          <br /><br />
+          However, for our workshop series, bookings are essential as space is limited. Reserve your booking via the ticket link.  
+          <br /><br />
+          All tickets to Town Hall Program are $13 + bf. 
+          <br />
+          Town Hall Program includes: 
+          <br />
+          FRITZ - Saturday 23/9/23 10:15am 
+          <br />
+          Sticks Stones Broken Bones – Saturday 23/9/23 12:15pm & 3pm 
+          <br />
+          Ultra Galactic Hyper Spacescape – Sunday 24/9/23 From 1pm to 4pm (drop in and out)
         </Text>
       <Spacer />
       </Box>

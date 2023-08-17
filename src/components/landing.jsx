@@ -1,14 +1,11 @@
 import { Flex, Text, Image, IconButton } from "@chakra-ui/react"
-import mbLogo from "/merri-bek1.png"
-import vicLogo from "/vic-gov1.png"
-import bunk from "/bunk-puppets1.png"
+
 import redStar from "/red-star.png"
 import puppet from "/puppet-crop.png"
 import { SideBar } from "./util"
 import { motion } from "framer-motion"
 
-const logos = [mbLogo, vicLogo, bunk]
-const things = ["Theatre", "Music", "Dance", "Workshops", "Installations", "VR"]
+const things = ["Theatre", "Music", "Story Telling", "Workshops", "Installations", "VR"]
 
 function Landing() {
   return (
@@ -22,11 +19,11 @@ function Landing() {
 
 function ImageBox() {
   return (
-    <Flex w={["100%", "100%", "60%"]} maxH="100%" bg="black" px={8} py={6} alignItems={"center"} justifyContent={"space-between"}>
-      <Flex flexDir={"column"} color="white">
-        <Flex w="100%" flexDirection={"column"} justifyContent={"space-between"}>
+    <Flex px={8} w={["100%", "100%", "60%"]} maxH="100%" bg="black" alignItems={"center"} justifyContent={"space-between"}>
+      <Flex py={6} flexDir={"column"} color="white">
+        <Flex w="100%" flexDirection={"column"} mb={["0", "0px", "50px", "40px"]} justifyContent={"space-between"}>
         {things.map((thing, index) => {
-            return <Text key={index} className="stretchpro" fontSize={['5vw', "5.4vw", "3vw", "3vw"]} color="brand.yellow">{thing}</Text>
+            return <Text key={index} className="stretchpro" fontSize={['4.6vw', "5vw", "2.7vw", "2.6vw"]} color="brand.yellow">{thing}</Text>
           })}
         </Flex>
         <Flex justifyContent={"center"}>
@@ -44,7 +41,7 @@ function ImageBox() {
           </motion.div>
         </Flex>
       </Flex>
-      <Image src={puppet} h={["88vw", "90vw", "60vw", "55vw"]} objectFit={"contain"}/>
+      <Image src={puppet} h={["86vw", "87vw", "57vw", "52vw"]} objectFit={"contain"}/>
     </Flex>
   )
 }
@@ -54,7 +51,7 @@ function RedStar() {
     <Flex pos={"relative"} alignSelf="center" boxSize={["160px", "230px", "200px", "250px"]}>
     <Image src={redStar} />
     <Text className="faktum" fontSize={["20", "27", "25", "30"]} align="center" pos={"fixed"} mt={["53px", "80px", "66px", "85px"]} ml={["37px", "57px", "45px", "60px"]} transform={"rotate(-15deg)"} >Get<br/>Tickets</Text>
-    </Flex> 
+    </Flex>
   )
 }
 
@@ -67,13 +64,9 @@ function InfoBox() {
         <br/><br/>
         Running from the Brunswick Library, Brunswick Town Hall and Counihan Gallery from September 18th - 24th.
         <br/><br/>
-        The Merri-bek Family Festival is the latest endeavour from local theatre company Bunk Puppets, supported by Merri-bek City Council and the State Government.
+        World class arts. Right in your backyard. School holidays are officially sorted.
       </Text>
-      <Flex w="100%" ml="1.1em" alignSelf={"center"}>
-        {logos.map((logo, index) => {
-          return <Image key={index} src={logo} w={1 / 3} />
-        })}
-      </Flex>
+
     </Flex>
   )
 }
