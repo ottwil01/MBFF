@@ -1,29 +1,20 @@
-import { useEffect, useState } from "react";
-import emailjs from "@emailjs/browser";
-import { Footer } from "./util";
-
-import {
-  Flex,
-  FormControl,
-  FormLabel,
-  Input,
-  Textarea,
-  Text,
-  Box
-} from "@chakra-ui/react";
+import { useEffect, useState } from "react"
+import emailjs from "@emailjs/browser"
+import { Footer } from "./util"
+import { Flex, FormControl, FormLabel, Input, Textarea, Text, Box } from "@chakra-ui/react"
 
 function ContactForm() {
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
+  const [loading, setLoading] = useState(false)
   const [validInput, setValidInput] = useState(false)
 
   function handleInput(target, event) {
-    target(event.target.value);
+    target(event.target.value)
   }
 
   function handleSubmit() {
-    setLoading(true);
+    setLoading(true)
 
     const params = {
       to_name: "mbffcontact@gmail.com",

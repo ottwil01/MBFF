@@ -1,11 +1,11 @@
 import { Flex, Text, Image } from "@chakra-ui/react"
-import { LeftSideBar } from "./util"
+import { SideBar } from "./util"
 import comingsoon from "/coming-soon.png"
 
 function Timetable() {
   return (
     <Flex zIndex={1} flexDir={"row"}>
-      <LeftSideBar display={["none", "none", "none", "flex", "flex"]}/>
+      <SideBar bg="brand.grey" display={["none", "none", "none", "flex", "flex"]}/>
       <TimetableContainer />
     </Flex>
   )

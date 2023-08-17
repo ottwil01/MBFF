@@ -1,6 +1,6 @@
 import { Flex, Spacer, Image, Text, Box } from "@chakra-ui/react"
 import ProgramData from "../program-data.json"
-import { RightSideBar } from "./util"
+import { SideBar } from "./util"
 import ssbb from "/ssbb.png"
 import fritz from "/ssbb.png"
 
@@ -20,7 +20,7 @@ function Program() {
   return (
     <Flex zIndex={1} flexDir={"row"}>
       <Combined />
-      <RightSideBar display={["none", "none", "none", "flex", "flex"]} />
+      <SideBar bg="brand.red" display={["none", "none", "none", "flex", "flex"]} />
       </Flex>
   )
 }
@@ -34,13 +34,13 @@ function Combined() {
       justifyContent={"Center"}
       w="full"
       id="Program"
+      pb={12}
     >
       <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight={"extrabold"}>
         Program
       </Text>
       <Flex
         flexDirection="column"
-        gap={8}
         alignItems="Center"
         justifyContent="Center"
       >
@@ -68,15 +68,15 @@ function ProgramComponent(props) {
   return (
     <Flex
       flexDirection={["column-reverse", "column-reverse", "row"]}
-      columnGap={8}
       maxWidth={"70%"}
       h={"full"}
+      pt={4}
     >
       <Flex gap={4} flexDirection="column" w={["100%", "100%", "50%", "50%"]}>
         <Text fontWeight={"black"} fontSize={["9vw", "9vw", "4vw", "44"]}>
           {props.name}
         </Text>
-        <Text fontWeight={"black"} fontSize={"xl"}>
+        <Text fontWeight={"black"} fontSize={["4.2vw", "", "", "24"]}>
           {props.date}
         </Text>
           <Box
@@ -89,7 +89,7 @@ function ProgramComponent(props) {
           >
             <Text fontSize={"xl"} fontWeight={"bold"}>{props.venue}</Text>
           </Box>
-          <Text fontSize={["5vw", "5vw", "2vw", "2vw"]} fontWeight={"semibold"} whiteSpace={"normal"}>
+          <Text fontSize={["4vw", "5vw", "2vw", "2vw"]} fontWeight={"semibold"} whiteSpace={"normal"}>
             {props.description}
           </Text>
       </Flex>

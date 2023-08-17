@@ -41,7 +41,8 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                 as="a"
                 aria-label="logo"
                 minW={["100px", "100px", "205px"]}
-                w={["100px", "100px", "210px"]} display="flex"
+                w={["100px", "100px", "210px"]}
+                display="flex"
                 icon={<Image src={Mbff} alt="mbff logo"/>}
                 variant="unstyled"
                 href={"/"}
@@ -77,7 +78,7 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                         mr="5px"
                         variant="unstyled"
                         target="_blank"
-                        href={"https://www.instagram.com/mbff.au/"}
+                        href={"https://www.facebook.com/events/597900092510902"}
                     />
                     <IconButton
                         as="a"
@@ -104,8 +105,14 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                 flexDirection={"column"}
                 >
                 <Flex flexDir={"row"} justifyContent={"space-between"}>
-                    <Box w={"10rem"}>
-                        <Image src={Mbfflogo}/>
+                    <Box w={["50vw", "40vw", "30vw"]}>
+                    <IconButton
+                        as="a"
+                        aria-label="logo"
+                        icon={<Image src={Mbff} alt="mbff logo"/>}
+                        variant="unstyled"
+                        href={"/"}
+                    />
                     </Box>
                     <Flex mt={["-5px", "-5px", "30px"]} mr={["-5px", "-5px", "3px"]}>
                     <IconButton
@@ -117,14 +124,14 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                     />
                     </Flex>
                 </Flex>
-                    <Flex mb="70px">
-                        <Text className="stretchpro" fontSize={"x-large"}>
+                    <Flex>
+                        <Text className="stretchpro" fontSize={["xl", "3xl", "4xl"]}>
                             Merri-bek<br/>Family Festival
                         </Text>
                     </Flex>
-                    <Flex className="stretchpro" flexDirection={"column"} alignItems={"flex-end"} w="100%">
+                    <Flex my="40px" className="stretchpro" flexDirection={"column"} alignItems={"flex-end"} w="100%">
                     {links.map((link, index) => {
-                            return <Button key={index} variant="unstyled" >
+                            return <Button fontSize={["23", "23", "40"]} h={["50px", "50px", "80px"]} key={index} variant="unstyled" >
                             <Link to={link} spy={true} smooth={true} offset={-70} duration={500} onClick={handleCloseMenu}>{link}</Link>
                         </Button>
                         })}
@@ -139,7 +146,7 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                         mr="5px"
                         variant="unstyled"
                         target="_blank"
-                        href={"https://www.instagram.com/mbff.au/"}
+                        href={"https://www.facebook.com/events/597900092510902"}
                     />
                     <IconButton
                         as="a"

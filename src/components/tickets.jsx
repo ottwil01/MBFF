@@ -1,12 +1,12 @@
 import { Flex, Box, Text, Spacer, Button, IconButton} from "@chakra-ui/react"
-import { LeftSideBar } from "./util"
+import { SideBar } from "./util"
 import { motion } from "framer-motion"
 
 
 function Tickets() {
   return (
     <Flex zIndex={1} flexDir={"row"}>
-      <LeftSideBar display={["none", "none", "none", "flex", "flex"]}/>
+      <SideBar bg="brand.grey" display={["none", "none", "none", "flex", "flex"]}/>
       <TicketContainer />
     </Flex>
   )

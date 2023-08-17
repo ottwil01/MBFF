@@ -4,7 +4,7 @@ import vicLogo from "/vic-gov1.png"
 import bunk from "/bunk-puppets1.png"
 import redStar from "/red-star.png"
 import puppet from "/puppet-crop.png"
-import { RightSideBar } from "./util"
+import { SideBar } from "./util"
 import { motion } from "framer-motion"
 
 const logos = [mbLogo, vicLogo, bunk]
@@ -13,7 +13,7 @@ const things = ["Theatre", "Music", "Dance", "Workshops", "Installations", "VR"]
 function Landing() {
   return (
     <Flex zIndex={1} justifyContent="space-between" flexDir={["column", "column", "row-reverse", "row-reverse"]} overflowX={"clip"} id="Home" mt={["70px", "70px", "140px"]}>
-      <RightSideBar display={["none", "none", "none", "flex", "flex"]} />
+      <SideBar bg="brand.red" display={["none", "none", "none", "flex", "flex"]} />
       <ImageBox />
       <InfoBox />
     </Flex>
