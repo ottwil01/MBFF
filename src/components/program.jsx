@@ -69,29 +69,32 @@ function ProgramComponent(props) {
     <Flex
       flexDirection={["column-reverse", "column-reverse", "row"]}
       columnGap={8}
+      p={8}
       maxWidth={"70%"}
       h={"full"}
     >
-      <Flex flexDirection="column" fontSize={"2xl"} w={["100%", "100%", "65%"]}>
+      <Flex columnGap={7} flexDirection="column" w={["100%", "100%", "50%", "50%"]}>
         <Text fontWeight={"black"} fontSize={"4xl"}>
           {props.name}
         </Text>
-        <Text fontWeight={"black"} fontSize={"4xl"}>
+        <Text fontWeight={"black"} fontSize={"xl"}>
           {props.date}
         </Text>
-        <Box
-          border={"4px"}
-          borderColor={"black"}
-          borderRadius={"full"}
-          maxWidth={"max-content"}
-          whiteSpace={"nowrap"}
-          px={3}
-        >
-          <Text fontSize={"xl"} fontWeight={"bold"}>{props.venue}</Text>
+        <Box py="10px">
+          <Box
+            border={"4px"}
+            borderColor={"black"}
+            borderRadius={"full"}
+            maxWidth={"max-content"}
+            whiteSpace={"nowrap"}
+            px={3}
+          >
+            <Text fontSize={"xl"} fontWeight={"bold"}>{props.venue}</Text>
+          </Box>
         </Box>
-        <Text py="20px" fontWeight={"semibold"} whiteSpace={"normal"}>
-          {props.description}
-        </Text>
+          <Text fontSize={["5vw", "5vw", "2vw", "2vw"]} fontWeight={"semibold"} whiteSpace={"normal"}>
+            {props.description}
+          </Text>
       </Flex>
       <Spacer />
     </Flex>

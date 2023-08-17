@@ -1,4 +1,4 @@
-import { Flex, Text, Image } from "@chakra-ui/react"
+import { Flex, Text, Image, IconButton } from "@chakra-ui/react"
 import mbLogo from "/merri-bek1.png"
 import vicLogo from "/vic-gov1.png"
 import bunk from "/bunk-puppets1.png"
@@ -30,21 +30,17 @@ function ImageBox() {
           })}
         </Flex>
         <Flex justifyContent={"center"}>
-          <motion.div
-            animate={{
-              rotate: [-5, 5, -5],
-              scale: [1, 1.2, 1]
-              }}
-            transition={{
-              duration: 2,
-              ease: "easeInOut",
-              repeat: Infinity,
-            }}
-          >
-            <Flex pos={"relative"} alignSelf="center" boxSize={["160px", "230px", "200px", "250px"]}>
-              <Image src={redStar} />
-              <Text className="faktum" fontSize={["12", "18", "16", "21"]} align="center" pos={"absolute"} mt={["53px", "74px", "64px", "80px"]} ml={["48px", "64px", "56px", "67px"]} transform={"rotate(-15deg)"} >You won't<br/>believe your<br/>eyes</Text>
-            </Flex>
+          <motion.div animate={{ rotate: [-5, 5, -5], scale: [1, 1.2, 1] }} transition={{ duration: 2, ease: "easeInOut", repeat: Infinity, }}>
+            <IconButton
+              as="a"
+              boxSize={"auto"}
+              aria-label="get-tickets"
+              icon={<RedStar boxSize={"fitcontent"} />}
+              isRound={true}
+              target="_blank"
+              variant="unstlyed"
+              href="https://events.humanitix.com/mbff"
+            />
           </motion.div>
         </Flex>
       </Flex>
@@ -52,6 +48,16 @@ function ImageBox() {
     </Flex>
   )
 }
+
+function RedStar() {
+  return (
+    <Flex pos={"relative"} alignSelf="center" boxSize={["160px", "230px", "200px", "250px"]}>
+    <Image src={redStar} />
+    <Text className="faktum" fontSize={["20", "27", "25", "30"]} align="center" pos={"fixed"} mt={["53px", "80px", "66px", "85px"]} ml={["37px", "57px", "45px", "60px"]} transform={"rotate(-15deg)"} >Get<br/>Tickets</Text>
+    </Flex> 
+  )
+}
+
 
 function InfoBox() {
   return (
