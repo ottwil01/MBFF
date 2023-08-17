@@ -18,12 +18,14 @@ export function LeftSideBar(props) {
 
 export function UnifiedSideBar(props) {
     return (
-        <Box w={32} h='100%' bg={`${props.bg}`} />
+        <Flex>
+            <Box w={32} h='100%' bg={`${props.bg}`} />
+        </Flex>
     )
 }
 
 export function Footer() {
     return (
-        <Box color="brand.yellow" w="100%" />
+        <Flex h={32} w="100%" bg="black" />
     )
 }

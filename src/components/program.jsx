@@ -69,18 +69,16 @@ function ProgramComponent(props) {
     <Flex
       flexDirection={["column-reverse", "column-reverse", "row"]}
       columnGap={8}
-      p={8}
       maxWidth={"70%"}
       h={"full"}
     >
-      <Flex columnGap={7} flexDirection="column" w={["100%", "100%", "50%", "50%"]}>
-        <Text fontWeight={"black"} fontSize={"4xl"}>
+      <Flex gap={4} flexDirection="column" w={["100%", "100%", "50%", "50%"]}>
+        <Text fontWeight={"black"} fontSize={["9vw", "9vw", "4vw", "44"]}>
           {props.name}
         </Text>
         <Text fontWeight={"black"} fontSize={"xl"}>
           {props.date}
         </Text>
-        <Box py="10px">
           <Box
             border={"4px"}
             borderColor={"black"}
@@ -91,7 +89,6 @@ function ProgramComponent(props) {
           >
             <Text fontSize={"xl"} fontWeight={"bold"}>{props.venue}</Text>
           </Box>
-        </Box>
           <Text fontSize={["5vw", "5vw", "2vw", "2vw"]} fontWeight={"semibold"} whiteSpace={"normal"}>
             {props.description}
           </Text>

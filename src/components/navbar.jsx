@@ -34,7 +34,7 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
             w="100%"
             color="white"
             h={["70px", "70px", "140px"]}
-            p="1.5em"
+            p={["1em", "1em", "1.5em"]}
             justifyContent={"space-between"}
             >
                 <IconButton
@@ -47,7 +47,7 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                 href={"/"}
                 />
                 <Flex px="0.3em" flexDirection={"column"} justifyContent={"center"}>
-                    <Text fontSize={["4.1vw", "25", "43", "3vw"]} textAlign="start" className="stretchpro">
+                    <Text fontSize={["4.7vw", "23", "43", "3vw"]} textAlign="start" className="stretchpro">
                         Merri-bek Family Festival
                     </Text>
                     <Flex justifyContent={"space-between"} display={[ "none", "none", "none", "flex", "flex" ]}  className="faktum">
@@ -58,7 +58,7 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                         })}
                     </Flex>
                 </Flex>
-                <Flex mr="12px" display={["flex", "flex", "flex", "none", "none"]}>
+                <Flex display={["flex", "flex", "flex", "none", "none"]}>
                     <IconButton
                         aria-label="Open Menu"
                         icon={<FaBars size={40}/>}
@@ -107,7 +107,7 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                     <Box w={"10rem"}>
                         <Image src={Mbfflogo}/>
                     </Box>
-                    <Flex mt={["-5px", "-5px", "30px"]} mr="15px">
+                    <Flex mt={["-5px", "-5px", "30px"]} mr={["-5px", "-5px", "3px"]}>
                     <IconButton
                         aria-label='Close Menu'
                         icon={<FaTimes size={50} />}
@@ -153,7 +153,6 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                         href={"https://www.instagram.com/mbff.au/"}
                     />
                     </Flex>
-
                 </Flex>
             </Flex>
     )

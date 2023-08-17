@@ -14,19 +14,16 @@ function Timetable() {
 function TimetableContainer() {
     return (
       <Flex
-            w={"100%"}
-            minH={"80vh"}
-            alignItems={"center"}
-            justifyContent={"start"}
-            flexDirection={"column"}
-            gap={10}
-            id="Timetable"
-            bg="brand.red"
-          >
+          w="100%"
+          h={["calc(100vh - 70px)", "calc(100vh - 70px)", "calc(100vh - 140px)", "calc(100vh - 140px)"]}
+          flexDirection={"column"}
+          id="Timetable"
+          bg="brand.red"
+        >
           <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight={"extrabold"} color={"white"}>
           Timetable
-        </Text>
-        <Flex my="10vw">
+          </Text>
+        <Flex w="100%" justifyContent={"center"}>
           <Image src={comingsoon} alt="timetable" />
         </Flex>
       </Flex>

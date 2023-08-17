@@ -1,5 +1,6 @@
-import { Flex, Box, Text, Spacer, Button, Link} from "@chakra-ui/react"
+import { Flex, Box, Text, Spacer, Button, IconButton} from "@chakra-ui/react"
 import { LeftSideBar } from "./util"
+import { motion } from "framer-motion"
 
 
 function Tickets() {
@@ -18,7 +19,7 @@ function TicketContainer() {
       minH={["calc(100vh - 70px)", "calc(100vh - 70px)", "calc(100vh - 140px)", "calc(100vh - 140px)"]}
       alignItems={"center"}
       justifyContent={"start"}
-      direction={"column"}
+      flexDir={"column"}
       id="Tickets"
       bg="brand.green"
     >
@@ -34,24 +35,33 @@ function TicketContainer() {
       <Spacer />
       </Box>
       <Flex my="10px" h="50%" alignItems={"center"} justifyContent={"center"}>
-        <Link href="https://events.humanitix.com/mbff" isExternal>
-        <Button
-            border={"4px"}
-            borderRadius={"full"}
-            whiteSpace={"nowrap"}
-            px={3}
-            color={"white"}
-            className={"stretchpro"}
-            w="100%"
-          >
-            <Text mt="2px" mx="15px">
-              Get Tickets
-            </Text>
-          </Button>
-        </Link>
+        <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+          <IconButton
+            as="a"
+            boxSize={"auto"}
+            aria-label="get-tickets"
+            icon={<Button
+                    border={"4px"}
+                    borderRadius={"full"}
+                    whiteSpace={"nowrap"}
+                    px={3}
+                    color={"white"}
+                    className={"stretchpro"}
+                    w="100%"
+                  >
+                    <Text mt="2px" mx="15px">
+                      Get Tickets
+                    </Text>
+                  </Button>}
+            target="_blank"
+            variant="unstlyed"
+            href="https://events.humanitix.com/mbff"
+          />
+        </motion.div>
       </Flex>
     </Flex>
   );
 }
 
 export default Tickets
+

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { Footer } from "./util";
 
 import {
   Flex,
@@ -56,7 +57,7 @@ function ContactForm() {
     <Flex
       zIndex={1}
       w="100%"
-      h={["calc(100vh - 70px)", "calc(100vh - 70px)", "calc(100vh - 140px)", "calc(100vh - 140px)"]}
+      // h={["calc(100vh - 70px)", "calc(100vh - 70px)", "calc(100vh - 140px)", "calc(100vh - 140px)"]}
       alignItems="center"
       justifyContent="start"
       direction="column"
@@ -103,6 +104,7 @@ function ContactForm() {
           Submit!
         </Box>
       </FormControl>
+      <Footer />
     </Flex>
   );
 }
