@@ -5,6 +5,7 @@ import bunk from "/bunk-puppets1.png"
 import redStar from "/red-star.png"
 import puppet from "/puppet-crop.png"
 import { RightSideBar } from "./util"
+import { motion } from "framer-motion"
 
 const logos = [mbLogo, vicLogo, bunk]
 const things = ["Theatre", "Music", "Dance", "Workshops", "Installations", "VR"]
@@ -28,9 +29,23 @@ function ImageBox() {
             return <Text key={index} className="stretchpro" fontSize={['5vw', "5.4vw", "3vw", "3vw"]} color="brand.yellow">{thing}</Text>
           })}
         </Flex>
-        <Flex pos={"relative"} alignSelf="center" boxSize={["160px", "230px", "200px", "250px"]}>
-          <Image src={redStar} />
-          <Text className="faktum" fontSize={["12", "18", "16", "21"]} align="center" pos={"absolute"} mt={["53px", "74px", "64px", "81px"]} ml={["48px", "64px", "56px", "69px"]} transform={"rotate(-15deg)"} >You won't<br/>believe your<br/>eyes</Text>
+        <Flex justifyContent={"center"}>
+          <motion.div
+            animate={{
+              rotate: [-5, 5, -5],
+              scale: [1, 1.2, 1]
+              }}
+            transition={{
+              duration: 2,
+              ease: "easeInOut",
+              repeat: Infinity,
+            }}
+          >
+            <Flex pos={"relative"} alignSelf="center" boxSize={["160px", "230px", "200px", "250px"]}>
+              <Image src={redStar} />
+              <Text className="faktum" fontSize={["12", "18", "16", "21"]} align="center" pos={"absolute"} mt={["53px", "74px", "64px", "80px"]} ml={["48px", "64px", "56px", "67px"]} transform={"rotate(-15deg)"} >You won't<br/>believe your<br/>eyes</Text>
+            </Flex>
+          </motion.div>
         </Flex>
       </Flex>
       <Image src={puppet} h={["88vw", "90vw", "60vw", "55vw"]} objectFit={"contain"}/>
