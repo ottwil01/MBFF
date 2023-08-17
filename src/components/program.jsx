@@ -73,10 +73,10 @@ function ProgramComponent(props) {
       pt={4}
     >
       <Flex gap={4} flexDirection="column" w={["100%", "100%", "50%", "50%"]}>
-        <Text fontWeight={"black"} fontSize={["9vw", "9vw", "4vw", "44"]}>
+        <Text className="stretchpro" fontSize={["6.7vw", "6.7vw", "3.3vw", "30"]}>
           {props.name}
         </Text>
-        <Text fontWeight={"black"} fontSize={["4.2vw", "", "", "24"]}>
+        <Text className="faktum-bold" fontSize={["4.2vw", "5vw", "2.6vw", "23"]}>
           {props.date}
         </Text>
           <Box
@@ -87,9 +87,9 @@ function ProgramComponent(props) {
             whiteSpace={"nowrap"}
             px={3}
           >
-            <Text fontSize={"xl"} fontWeight={"bold"}>{props.venue}</Text>
+            <Text fontSize={["3.3vw", "4vw", "2vw", "18"]} className="stretchpro">{props.venue}</Text>
           </Box>
-          <Text fontSize={["4vw", "5vw", "2vw", "2vw"]} fontWeight={"semibold"} whiteSpace={"normal"}>
+          <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum" whiteSpace={"normal"}>
             {props.description}
           </Text>
       </Flex>
