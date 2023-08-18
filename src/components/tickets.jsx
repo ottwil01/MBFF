@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 function Tickets() {
   return (
-    <Flex zIndex={1} flexDir={"row"}>
+    <Flex id="Tickets" zIndex={1} flexDir={"row"}>
       <SideBar bg="brand.grey" />
       <TicketContainer />
     </Flex>
@@ -20,7 +20,6 @@ function TicketContainer() {
       alignItems={"center"}
       justifyContent={"start"}
       flexDir={"column"}
-      id="Tickets"
       bg="brand.green"
     >
       <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight={"extrabold"} color={"white"}>

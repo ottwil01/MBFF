@@ -4,7 +4,7 @@ import comingsoon from "/coming-soon.png"
 
 function Timetable() {
   return (
-    <Flex zIndex={1} flexDir={"row"}>
+    <Flex id="Timetable" zIndex={1} flexDir={"row"}>
       <SideBar bg="brand.grey" />
       <TimetableContainer />
     </Flex>
@@ -17,7 +17,6 @@ function TimetableContainer() {
           w="100%"
           minH={["calc(100vh - 70px)", "calc(100vh - 70px)", "calc(100vh - 140px)", "calc(100vh - 140px)"]}
           flexDirection={"column"}
-          id="Timetable"
           bg="brand.red"
         >
           <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight={"extrabold"} color={"white"}>

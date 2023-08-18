@@ -13,7 +13,7 @@ import { useState } from "react"
 
 function Program() {
   return (
-    <Flex zIndex={1} flexDir={"row"}>
+    <Flex id="Program" zIndex={1} flexDir={"row"}>
       <Combined />
       <SideBar bg="brand.red" />
       </Flex>
@@ -36,34 +36,26 @@ function Combined() {
       alignItems={"Center"}
       justifyContent={"Center"}
       w="full"
-      id="Program"
       pb={12}
     >
       <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight={"extrabold"}>
         Program
       </Text>
-      <Flex
-        flexDirection="column"
-        alignItems="Center"
-        justifyContent="Center"
-      >
-
-        {ProgramData.data.map((item, i) => (
-          <ProgramComponent
-            key={i}
-            image={images[item.name]}
-            name={item.name}
-            type={item.type}
-            date={item.date}
-            venue={item.venue}
-            description={item.description}
-            descriptionShort={item.descriptionShort}
-            age={item.age}
-            presenter={item.presenter}
-            website={<Link href={`https://${item.website}`} isExternal>{item.website}</Link>}
-          />
+      {ProgramData.data.map((item, i) => (
+        <ProgramComponent
+          key={i}
+          image={images[item.name]}
+          name={item.name}
+          type={item.type}
+          date={item.date}
+          venue={item.venue}
+          descriptionShort={item.descriptionShort}
+          description={item.description}
+          age={item.age}
+          presenter={item.presenter}
+          website={<Link href={`https://${item.website}`} isExternal>{item.website}</Link>}
+        />
         ))}
-      </Flex>
     </Flex>
   )
 }
@@ -75,7 +67,7 @@ function ProgramComponent(props) {
     setIsShowMore(!isShowMore)
   }
   return (
-    <Flex>
+    <Flex justifyContent={"center"} alignItems={"center"} flexDir={"column"}>
       {!isShowMore
         ?
         <Flex
@@ -111,7 +103,7 @@ function ProgramComponent(props) {
               <Text fontSize={["3.3vw", "4vw", "2vw", "18"]} className="stretchpro">{props.venue}</Text>
             </Box>
             <Flex>
-              <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum"> {props.descriptionShort}
+              <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">{props.descriptionShort}
               </Text>
             </Flex>
             <Button variant="unstlyed" className="faktum" onClick={toggleReadMoreLess}>{!isShowMore ? "Read More" : "Read Less" }</Button>
@@ -185,5 +177,11 @@ function ProgramComponent(props) {
       </Flex>
   ) 
 }
+
+// function Toggle(props) {
+//   return (
+    
+//   )
+// }
 
 export default Program

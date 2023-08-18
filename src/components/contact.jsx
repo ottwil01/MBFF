@@ -46,6 +46,7 @@ function ContactForm() {
 
   return (
     <Flex
+      id="Contact"
       zIndex={1}
       w="100%"
       // h={["calc(100vh - 70px)", "calc(100vh - 70px)", "calc(100vh - 140px)", "calc(100vh - 140px)"]}
@@ -53,7 +54,6 @@ function ContactForm() {
       justifyContent="start"
       flexDir="column"
       gap={4}
-      id="Contact"
     >
       <Text textAlign="center" w="100%" mt="15px" className="stretchpro" fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight="extrabold">
         Contact

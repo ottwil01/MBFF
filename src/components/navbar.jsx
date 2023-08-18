@@ -35,6 +35,7 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
             h={["70px", "70px", "140px"]}
             p={["1em", "1em", "1.5em"]}
             justifyContent={"space-between"}
+            id="Navbar"
             >
                 <IconButton
                 as="a"

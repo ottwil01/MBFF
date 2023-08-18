@@ -9,7 +9,7 @@ const things = ["Theatre", "Music", "Story Telling", "Workshops", "Installations
 
 function Landing() {
   return (
-    <Flex zIndex={1} justifyContent="space-between" flexDir={["column", "column", "row-reverse", "row-reverse"]} overflowX={"clip"} id="Home" mt={["70px", "70px", "140px"]}>
+    <Flex id="Home" zIndex={1} justifyContent="space-between" flexDir={["column", "column", "row-reverse", "row-reverse"]} overflowX={"clip"} mt={["70px", "70px", "140px"]}>
       <SideBar bg="brand.red" />
       <ImageBox />
       <InfoBox />

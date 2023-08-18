@@ -10,10 +10,8 @@ import './fonts.css'
 function App() {
   return (
     <Flex flexDir={"column"}>
-      <Flex>
         <NavBar />
         <Landing />
-      </Flex>
         <Program />
         <Timetable />
         <Tickets />
