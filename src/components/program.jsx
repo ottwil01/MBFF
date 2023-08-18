@@ -80,11 +80,11 @@ function ProgramComponent(props) {
       whiteSpace={"pre-wrap"}
       justifyContent={"space-between"}
     >
-      <Flex gap={4} flexDirection="column" w={["100%", "100%", "50%", "50%"]}>
+      <Flex gap={4} flexDirection="column" w={["100%", "100%", "100%", "50%"]}>
         <Text className="stretchpro" fontSize={["6.7vw", "6.7vw", "3.3vw", "30"]}>
           {props.name}
         </Text>
-        <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
+        <Text fontSize={["4.2vw", "5vw", "2.6vw", "23"]} className="faktum">
           {props.type}
         </Text>
         <Text  className="faktum-bold" fontWeight={"ex"} fontSize={["4.2vw", "5vw", "2.6vw", "23"]}>

@@ -55,10 +55,9 @@ function RedStar() {
   )
 }
 
-
 function InfoBox() {
   return (
-    <Flex w={["100%", "100%", "40%"]} maxH="100%" bg='brand.green' flexDir={"column"} color="white" px={8} pt={14} justifyContent={"space-between"} gap={4} fontSize={["4vw","4vw", "2vw"]}>
+    <Flex w={["100%", "100%", "40%"]} bg='brand.green' color="white" px={8} pt={14} pb={8} fontSize={["4vw","4vw", "2vw"]}>
       <Text verticalAlign={"top"} className="faktum-bold" w="100%">
         High quality art for the whole family, and either low-cost or free!
         <br/><br/>
@@ -66,7 +65,6 @@ function InfoBox() {
         <br/><br/>
         World class arts. Right in your backyard. School holidays are officially sorted.
       </Text>
-
     </Flex>
   )
 }
