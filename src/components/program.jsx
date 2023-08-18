@@ -83,13 +83,13 @@ function ProgramComponent(props) {
             flexDirection="column"
             w={["100%", "100%", "100%", "50%"]}
           >
-            <Text className="stretchpro" fontSize={["6.7vw", "6.7vw", "3.3vw", "30"]}>
+            <Text className="stretchpro" fontSize={["6.6vw", "6.7vw", "3.3vw", "30"]}>
               {props.name}
             </Text>
-            <Text fontSize={["4.2vw", "5vw", "2.6vw", "23"]} className="faktum">
+            <Text fontSize={["5vw", "5vw", "2.6vw", "23"]} className="faktum">
               {props.type}
             </Text>
-            <Text  className="faktum-bold" fontWeight={"ex"} fontSize={["4.2vw", "5vw", "2.6vw", "23"]}>
+            <Text  className="faktum-bold" fontWeight={"ex"} fontSize={["4.4vw", "4.6vw", "2.6vw", "23"]}>
               {props.date}
             </Text>
             <Box
@@ -100,13 +100,18 @@ function ProgramComponent(props) {
               whiteSpace={"nowrap"}
               px={3}
             >
-              <Text fontSize={["3.3vw", "4vw", "2vw", "18"]} className="stretchpro">{props.venue}</Text>
+              <Text fontSize={["4vw", "4vw", "2.5vw", "18"]} className="stretchpro">
+                {props.venue}
+              </Text>
             </Box>
             <Flex>
-              <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">{props.descriptionShort}
+              <Text fontSize={["3.8vw", "3.1vw", "2.5vw", "2xl"]} className="faktum">
+                {props.descriptionShort}
               </Text>
             </Flex>
-            <Button variant="unstlyed" className="faktum" onClick={toggleReadMoreLess}>{!isShowMore ? "Read More" : "Read Less" }</Button>
+            <Flex w="100%" justifyContent={"center"}>
+              <Button variant="unstlyed" className="faktum" onClick={toggleReadMoreLess}>{!isShowMore ? "Read More" : "Read Less" }</Button>
+            </Flex>
           </Flex>
           <Flex w={["100%", "100%", "100%", "45%"]} shadow="sm">
             <Image
@@ -131,13 +136,13 @@ function ProgramComponent(props) {
             flexDirection="column"
             w={["100%", "100%", "100%", "50%"]}
           >
-            <Text className="stretchpro" fontSize={["6.7vw", "6.7vw", "3.3vw", "30"]}>
+            <Text className="stretchpro" fontSize={["6.6vw", "6.7vw", "3.3vw", "30"]}>
               {props.name}
             </Text>
-            <Text fontSize={["4.2vw", "5vw", "2.6vw", "23"]} className="faktum">
+            <Text fontSize={["5vw", "5vw", "2.6vw", "23"]} className="faktum">
               {props.type}
             </Text>
-            <Text  className="faktum-bold" fontWeight={"ex"} fontSize={["4.2vw", "5vw", "2.6vw", "23"]}>
+            <Text  className="faktum-bold" fontWeight={"ex"} fontSize={["4.4vw", "4.6vw", "2.6vw", "23"]}>
               {props.date}
             </Text>
             <Box
@@ -148,10 +153,12 @@ function ProgramComponent(props) {
               whiteSpace={"nowrap"}
               px={3}
             >
-              <Text fontSize={["3.3vw", "4vw", "2vw", "18"]} className="stretchpro">{props.venue}</Text>
+              <Text fontSize={["4vw", "4vw", "2.5vw", "18"]} className="stretchpro">
+                {props.venue}
+              </Text>
             </Box>
-              <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
-                {props.description}
+              <Text fontSize={["3.8vw", "3.1vw", "2.5vw", "2xl"]} class="faktum">
+              {props.description}
               </Text>
               <Text fontStyle="italic" fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
               {props.age}
@@ -162,7 +169,9 @@ function ProgramComponent(props) {
               <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
               {props.website}
               </Text>
-              <Button variant="unstlyed" className="faktum" onClick={toggleReadMoreLess}>{!isShowMore ? "Read More" : "Read Less" }</Button>
+              <Flex w="100%" justifyContent={"center"}>
+                <Button variant="unstlyed" className="faktum" onClick={toggleReadMoreLess}>{!isShowMore ? "Read More" : "Read Less" }</Button>
+              </Flex>
           </Flex>
           <Flex w={["100%", "100%", "100%", "45%"]} shadow="sm">
             <Image
@@ -170,18 +179,12 @@ function ProgramComponent(props) {
               alt="thumbnail"
               objectFit={"cover"}
               boxSize={"fit-content"}
-          />
+            />
           </Flex>
         </Flex>
-        }
-      </Flex>
+      }
+    </Flex>
   ) 
 }
-
-// function Toggle(props) {
-//   return (
-    
-//   )
-// }
 
 export default Program
