@@ -1,4 +1,4 @@
-import { Flex, Image, Text, Box, Link } from "@chakra-ui/react"
+import { Flex, Image, Text, Box, Link, Button } from "@chakra-ui/react"
 import ProgramData from "../program-data.json"
 import { SideBar } from "./util"
 import sg from "/strange-garden.png"
@@ -7,11 +7,8 @@ import eaa from "/everyones-absurd-adventure.png"
 import fritz from "/fritz.png"
 import ssbb from "/ssbb.png"
 import beasties from "/beasties.png"
+import { useState } from "react"
 
-
-// function ReadMoreLess() {
-//   const [isShowMore, ]
-// }
 
 
 function Program() {
@@ -60,6 +57,7 @@ function Combined() {
             date={item.date}
             venue={item.venue}
             description={item.description}
+            descriptionShort={item.descriptionShort}
             age={item.age}
             presenter={item.presenter}
             website={<Link href={`https://${item.website}`} isExternal>{item.website}</Link>}
@@ -71,58 +69,121 @@ function Combined() {
 }
 
 function ProgramComponent(props) {
+  const [isShowMore, setIsShowMore] = useState(false)
+
+  const toggleReadMoreLess = () => {
+    setIsShowMore(!isShowMore)
+  }
   return (
-    <Flex
-      flexDirection={["column-reverse", "column-reverse", "column-reverse", "row"]}
-      maxWidth={"80%"}
-      h={"full"}
-      pt={4}
-      whiteSpace={"pre-wrap"}
-      justifyContent={"space-between"}
-    >
-      <Flex gap={4} flexDirection="column" w={["100%", "100%", "100%", "50%"]}>
-        <Text className="stretchpro" fontSize={["6.7vw", "6.7vw", "3.3vw", "30"]}>
-          {props.name}
-        </Text>
-        <Text fontSize={["4.2vw", "5vw", "2.6vw", "23"]} className="faktum">
-          {props.type}
-        </Text>
-        <Text  className="faktum-bold" fontWeight={"ex"} fontSize={["4.2vw", "5vw", "2.6vw", "23"]}>
-          {props.date}
-        </Text>
-          <Box
-            border={"4px"}
-            borderColor={"black"}
-            borderRadius={"full"}
-            maxWidth={"max-content"}
-            whiteSpace={"nowrap"}
-            px={3}
+    <Flex>
+      {!isShowMore
+        ?
+        <Flex
+        flexDirection={["column-reverse", "column-reverse", "column-reverse", "row"]}
+        maxWidth={"80%"}
+        h={"full"}
+        pt={4}
+        whiteSpace={"pre-wrap"}
+        justifyContent={"space-between"}
+        >
+          <Flex
+            gap={4}
+            flexDirection="column"
+            w={["100%", "100%", "100%", "50%"]}
           >
-            <Text fontSize={["3.3vw", "4vw", "2vw", "18"]} className="stretchpro">{props.venue}</Text>
-          </Box>
-          <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
-            {props.description}
-          </Text>
-          <Text fontStyle="italic" fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
-          {props.age}
-        </Text>
-        <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
-          {props.presenter}
-        </Text>
-        <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
-          {props.website}
-        </Text>
+            <Text className="stretchpro" fontSize={["6.7vw", "6.7vw", "3.3vw", "30"]}>
+              {props.name}
+            </Text>
+            <Text fontSize={["4.2vw", "5vw", "2.6vw", "23"]} className="faktum">
+              {props.type}
+            </Text>
+            <Text  className="faktum-bold" fontWeight={"ex"} fontSize={["4.2vw", "5vw", "2.6vw", "23"]}>
+              {props.date}
+            </Text>
+            <Box
+              border={"4px"}
+              borderColor={"black"}
+              borderRadius={"full"}
+              maxWidth={"max-content"}
+              whiteSpace={"nowrap"}
+              px={3}
+            >
+              <Text fontSize={["3.3vw", "4vw", "2vw", "18"]} className="stretchpro">{props.venue}</Text>
+            </Box>
+            <Flex>
+              <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum"> {props.descriptionShort}
+              </Text>
+            </Flex>
+            <Button variant="unstlyed" className="faktum" onClick={toggleReadMoreLess}>{!isShowMore ? "Read More" : "Read Less" }</Button>
+          </Flex>
+          <Flex w={["100%", "100%", "100%", "45%"]} shadow="sm">
+            <Image
+              src={props.image}
+              alt="thumbnail"
+              objectFit={"cover"}
+              boxSize={"fit-content"}
+          />
+          </Flex>
+        </Flex>
+        :
+        <Flex
+        flexDirection={["column-reverse", "column-reverse", "column-reverse", "row"]}
+        maxWidth={"80%"}
+        h={"full"}
+        pt={4}
+        whiteSpace={"pre-wrap"}
+        justifyContent={"space-between"}
+        >
+          <Flex
+            gap={4}
+            flexDirection="column"
+            w={["100%", "100%", "100%", "50%"]}
+          >
+            <Text className="stretchpro" fontSize={["6.7vw", "6.7vw", "3.3vw", "30"]}>
+              {props.name}
+            </Text>
+            <Text fontSize={["4.2vw", "5vw", "2.6vw", "23"]} className="faktum">
+              {props.type}
+            </Text>
+            <Text  className="faktum-bold" fontWeight={"ex"} fontSize={["4.2vw", "5vw", "2.6vw", "23"]}>
+              {props.date}
+            </Text>
+            <Box
+              border={"4px"}
+              borderColor={"black"}
+              borderRadius={"full"}
+              maxWidth={"max-content"}
+              whiteSpace={"nowrap"}
+              px={3}
+            >
+              <Text fontSize={["3.3vw", "4vw", "2vw", "18"]} className="stretchpro">{props.venue}</Text>
+            </Box>
+              <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
+                {props.description}
+              </Text>
+              <Text fontStyle="italic" fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
+              {props.age}
+              </Text>
+              <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
+              {props.presenter}
+              </Text>
+              <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
+              {props.website}
+              </Text>
+              <Button variant="unstlyed" className="faktum" onClick={toggleReadMoreLess}>{!isShowMore ? "Read More" : "Read Less" }</Button>
+          </Flex>
+          <Flex w={["100%", "100%", "100%", "45%"]} shadow="sm">
+            <Image
+              src={props.image}
+              alt="thumbnail"
+              objectFit={"cover"}
+              boxSize={"fit-content"}
+          />
+          </Flex>
+        </Flex>
+        }
       </Flex>
-      <Flex w={["100%", "100%", "100%", "45%"]} shadow="sm">
-        <Image
-          src={props.image}
-          alt="thumbnail"
-          objectFit={"cover"}
-          boxSize={"fit-content"}
-        />
-      </Flex>
-    </Flex>
-  )
+  ) 
 }
 
 export default Program
