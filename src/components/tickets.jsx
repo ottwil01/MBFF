@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 function Tickets() {
   return (
     <Flex zIndex={1} flexDir={"row"}>
-      <SideBar bg="brand.grey" display={["none", "none", "none", "flex", "flex"]}/>
+      <SideBar bg="brand.grey" />
       <TicketContainer />
     </Flex>
   )

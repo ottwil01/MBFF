@@ -1,4 +1,4 @@
-import { Flex, Image, Text, Box } from "@chakra-ui/react"
+import { Flex, Image, Text, Box, Link } from "@chakra-ui/react"
 import ProgramData from "../program-data.json"
 import { SideBar } from "./util"
 import sg from "/strange-garden.png"
@@ -9,14 +9,16 @@ import ssbb from "/ssbb.png"
 import beasties from "/beasties.png"
 
 
-
+// function ReadMoreLess() {
+//   const [isShowMore, ]
+// }
 
 
 function Program() {
   return (
     <Flex zIndex={1} flexDir={"row"}>
       <Combined />
-      <SideBar bg="brand.red" display={["none", "none", "none", "flex", "flex"]} />
+      <SideBar bg="brand.red" />
       </Flex>
   )
 }
@@ -60,7 +62,7 @@ function Combined() {
             description={item.description}
             age={item.age}
             presenter={item.presenter}
-            website={item.website}
+            website={<Link href={`https://${item.website}`} isExternal>{item.website}</Link>}
           />
         ))}
       </Flex>
@@ -71,11 +73,12 @@ function Combined() {
 function ProgramComponent(props) {
   return (
     <Flex
-      flexDirection={["column-reverse", "column-reverse", "row"]}
-      maxWidth={"70%"}
+      flexDirection={["column-reverse", "column-reverse", "column-reverse", "row"]}
+      maxWidth={"80%"}
       h={"full"}
       pt={4}
       whiteSpace={"pre-wrap"}
+      justifyContent={"space-between"}
     >
       <Flex gap={4} flexDirection="column" w={["100%", "100%", "50%", "50%"]}>
         <Text className="stretchpro" fontSize={["6.7vw", "6.7vw", "3.3vw", "30"]}>
@@ -110,14 +113,14 @@ function ProgramComponent(props) {
           {props.website}
         </Text>
       </Flex>
-      <Box w={["100%", "100%", "35%"]} shadow="sm">
+      <Flex w={["100%", "100%", "100%", "45%"]} shadow="sm">
         <Image
           src={props.image}
           alt="thumbnail"
-          w="100%"
           objectFit={"cover"}
+          boxSize={"fit-content"}
         />
-      </Box>
+      </Flex>
     </Flex>
   )
 }

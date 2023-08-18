@@ -7,7 +7,7 @@ const logos = [mbLogo, arts, vicLogo]
 
 export function SideBar(props) {
     return (
-        <Flex display={props.display}>
+        <Flex display={["none", "none", "none", "flex", "flex"]}>
             <Box w={24} h='100%' bg={`${props.bg}`} />
         </Flex>
     )
@@ -15,11 +15,11 @@ export function SideBar(props) {
 
 export function Footer() {
     return (
-        <Flex h={64} w="100%" bg="black" justifyContent={"space-between"} flexDir={"column"}>
+        <Flex h={32} w="100%" bg="black" justifyContent={"space-between"} flexDir={"column"}>
             <Text textAlign="center" color="white" p="10px" fontSize={"12"}>
                 This event has been proudly supported by Merri-bek City Council through the Flourish:<br/>Arts Recovery Grant Program. And through the State Government's Department of Jobs,<br/>Skills, Industry and Regions' SME Program.
             </Text>
-            <Flex w="100%" boxSize="50%" alignSelf={"center"}>
+            <Flex w="50%" overflow={"hidden"} alignSelf={"center"}>
                 {logos.map((logo, index) => {
                 return <Image key={index} src={logo} w={1 / 3} />
                 })}

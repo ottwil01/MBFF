@@ -5,7 +5,7 @@ import comingsoon from "/coming-soon.png"
 function Timetable() {
   return (
     <Flex zIndex={1} flexDir={"row"}>
-      <SideBar bg="brand.grey" display={["none", "none", "none", "flex", "flex"]}/>
+      <SideBar bg="brand.grey" />
       <TimetableContainer />
     </Flex>
   )
