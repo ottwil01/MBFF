@@ -24,7 +24,7 @@ function TimetableContainer() {
           Timetable
           </Text>
         <Flex w="100%" justifyContent={"center"}>
-          <Image src={comingsoon} alt="timetable" />
+          <Image src={comingsoon} boxSize={"400px"} alt="timetable" />
         </Flex>
       </Flex>
     );
