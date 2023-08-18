@@ -26,7 +26,7 @@ function TicketContainer() {
       <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight={"extrabold"} color={"white"}>
       Tickets
       </Text>
-      <Box px="1vw" w="80%" color={"white"} className="faktum-bold" fontSize={["20", "23", "25"]} maxW={"1200px"}>
+      <Box px="1vw" w="80%" color={"white"} className="faktum-bold" fontSize={["20", "23", "20"]} maxW={"1200px"}>
         <Text textAlign={"center"}>
           Except for our Town Hall Program, all activities and workshops at the Merri-bek Family Festival are completely free!
           <br /><br />
@@ -44,7 +44,7 @@ function TicketContainer() {
         </Text>
       <Spacer />
       </Box>
-      <Flex my="10px" h="50%" alignItems={"center"} justifyContent={"center"}>
+      <Flex my="60px" h="50%" alignItems={"center"} justifyContent={"center"}>
         <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
           <IconButton
             as="a"

@@ -15,16 +15,16 @@ export function SideBar(props) {
 
 export function Footer() {
     return (
-        <Flex bottom="0" align={"center"} h={32} w="100%" bg="black" justifyContent={"space-between"} flexDir={"column"} alignItems={"center"}>
+        <Flex bottom="0" align={"center"} boxSize="100%" bg="black" justifyContent={"space-between"} flexDir={"column"} alignItems={"center"}>
             <Flex w="100%" h="40%" justifyContent={"center"}>
-                <Text textAlign="center" color="white" p="10px" w="60%" fontSize={"9"}>
+                <Text textAlign="center" color="white" p="10px" w={["90%", "90%", "90%", "70%"]} fontSize={["10", "11", "15", "16"]}>
                     This event has been proudly supported by Merri-bek City Council through the Flourish: Arts Recovery Grant Program. And through the State Government's Department of Jobs, Skills, Industry and Regions' SME Program.
                 </Text>
             </Flex>
             <Flex w="100%" h="50%" justifyContent={"center"} alignItems={"center"}>
-                <Flex w="60%" justifyContent="space-between" overflow={"hidden"}>
+                <Flex w={["90%", "90%", "90%", "70%"]} justifyContent="space-evenly" overflow={"hidden"}>
                     {logos.map((logo, index) => {
-                    return <Image key={index} src={logo} boxSize={"30%"} />
+                    return <Image key={index} src={logo} maxW={"20%"} />
                     })}
                 </Flex>
             </Flex>
