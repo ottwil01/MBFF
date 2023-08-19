@@ -54,6 +54,7 @@ function Combined() {
           age={item.age}
           presenter={item.presenter}
           website={<Link href={`https://${item.website}`} isExternal>{item.website}</Link>}
+          website1={<Link href={`https://${item.website1}`} isExternal>{item.website1}</Link>}
         />
         ))}
     </Flex>
@@ -171,6 +172,9 @@ function ProgramComponent(props) {
               </Text>
               <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
               {props.website}
+              </Text>
+              <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
+              {props.website1}
               </Text>
               <Flex w="100%" justifyContent={"center"}>
                 <Button variant="unstlyed" className="faktum" onClick={toggleReadMoreLess}>{!isShowMore ? "Read More" : "Read Less" }</Button>
