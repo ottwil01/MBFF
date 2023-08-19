@@ -189,6 +189,7 @@ function ProgramComponent(props) {
               alt="thumbnail"
               objectFit={"cover"}
               boxSize={"fit-content"}
+              h="100%"
             />
           </Flex>
         </Flex>
