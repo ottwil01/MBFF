@@ -164,17 +164,19 @@ function ProgramComponent(props) {
                 {props.venue}
               </Text>
             </Box>
-              <Text fontSize={["3.8vw", "3.1vw", "2.5vw", "2xl"]} class="faktum">
-              {props.description}
+              <Flex>
+                <Text fontSize={["3.8vw", "3.1vw", "2.5vw", "2xl"]} class="faktum">
+                  {props.description}
+                </Text>
+              </Flex>
+              <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
+                {props.presenter}
               </Text>
               <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
-              {props.presenter}
+                {props.website}
               </Text>
               <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
-              {props.website}
-              </Text>
-              <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
-              {props.website1}
+                {props.website1}
               </Text>
               <Flex w="100%" justifyContent={"center"}>
                 <Button variant="unstlyed" className="faktum" onClick={toggleReadMoreLess}>{!isShowMore ? "Read More" : "Read Less" }</Button>
