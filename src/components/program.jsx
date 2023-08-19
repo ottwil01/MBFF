@@ -148,6 +148,9 @@ function ProgramComponent(props) {
             <Text  className="faktum-bold" fontWeight={"ex"} fontSize={["4.4vw", "4.6vw", "2.6vw", "23"]}>
               {props.date}
             </Text>
+            <Text fontStyle="italic" fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
+              {props.age}
+            </Text>
             <Box
               border={"4px"}
               borderColor={"black"}
