@@ -92,6 +92,9 @@ function ProgramComponent(props) {
             <Text  className="faktum-bold" fontWeight={"ex"} fontSize={["4.4vw", "4.6vw", "2.6vw", "23"]}>
               {props.date}
             </Text>
+            <Text fontStyle="italic" fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
+              {props.age}
+            </Text>
             <Box
               border={"4px"}
               borderColor={"black"}
@@ -159,9 +162,6 @@ function ProgramComponent(props) {
             </Box>
               <Text fontSize={["3.8vw", "3.1vw", "2.5vw", "2xl"]} class="faktum">
               {props.description}
-              </Text>
-              <Text fontStyle="italic" fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
-              {props.age}
               </Text>
               <Text fontSize={["4vw", "5vw", "2vw", "2xl"]} className="faktum">
               {props.presenter}
