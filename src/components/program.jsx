@@ -85,7 +85,7 @@ function ProgramComponent(props) {
             <Text className="stretchpro" fontSize={["6.6vw", "6.7vw", "3.3vw", "30"]}>
               {props.name}
             </Text>
-            <Text fontSize={["5vw", "5vw", "2.6vw", "23"]}>
+            <Text className="faktum-bold" fontSize={["5vw", "5vw", "2.6vw", "23"]}>
               {props.type}
             </Text>
             <Text  className="faktum-bold" fontWeight={"ex"} fontSize={["4.4vw", "4.6vw", "2.6vw", "23"]}>
@@ -128,12 +128,14 @@ function ProgramComponent(props) {
                 </Button>
               </Flex>
           </Flex>
-          <Flex w={["100%", "100%", "100%", "45%"]} shadow="sm">
+          <Flex w={["100%", "100%", "100%", "45%"]} shadow="sm" justifyContent={["center", "center", "center", "normal"]}>
             <Image
               src={props.image}
               alt="thumbnail"
               objectFit={"cover"}
-              boxSize={"min-content"}
+              boxSize={["100%", "100%", "90vw", "35vw"]}
+              maxH={["", "", "500px", "500px"]}
+              maxW={["", "", "500px", "500px"]}
             />
           </Flex>
       </Flex>
