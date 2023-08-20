@@ -133,8 +133,7 @@ function ProgramComponent(props) {
               src={props.image}
               alt="thumbnail"
               objectFit={"cover"}
-              boxSize={"fit-content"}
-
+              boxSize={"min-content"}
             />
           </Flex>
       </Flex>
