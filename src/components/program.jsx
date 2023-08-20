@@ -126,7 +126,7 @@ function ProgramComponent(props) {
                 <Button className="faktum" variant="unstlyed" onClick={toggleReadMoreLess}>
                   {!isShowMore ? "Read More" : "Read Less" }
                 </Button>
-            </Flex>
+              </Flex>
           </Flex>
           <Flex w={["100%", "100%", "100%", "45%"]} shadow="sm">
             <Image
@@ -134,9 +134,9 @@ function ProgramComponent(props) {
               alt="thumbnail"
               objectFit={"cover"}
               boxSize={"fit-content"}
-              h="100%"
-          />
-        </Flex>
+
+            />
+          </Flex>
       </Flex>
     </Flex>
   )
