@@ -47,13 +47,15 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                 variant="unstyled"
                 href={"/"}
                 />
-                <Flex px="0.3em" flexDirection={"column"} justifyContent={"center"}>
-                    <Text fontSize={["4.7vw", "23", "43", "3vw"]} textAlign="start" className="stretchpro">
-                        Merri-bek Family Festival
-                    </Text>
-                    <Flex justifyContent={"space-between"} display={[ "none", "none", "none", "flex", "flex" ]}  className="faktum">
+                <Flex w="100%" px="0.3em" flexDirection={"column"} justifyContent={"center"} maxW={"950px"}>
+                    <Flex justifyContent={"center"} w="100%">
+                        <Text fontSize={["4.7vw", "23", "43", "3.3vw", "49"]} textAlign="start" className="stretchpro">
+                            Merri-bek Family Festival
+                        </Text>
+                    </Flex>
+                    <Flex className="faktum" justifyContent={"space-between"} display={[ "none", "none", "none", "flex", "flex"]} w="100%" alignContent={"center"}>
                         {links.map((link, index) => {
-                            return <Button fontSize="1.7vw" key={index} variant="unstyled" >
+                            return <Button fontSize={["1.7vw", "1.7vw", "1.7vw", "2vw", "30"]} key={index} variant="unstyled" >
                                         <Link to={link} spy={true} smooth={true} offset={-140} duration={500}>{link}</Link>
                                     </Button>
                         })}

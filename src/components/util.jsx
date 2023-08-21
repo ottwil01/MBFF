@@ -23,7 +23,7 @@ export function Footer() {
                 </Text>
             </Flex>
             <Flex w="100%" h="50%" justifyContent={"center"} alignItems={"center"}>
-                <Flex w={["90%", "90%", "90%", "70%"]} justifyContent="space-evenly" overflow={"hidden"}>
+                <Flex w={["90%", "90%", "90%", "70%", "1100px"]} justifyContent="space-evenly" overflow={"hidden"}>
                     {logos.map((logo, index) => {
                     return <Image key={index} src={logo} maxW={"20%"} />
                     })}
