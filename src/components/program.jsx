@@ -140,7 +140,7 @@ function ProgramComponent(props) {
                       </Text>
                     )
                   })}
-                  <Text fontSize={["4vw", "5vw", "2vw", "2xl"]}>
+                  <Text fontSize={["3vw"]}>
                     {props.extrainfo}
                   </Text>
                 </>
