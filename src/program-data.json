@@ -8,9 +8,33 @@
       "tickets": "Booking Required",
       "descriptionShort": "Children aged 7-12 will make 3-D cardboard plants and...",
       "description": "Children aged 7-12 will make 3-D cardboard plants and flowers to start their own Strange Garden. These workshops teach young artists about patterns, geometry, sustainability and our relationship with nature.\n\nEliza-Jane Gilchrist is a sculptor, prop/set/puppet builder and puppeteer. In Eliza-Jane's sculpture practice her materials are often the discarded – clothes, found objects, and cardboard. She lavishes detail onto the humble and mundane and makes ugly things beautiful in an attempt to challenge perceptions of insignificance and value.", 
-      "age": "Appropriate for ages 7 - 12",
+      "age": "Appropriate for ages 7 to 12",
       "presenter": "Presented by Eliza-Jane Gilchrist",
       "website": ["elizajanegilchrist.com"]
+    },
+    {
+      "name": "Bunk Puppets",
+      "type": "Shadow Puppet Workshop",
+      "date": "Tuesday 19/9/23\n11:00am to 12:00pm\n(1 hour)",
+      "venue": "Atrium",
+      "tickets": "Booking Required",
+      "descriptionShort": "In this integrated craft and performance workshop, children...",
+      "description": "In this integrated craft and performance workshop, children will create their own individual shadow character made from scraps, crafts, tinsel, tape and teddy bear fluff. Participants will then be guided in performance techniques to draw emotion and drama out of the characters they make.\nParents and adults are welcome to participate, or simply make a puppet along with the child... or just watch and snap photos (!) At the end of the workshop sessions, each participant will have made a ‘talking thumb’ shadow puppet and will have learned some techniques for making the character come alive on screen.", 
+      "age": "Appropriate for ages 5 to 12",
+      "presenter": "Presented by Bunk Puppets",
+      "website": ["bunk.studio"]
+    },
+    {
+      "name": "Lip to Lung, Larynx and Tongue, Beatbox and Beyond.",
+      "type": "Beatbox and Strange Sound Workshop",
+      "date": "Wednesday 20/9/23\n11:00am – 12:00pm\n(1 hour)",
+      "venue": "Atrium",
+      "tickets": "Booking Required",
+      "descriptionShort": "Around the world and into your gob, vocal explorer and...",
+      "description": "Around the world and into your gob, vocal explorer and songwriter Mal Webb takes you on a lip to lung journey through the physics, physiology and phrivolity of all the sounds a face can make. Sideways yodelling, beatbox/mouth drums/vocal percussion, harmonics/throat singing, character voices, mic technique, looping, advanced clapping and vocal distortion (without hurting) are all explored on the way to being a band with your voice and the lead singer too!", 
+      "age": "Appropriate for ages 5 and up",
+      "presenter": "Presented by Mal Webb",
+      "website": ["malwebb.com"]
     },
     {
       "name": "Brunswick Village Publisher",
@@ -23,6 +47,27 @@
       "age": "Appropriate for ages 5 to 12",
       "presenter": "Presented by Author Alisa Wild",
       "website": ["alisawild.com"]
+    },
+    {
+      "name": "Choral Edge",
+      "type": "Music Performance Accompanied by Light and Projections",
+      "date": "Friday 22/9/23\n7:00pm – 7:30pm\n(30 minutes)",
+      "venue": "Brunswick Library",
+      "descriptionShort": "Choral Edge is one of Melbourne’s most innovative and...",
+      "description": "Choral Edge is one of Melbourne’s most innovative and engaging choirs. Led by director Juliana Kay, this troupe of versatile and talented singers seeks to expand the boundaries of choral music and delight audiences through playful, multi-dimensional projects. They will be gracing the Merri-bek Family Festival as part of our Opening Ceremony, accompanied by attendees of all ages creating lighting effects across the gigantic Brunswick Library roof.",
+      "age": "Appropriate for all ages",
+      "presenter": "Presented by Choral Edge",
+      "website": ["choraledge.com.au"]
+    },
+    {
+      "name": "Scavenger Hunt",
+      "type": "Interactive, self-led",
+      "date": "Saturday 23/9/23\n9:00am to 3:30pm\nSunday 24/9/23\n1:00pm to 4:00pm",
+      "venue": "Brunswick Library",
+      "descriptionShort": "Choral Edge is one of Melbourne’s most innovative and...",
+      "description": "Explore the Library precinct with a scavenger hunt devised by Coburg artist Brendan Brown.   You'll need a smartphone, and a good set of searching eyes to find all 26 clues on the list.  The Hunt should take most 7 - 11 year olds 45 min - 60 min to complete, and participants should be accompanied as they wander by an adult (to fend of grumpy unicorns and librarian ghosts).",
+      "age": "Appropriate for ages 7 to 11",
+      "presenter": "Presented by Brendan Brown"
     },
     {
       "name": "Everyones Absurd Adventure",
@@ -60,8 +105,19 @@
       "website": ["bunk.studio"]
     },
     {
+      "name": "Spacescape!",
+      "type": "Interactive Puppetry Installation",
+      "date": "Saturday 23/9/23\n9:00am to 3:30pm\nSunday 24/9/23\n1:00pm to 4:00pm",
+      "venue": "Brunswick Library",
+      "descriptionShort": "It's an intergalactic town hall takeover! Enjoy video...",
+      "description": "It's an intergalactic town hall takeover! Enjoy video projections of alien creatures and space walkers. Make your own starship to fly across the galaxy, faster than the speed of light (no pilot's license required).",
+      "age": "Appropriate for ages 5 and up",
+      "presenter": "Presented by Hamish Fletcher",
+      "website": ["www.thingsoffoamandwood.com "]
+    },
+    {
       "name": "Beasties",
-      "type": "Animatronic Puppet Installation",
+      "type": "Animatronic Puppetry Installation",
       "date": "Sunday 24/9/23\n1:00pm to 4:00pm\n(3 hours)",
       "venue": "Atrium",
       "descriptionShort": "A square cow quacking for biscuits, a squirting pig, a one...",

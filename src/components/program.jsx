@@ -2,10 +2,15 @@ import { Flex, Image, Text, Box, Link, Button } from "@chakra-ui/react"
 import ProgramData from "../program-data.json"
 import { SideBar } from "./util"
 import sg from "/strange-garden.png"
+import bp from "/bunk-puppets.png"
+import lip from "/lip-to-lung.png"
 import bvp from "/brunswick-village-publisher.png"
+import ce from "/choral-edge.png"
+import sh from "/scavenger-hunt.png"
 import eaa from "/everyones-absurd-adventure.png"
 import fritz from "/fritz.png"
 import ssbb from "/ssbb.png"
+import space from "/spacescape.png"
 import beasties from "/beasties.png"
 import { useState } from "react"
 
@@ -23,10 +28,15 @@ function Program() {
 function Combined() {
   const images = {
     "Strange Garden": sg,
+    "Bunk Puppets": bp,
+    "Lip to Lung, Larynx and Tongue, Beatbox and Beyond.": lip,
     "Brunswick Village Publisher": bvp,
+    "Choral Edge": ce,
+    "Scavenger Hunt": sh,
     "Everyones Absurd Adventure": eaa,
     "FRITZ": fritz,
     "Sticks Stones Broken Bones": ssbb,
+    "Spacescape!": space,
     "Beasties": beasties
   }
   return (

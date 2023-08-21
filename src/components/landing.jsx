@@ -18,7 +18,7 @@ function Landing() {
 
 function ImageBox() {
   return (
-    <Flex px={8} w={["100%", "100%", "60%"]} maxH="100%" bg="black" alignItems={"center"} justifyContent={"space-between"}>
+    <Flex pl={8} pr={4} w={["100%", "100%", "60%"]} maxH="100%" bg="black" alignItems={"center"} justifyContent={"space-between"}>
       <Flex py={6} flexDir={"column"} color="white">
         <Flex w="100%" flexDirection={"column"} mb={["0", "0px", "50px", "40px"]} justifyContent={"space-between"}>
         {things.map((thing, index) => {
@@ -40,8 +40,8 @@ function ImageBox() {
           </motion.div>
         </Flex>
       </Flex>
-      <Flex boxSize="100%">
-      <Image alignSelf={"flex-end"} src={puppet} h={["86vw", "87vw", "57vw", "100%"]} objectFit={"contain"}/>
+      <Flex boxSize="100%" justifyContent="flex-end">
+      <Image alignSelf={"flex-end"} src={puppet} h={["86vw", "87vw", "55vw", "50vw", "3xl"]} objectFit={"contain"}/>
       </Flex>
     </Flex>
   )
@@ -58,7 +58,7 @@ function RedStar() {
 
 function InfoBox() {
   return (
-    <Flex w={["100%", "100%", "40%"]} bg='brand.green' color="white" px={8} pt={14} pb={8} fontSize={["4vw","4vw", "2vw"]}>
+    <Flex w={["100%", "100%", "40%"]} bg='brand.green' color="white" px={8} pt={8} pb={8} fontSize={["4vw", "4vw", "2.5vw", "2.4vw", "2.5vw"]}>
       <Text verticalAlign={"top"} className="faktum-bold" w="100%">
         High quality art for the whole family, and either low-cost or free!
         <br/><br/>
