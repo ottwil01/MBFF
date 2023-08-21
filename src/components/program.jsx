@@ -94,10 +94,10 @@ function ProgramComponent(props) {
             flexDirection="column"
             w={["100%", "100%", "100%", "50%"]}
           >
-            <Text className="stretchpro" fontSize={["6.6vw", "6.7vw", "3.3vw", "30"]}>
+            <Text className="stretchpro" fontSize={["5vw", "6.7vw", "3.3vw", "30"]}>
               {props.name}
             </Text>
-            <Text className="faktum-bold" fontSize={["5vw", "5vw", "2.6vw", "23"]}>
+            <Text className="faktum-bold" fontSize={["4.8vw", "5vw", "2.6vw", "23"]}>
               {props.type}
             </Text>
             <Text  className="faktum-bold" fontWeight={"ex"} fontSize={["4.4vw", "4.6vw", "2.6vw", "23"]}>
@@ -150,6 +150,13 @@ function ProgramComponent(props) {
                       </Text>
                     )
                   })}
+                  {/* {props.extrainfo.map((info, i) => {
+                    return (
+                      <Text key={i} fontSize={["3vw"]}>
+                        {info}
+                      </Text>
+                    )
+                  })} */}
                   <Text fontSize={["3vw"]}>
                     {props.extrainfo}
                   </Text>

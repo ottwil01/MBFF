@@ -125,7 +125,7 @@
       "age": "Appropriate for all ages",
       "presenter": "Presented by Kinetic Theatre",
       "website": ["kinetictheatre.com"],
-      "extrainfo": "And even more to be announced!"
+      "extrainfo": ["And even more to be announced!"]
     }
   ]
 }
