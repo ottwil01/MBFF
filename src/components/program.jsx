@@ -140,6 +140,9 @@ function ProgramComponent(props) {
                       </Text>
                     )
                   })}
+                  <Text fontSize={["4vw", "5vw", "2vw", "2xl"]}>
+                    {props.extrainfo}
+                  </Text>
                 </>
                 }
               <Flex w="100%" justifyContent={"center"}>
@@ -156,6 +159,7 @@ function ProgramComponent(props) {
               boxSize={["100%", "100%", "90vw", "35vw"]}
               maxH={["", "", "500px", "500px"]}
               maxW={["", "", "500px", "500px"]}
+              borderRadius={"0.3rem"}
             />
           </Flex>
       </Flex>
