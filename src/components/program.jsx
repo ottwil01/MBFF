@@ -37,6 +37,8 @@ function Combined() {
       justifyContent={"Center"}
       w="full"
       pb={12}
+      gap={4}
+      borderStyle={"solid"}
     >
       <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight={"extrabold"}>
         Program
@@ -55,6 +57,7 @@ function Combined() {
           age={item.age}
           presenter={item.presenter}
           website={item.website}
+          extrainfo={item.extrainfo}
         />
         ))}
     </Flex>
@@ -70,9 +73,10 @@ function ProgramComponent(props) {
         flexDirection={["column-reverse", "column-reverse", "column-reverse", "row"]}
         maxWidth={"80%"}
         h={"full"}
-        pt={4}
+        p={4}
         whiteSpace={"pre-wrap"}
         justifyContent={"space-between"}
+        border={"solid"}
         >
           <Flex
             gap={4}
@@ -116,7 +120,7 @@ function ProgramComponent(props) {
               <Text className="stretchpro" fontSize={["4vw", "4vw", "2.5vw", "18"]}>
                 {props.tickets}
               </Text>
-            </Box> 
+              </Box> 
             }
                 <Text fontSize={["4vw", "5vw", "2vw", "2xl"]}>
                   {!isShowMore ? props.descriptionShort : props.description}
@@ -129,11 +133,12 @@ function ProgramComponent(props) {
                   {props.website.map((weblink, i) => {
                     return (
                       <Text key={i} fontSize={["4vw", "5vw", "2vw", "2xl"]}>
-                        <Link href={`https://${weblink}`} isExternal>{weblink}</Link>
+                        <Link href={`https://${weblink}`} isExternal>
+                          {weblink}
+                        </Link>
                       </Text>
                     )
                   })}
-
                 </>
                 }
               <Flex w="100%" justifyContent={"center"}>
@@ -142,7 +147,7 @@ function ProgramComponent(props) {
                 </Button>
               </Flex>
           </Flex>
-          <Flex w={["100%", "100%", "100%", "45%"]} justifyContent={["center", "center", "center", "normal"]}>
+          <Flex w={["100%", "100%", "100%", "45%"]} justifyContent={["center", "center", "center", "end"]}>
             <Image
               src={props.image}
               alt="thumbnail"
