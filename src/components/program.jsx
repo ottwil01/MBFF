@@ -49,12 +49,12 @@ function Combined() {
           type={item.type}
           date={item.date}
           venue={item.venue}
+          tickets={item.tickets}
           descriptionShort={item.descriptionShort}
           description={item.description}
           age={item.age}
           presenter={item.presenter}
-          website={<Link href={`https://${item.website}`} isExternal>{item.website}</Link>}
-          website1={<Link href={`https://${item.website1}`} isExternal>{item.website1}</Link>}
+          website={item.website}
         />
         ))}
     </Flex>
@@ -64,9 +64,6 @@ function Combined() {
 function ProgramComponent(props) {
   const [isShowMore, setIsShowMore] = useState(false)
 
-  const toggleReadMoreLess = () => {
-    setIsShowMore(!isShowMore)
-  }
   return (
     <Flex className="faktum" justifyContent={"center"} alignItems={"center"} flexDir={"column"}>
       <Flex
@@ -91,7 +88,7 @@ function ProgramComponent(props) {
             <Text  className="faktum-bold" fontWeight={"ex"} fontSize={["4.4vw", "4.6vw", "2.6vw", "23"]}>
               {props.date}
             </Text>
-            <Text fontStyle="italic" fontSize={["4vw", "5vw", "2vw", "2xl"]} >
+            <Text fontStyle="italic" fontSize={["4vw", "5vw", "2vw", "2xl"]}>
               {props.age}
             </Text>
             <Box
@@ -102,33 +99,50 @@ function ProgramComponent(props) {
               whiteSpace={"nowrap"}
               px={3}
             >
-              <Text className="stretchpro" fontSize={["4vw", "4vw", "2.5vw", "18"]} >
+              <Text className="stretchpro" fontSize={["4vw", "4vw", "2.5vw", "18"]}>
                 {props.venue}
               </Text>
             </Box>
+            { props.tickets &&
+              <Box
+              border={"4px"}
+              borderColor={"black"}
+              borderRadius={"full"}
+              maxWidth={"max-content"}
+              whiteSpace={"nowrap"}
+              px={3}
+              fontSize={["4vw", "4vw", "2.5vw", "18"]}
+              >
+              <Text className="stretchpro" fontSize={["4vw", "4vw", "2.5vw", "18"]}>
+                {props.tickets}
+              </Text>
+            </Box> 
+            }
                 <Text fontSize={["4vw", "5vw", "2vw", "2xl"]}>
                   {!isShowMore ? props.descriptionShort : props.description}
                 </Text>
                 {isShowMore &&
-                <Box>
+                <>
                   <Text fontSize={["4vw", "5vw", "2vw", "2xl"]}>
                     {props.presenter}
                   </Text>
-                  <Text fontSize={["4vw", "5vw", "2vw", "2xl"]}>
-                    {props.website}
-                  </Text>
-                  <Text fontSize={["4vw", "5vw", "2vw", "2xl"]}>
-                    {props.website1}
-                  </Text>
-                </Box>
+                  {props.website.map((weblink, i) => {
+                    return (
+                      <Text fontSize={["4vw", "5vw", "2vw", "2xl"]}>
+                        <Link href={`https://${weblink}`} isExternal>{weblink}</Link>
+                      </Text>
+                    )
+                  })}
+
+                </>
                 }
               <Flex w="100%" justifyContent={"center"}>
-                <Button className="faktum" variant="unstlyed" onClick={toggleReadMoreLess}>
+                <Button color="brand.blue" fontSize={["4vw", "5vw", "2vw", "2xl"]} variant="unstlyed" onClick={() => setIsShowMore(!isShowMore)}>
                   {!isShowMore ? "Read More" : "Read Less" }
                 </Button>
               </Flex>
           </Flex>
-          <Flex w={["100%", "100%", "100%", "45%"]} shadow="sm" justifyContent={["center", "center", "center", "normal"]}>
+          <Flex w={["100%", "100%", "100%", "45%"]} justifyContent={["center", "center", "center", "normal"]}>
             <Image
               src={props.image}
               alt="thumbnail"

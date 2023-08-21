@@ -29,17 +29,17 @@ function TicketContainer() {
         <Text textAlign={"center"}>
           Except for our Town Hall Program, all activities and workshops at the Merri-bek Family Festival are completely free!
           <br /><br />
-          However, for our workshop series, bookings are essential as space is limited. Reserve your booking via the ticket link.  
+          However, for our workshops, bookings are essential as space is limited. Reserve your booking via the ticket link.  
           <br /><br />
           All tickets to Town Hall Program are $13 + bf. 
           <br />
           Town Hall Program includes: 
           <br />
-          FRITZ - Saturday 23/9/23 10:15am 
+          FRITZ 
           <br />
-          Sticks Stones Broken Bones – Saturday 23/9/23 12:15pm & 3pm 
+          Sticks Stones Broken Bones 
           <br />
-          Ultra Galactic Hyper Spacescape – Sunday 24/9/23 From 1pm to 4pm (drop in and out)
+          Ultra Galactic Hyper Spacescape
         </Text>
       <Spacer />
       </Box>
