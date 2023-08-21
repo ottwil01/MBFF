@@ -97,21 +97,7 @@ function ContactForm() {
       </FormControl>
       <Footer />
     </Flex>
-  );
-}
-
-function validate(email) {
-  if (email.length < 1) {
-    return false
-  }
-
-  if (validateEmail(email) === false) {
-    return false
-  }
-  if (validateEmail(email) === null) {
-    return false
-  }
-  return true
+  )
 }
 
 function validateEmail(email) {
@@ -120,5 +106,18 @@ function validateEmail(email) {
   return String(email).toLowerCase().match(validReg)
 }
 
+// function validate(email) {
+//   if (email.length < 1) {
+//     return false
+//   }
+
+//   if (validateEmail(email) === false) {
+//     return false
+//   }
+//   if (validateEmail(email) === null) {
+//     return false
+//   }
+//   return true
+// }
 
 export default ContactForm

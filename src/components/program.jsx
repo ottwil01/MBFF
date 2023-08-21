@@ -128,7 +128,7 @@ function ProgramComponent(props) {
                   </Text>
                   {props.website.map((weblink, i) => {
                     return (
-                      <Text fontSize={["4vw", "5vw", "2vw", "2xl"]}>
+                      <Text key={i} fontSize={["4vw", "5vw", "2vw", "2xl"]}>
                         <Link href={`https://${weblink}`} isExternal>{weblink}</Link>
                       </Text>
                     )
