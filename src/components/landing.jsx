@@ -1,7 +1,6 @@
 import { Flex, Text, Image, IconButton } from "@chakra-ui/react"
-
 import redStar from "/red-star.png"
-import puppet from "/puppet-crop.png"
+import puppet from "/puppet-crop-new.png"
 import { SideBar } from "./util"
 import { motion } from "framer-motion"
 
@@ -41,7 +40,7 @@ function ImageBox() {
           </motion.div>
         </Flex>
       </Flex>
-      <Image src={puppet} h={["86vw", "87vw", "57vw", "52vw"]} objectFit={"contain"}/>
+      <Image src={puppet} h={["86vw", "87vw", "57vw", "48vw"]} objectFit={""}/>
     </Flex>
   )
 }
