@@ -68,10 +68,10 @@ function ProgramComponent(props) {
   const [isShowMore, setIsShowMore] = useState(false)
 
   return (
-    <Flex className="faktum" justifyContent={"center"} alignItems={"center"} flexDir={"column"}>
+    <Flex w="100%" className="faktum" justifyContent={"center"} alignItems={"center"} flexDir={"column"}>
       <Flex
         flexDirection={["column-reverse", "column-reverse", "column-reverse", "row"]}
-        maxWidth={"80%"}
+        w={"90%"}
         h={"full"}
         p={4}
         whiteSpace={"pre-wrap"}
@@ -133,7 +133,7 @@ function ProgramComponent(props) {
                   </Text>
                   {props.website.map((weblink, i) => {
                     return (
-                      <Text key={i} fontSize={["4vw", "5vw", "2vw", "2xl"]}>
+                      <Text textDecor={"underline"} key={i} fontSize={["4vw", "5vw", "2vw", "2xl"]}>
                         <Link href={`https://${weblink}`} isExternal>
                           {weblink}
                         </Link>
@@ -157,8 +157,8 @@ function ProgramComponent(props) {
               alt="thumbnail"
               objectFit={"cover"}
               boxSize={["100%", "100%", "90vw", "35vw"]}
-              maxH={["", "", "500px", "500px"]}
-              maxW={["", "", "500px", "500px"]}
+              maxH={["200px", "300px", "400px", "500px"]}
+              maxW={["200px", "300px", "400px", "500px"]}
               borderRadius={"0.3rem"}
             />
           </Flex>
