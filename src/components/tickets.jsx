@@ -27,7 +27,7 @@ function TicketContainer() {
       </Text>
       <Box px="1vw" w="80%" color={"white"} className="faktum-bold" fontSize={["20", "23", "20"]} maxW={"1200px"}>
         <Text textAlign={"center"}>
-          Except for our Town Hall Program, all activities and workshops at the Merri-bek Family Festival are completely free!
+          Except for our Town Hall Program, all activities and workshops at the MBFF are completely free!
           <br /><br />
           However, for our workshops, bookings are essential as space is limited. Reserve your booking via the ticket link.  
           <br /><br />
