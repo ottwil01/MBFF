@@ -77,6 +77,7 @@ function ProgramComponent(props) {
         whiteSpace={"pre-wrap"}
         justifyContent={"space-between"}
         border={"solid"}
+        borderRadius={"0.3rem"}
         >
           <Flex
             gap={4}
