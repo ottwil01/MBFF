@@ -87,6 +87,7 @@ function ProgramComponent(props) {
         whiteSpace={"pre-wrap"}
         justifyContent={"space-between"}
         border={"solid"}
+        borderWidth={"4px"}
         borderRadius={"0.3rem"}
         >
           <Flex

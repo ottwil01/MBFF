@@ -3,7 +3,7 @@
     {
       "name": "Strange Garden",
       "type": "Cardboard Craft and Sculpture Workshop",
-      "date": "Monday 18/9/23\n10:30am to 12:00pm\n(1 hour 30 mins)",
+      "date": "Monday 18/9/23\n10:30am - 12:00pm\n(1 hour 30 mins)",
       "venue": "Atrium",
       "tickets": "Booking Required",
       "descriptionShort": "Children aged 7-12 will make 3-D cardboard plants and...",
@@ -15,7 +15,7 @@
     {
       "name": "Bunk Puppets",
       "type": "Shadow Puppet Workshop",
-      "date": "Tuesday 19/9/23\n11:00am to 12:00pm\n(1 hour)",
+      "date": "Tuesday 19/9/23\n11:00am - 12:00pm\n(1 hour)",
       "venue": "Atrium",
       "tickets": "Booking Required",
       "descriptionShort": "In this integrated craft and performance workshop, children...",
@@ -27,7 +27,7 @@
     {
       "name": "Lip to Lung, Larynx and Tongue, Beatbox and Beyond.",
       "type": "Beatbox and Strange Sound Workshop",
-      "date": "Wednesday 20/9/23\n11:00am – 12:00pm\n(1 hour)",
+      "date": "Wednesday 20/9/23\n11:00am - 12:00pm\n(1 hour)",
       "venue": "Atrium",
       "tickets": "Booking Required",
       "descriptionShort": "Around the world and into your gob, vocal explorer and...",
@@ -39,8 +39,8 @@
     {
       "name": "Brunswick Village Publisher",
       "type": "Book Publishing Workshop",
-      "date": "Thursday 21/9/23\n10:00am to 11:30am\n(1 hour 30 mins)",
-      "venue": "Atrium",
+      "date": "Thursday 21/9/23\n10:00am - 11:30am\n(1 hour 30 mins)",
+      "venue": "Brunswick Library",
       "tickets": "Booking Required",
       "descriptionShort": "Tell your own story, create illustrations and be published...",
       "description": "Tell your own story, create illustrations and be published by the Brunswick Village Publisher – into your own fabulous mini-book. Author Ailsa Wild will support you on your journey to publication.\n\nAilsa Wild was a professional acrobat and whip-cracker who ran away from the circus to become a writer. She is now an author, performer and community artist with a history of deep collaboration. Ailsa has written two junior fiction series: ‘Squishy Taylor’ and ‘The Naughtiest Pixie’ both full of cheekiness and adventure (Hardie Grant Children’s Books). She is the lead writer of Small Friends Books (CSIRO Publishing and Scale Free Network) where she works with microbiologists, virologists and other scientists to translate complex science into compelling illustrated narrative picture-books. Of these ‘Zobi and the Zoox – a story of coral bleaching’ was the first ever children’s book to win the Royal Zoological Society of NSW Whitely Medal. Her collaboration, the science-based YA graphic novel The Invisible War (Scale Free Network, 2016) was a CBCA notable and won several awards.",
@@ -51,7 +51,7 @@
     {
       "name": "Choral Edge",
       "type": "Music Performance Accompanied by Light and Projections",
-      "date": "Friday 22/9/23\n7:00pm – 7:30pm\n(30 minutes)",
+      "date": "Friday 22/9/23\n7:00pm - 7:30pm\n(30 minutes)",
       "venue": "Brunswick Library",
       "descriptionShort": "Choral Edge is one of Melbourne’s most innovative and...",
       "description": "Choral Edge is one of Melbourne’s most innovative and engaging choirs. Led by director Juliana Kay, this troupe of versatile and talented singers seeks to expand the boundaries of choral music and delight audiences through playful, multi-dimensional projects. They will be gracing the Merri-bek Family Festival as part of our Opening Ceremony, accompanied by attendees of all ages creating lighting effects across the gigantic Brunswick Library roof.",
@@ -62,7 +62,7 @@
     {
       "name": "Scavenger Hunt",
       "type": "Interactive, self-led",
-      "date": "Saturday 23/9/23\n9:00am to 3:30pm\nSunday 24/9/23\n1:00pm to 4:00pm",
+      "date": "Saturday 23/9/23\n9:00am - 3:30pm\nSunday 24/9/23\n1:00pm to 4:00pm",
       "venue": "Brunswick Library",
       "descriptionShort": "Choral Edge is one of Melbourne’s most innovative and...",
       "description": "Explore the Library precinct with a scavenger hunt devised by Coburg artist Brendan Brown.   You'll need a smartphone, and a good set of searching eyes to find all 26 clues on the list.  The Hunt should take most 7 - 11 year olds 45 min - 60 min to complete, and participants should be accompanied as they wander by an adult (to fend of grumpy unicorns and librarian ghosts).",
@@ -72,7 +72,7 @@
     {
       "name": "Everyones Absurd Adventure",
       "type": "Interactive & Improvised",
-      "date": "Saturday 23/9/23\n9:15am to 10:00am\n(45 minutes)\n2:00pm to 2:45pm\n(45 minutes)",
+      "date": "Saturday 23/9/23\n9:15am - 10:00am\n(45 minutes)\n2:00pm to 2:45pm\n(45 minutes)",
       "venue": "Atrium",
       "descriptionShort": "You make up the story… The catch is - everyone else does...",
       "description": "You make up the story… The catch is - everyone else does too! What ridiculousness occurs when everybody is making up the same story? Can Ailsa and Robbie wrangle a plot from the chaos – all with a live music score?",
@@ -83,7 +83,7 @@
     {
       "name": "FRITZ",
       "type": "Clown and “Magic” Show",
-      "date": "Saturday 23/9/23\n10:15am to 11:00am\n(45 minutes)",
+      "date": "Saturday 23/9/23\n10:15am - 11:00am\n(45 minutes)",
       "venue": "Brunswick Town Hall",
       "tickets": "Ticketed",
       "descriptionShort": "Magic, mayhem and many things gone wrong, Fritz the world...",
@@ -95,7 +95,7 @@
     {
       "name": "Sticks Stones Broken Bones",
       "type": "Shadow Puppet Theatre",
-      "date": "Saturday 23/9/23\n12:15pm to 1:00pm\n(45 minutes)\n3:00pm to 3:45pm\n(45 minutes)",
+      "date": "Saturday 23/9/23\n12:15pm - 1:00pm\n(45 minutes)\n3:00pm - 3:45pm\n(45 minutes)",
       "venue": "Brunswick Town Hall",
       "tickets": "Ticketed",
       "descriptionShort": "A playful world of shadow puppetry, appearing as live...",
@@ -107,8 +107,9 @@
     {
       "name": "Spacescape!",
       "type": "Interactive Puppetry Installation",
-      "date": "Saturday 23/9/23\n9:00am to 3:30pm\nSunday 24/9/23\n1:00pm to 4:00pm",
+      "date": "Saturday 23/9/23\n9:00am - 3:30pm\nSunday 24/9/23\n1:00pm - 4:00pm",
       "venue": "Brunswick Library",
+      "tickets": "Ticketed",
       "descriptionShort": "It's an intergalactic town hall takeover! Enjoy video...",
       "description": "It's an intergalactic town hall takeover! Enjoy video projections of alien creatures and space walkers. Make your own starship to fly across the galaxy, faster than the speed of light (no pilot's license required).",
       "age": "Appropriate for ages 5 and up",
@@ -118,7 +119,7 @@
     {
       "name": "Beasties",
       "type": "Animatronic Puppetry Installation",
-      "date": "Sunday 24/9/23\n1:00pm to 4:00pm\n(3 hours)",
+      "date": "Sunday 24/9/23\n1:00pm -0 4:00pm\n(3 hours)",
       "venue": "Atrium",
       "descriptionShort": "A square cow quacking for biscuits, a squirting pig, a one...",
       "description": "A square cow quacking for biscuits, a squirting pig, a one eyed blue cat, dancing carrots, and a giant roaming poo, Beasties is a petting zoo with a difference.. This strange but endearing assortment of electronic “animals” will keep young and old enchanted and highly amused. Set up to be partly observational and partly interactive, there’s fish birds to feed and Deloras will sing for you if you pat her enough. There’s also a pair of keepers to oversee the animals, answer your questions, and keep the poo from following you home.",

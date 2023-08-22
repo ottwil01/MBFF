@@ -1,6 +1,8 @@
 import { Flex, Text, Image } from "@chakra-ui/react"
 import { SideBar } from "./util"
-import comingsoon from "/coming-soon.png"
+import timetableh from "/timetable-h.png"
+import timetablev from "/timetable-v.png"
+
 
 function Timetable() {
   return (
@@ -22,8 +24,9 @@ function TimetableContainer() {
           <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight={"extrabold"} color={"white"}>
           Timetable
           </Text>
-        <Flex w="100%" h="100%" pb="20px" alignItems={"center"} justifyContent={"center"}>
-          <Image src={comingsoon} boxSize={"300px"} alt="timetable" />
+        <Flex w="100%" h="100%" alignItems={"center"} justifyContent={"center"}>
+          <Image display={["none", "none", "none", "flex", "flex"]} src={[timetableh]} boxSize={"fit-content"} alt="horizontal-timetable"/>
+          <Image display={["flex", "flex", "flex", "none", "none"]} src={[timetablev]} boxSize={"fit-content"} alt="vertical-timetable" />
         </Flex>
       </Flex>
     );

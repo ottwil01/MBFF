@@ -62,7 +62,7 @@ function InfoBox() {
       <Text verticalAlign={"top"} className="faktum-bold" w="100%">
         High quality art for the whole family, and either low-cost or free!
         <br/><br/>
-        Running from the Brunswick Library, Brunswick Town Hall and Counihan Gallery from September 18th - 24th.
+        Running in the Brunswick Library, Brunswick Town Hall and Counihan Gallery from September 18th - 24th.
         <br/><br/>
         World class arts. Right in your backyard. School holidays are officially sorted.
       </Text>
