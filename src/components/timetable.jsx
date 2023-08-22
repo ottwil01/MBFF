@@ -24,8 +24,8 @@ function TimetableContainer() {
           <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight={"extrabold"} color={"white"}>
           Timetable
           </Text>
-        <Flex w="100%" h="100%" alignItems={"center"} justifyContent={"center"}>
-          <Image display={["none", "none", "none", "flex", "flex"]} src={[timetableh]} boxSize={"fit-content"} alt="horizontal-timetable"/>
+        <Flex mb="20px" mx="20px" maxW="100%" objectFit={"cover"} justifyContent={"center"}>
+          <Image  w="90%" display={["none", "none", "none", "flex", "flex"]} src={[timetableh]} boxSize={"fit-content"} alt="horizontal-timetable"/>
           <Image display={["flex", "flex", "flex", "none", "none"]} src={[timetablev]} boxSize={"fit-content"} alt="vertical-timetable" />
         </Flex>
       </Flex>

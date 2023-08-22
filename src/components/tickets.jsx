@@ -25,7 +25,7 @@ function TicketContainer() {
       <Text textAlign="center" w="100%" mt="15px" className={"stretchpro"} fontSize={["12vw", "12vw", "10vw", "8xl"]} fontWeight={"extrabold"} color={"white"}>
       Tickets
       </Text>
-      <Box px="1vw" w="80%" color={"white"} className="faktum-bold" fontSize={["20", "23", "20"]} maxW={"1200px"}>
+      <Box px="1vw" w="80%" color={"white"} className="faktum-bold" fontSize={["22", "23", "24", "24"]} maxW={"1200px"}>
         <Text textAlign={"center"}>
           Except for our Town Hall Program, all activities and workshops at the MBFF are completely free!
           <br /><br />
