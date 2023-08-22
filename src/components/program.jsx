@@ -1,4 +1,4 @@
-import { Flex, Image, Text, Box, Link, Button } from "@chakra-ui/react"
+import { Flex, Image, Text, Box, Link, Button, IconButton } from "@chakra-ui/react"
 import ProgramData from "../program-data.json"
 import { SideBar } from "./util"
 import sg from "/strange-garden.png"
@@ -13,6 +13,7 @@ import ssbb from "/ssbb.png"
 import space from "/spacescape.png"
 import beasties from "/beasties.png"
 import { useState } from "react"
+import { motion } from "framer-motion"
 
 
 
@@ -112,7 +113,7 @@ function ProgramComponent(props) {
               border={"4px"}
               borderColor={"black"}
               borderRadius={"full"}
-              maxWidth={"max-content"}
+              maxW={"max-content"}
               whiteSpace={"nowrap"}
               px={3}
             >
@@ -121,19 +122,29 @@ function ProgramComponent(props) {
               </Text>
             </Box>
             { props.tickets &&
-              <Box
-              border={"4px"}
-              borderColor={"black"}
-              borderRadius={"full"}
-              maxWidth={"max-content"}
-              whiteSpace={"nowrap"}
-              px={3}
-              fontSize={["4vw", "4vw", "2.5vw", "18"]}
-              >
-              <Text className="stretchpro" fontSize={["4vw", "4vw", "2.5vw", "18"]}>
-                {props.tickets}
-              </Text>
-              </Box> 
+              <Flex>
+                <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+                  <IconButton
+                    as="a"
+                    aria-label="tickets"
+                    icon={<Button
+                            border={"4px"}
+                            borderRadius={"full"}
+                            whiteSpace={"nowrap"}
+                            px={3}
+                            color={"black"}
+                            maxW={"max-content"}
+                          >
+                            <Text className={"stretchpro"} fontSize={["4vw", "4vw", "2.5vw", "18"]} mt="4px">
+                              {props.tickets}
+                            </Text>
+                          </Button>}
+                    target="_blank"
+                    variant="unstlyed"
+                    href="https://events.humanitix.com/mbff"
+                  />
+                </motion.div>
+              </Flex>
             }
                 <Text fontSize={["4vw", "5vw", "2vw", "2xl"]}>
                   {!isShowMore ? props.descriptionShort : props.description}
@@ -152,7 +163,7 @@ function ProgramComponent(props) {
                       </Text>
                     )
                   })}
-                  {props.website1.map((weblink, i) => {
+                  {/* {props.website1.map((weblink, i) => {
                     return (
                       <Text textDecor={"underline"} fontSize={["4vw", "5vw", "2vw", "2xl"]}>
                         <Link href={`https://${weblink}`} isExternal>
@@ -160,7 +171,7 @@ function ProgramComponent(props) {
                         </Link>
                       </Text>
                     )
-                  })}
+                  })} */}
 
                   {/* {props.extrainfo.map((info, i) => {
                     return (

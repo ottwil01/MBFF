@@ -91,7 +91,7 @@ function ContactForm() {
           onInput={(e) => handleInput(setMessage, e)}
           mb={5}
         />
-        <Box as="button" ml="3.5" mb="16" alignSelf="baseline" textColor="brand.blue" fontSize={["3.9vw", "3.7vw", "3.3vw", "3xl"]} fontWeight="bold" onClick={handleSubmit} isLoading={loading} isDisabled={!validInput}>
+        <Box as="button" ml="3.5" mb="16" alignSelf="baseline" textColor="brand.blue" border={"4px"}borderColor={"black"} borderRadius={"full"} maxWidth={"max-content"} whiteSpace={"nowrap"} px={3} fontSize={["3.9vw", "3.7vw", "3.3vw", "3xl"]} fontWeight="bold" onClick={handleSubmit} isLoading={loading} isDisabled={!validInput}>
           Submit!
         </Box>
       </FormControl>
