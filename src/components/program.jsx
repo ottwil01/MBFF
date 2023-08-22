@@ -28,7 +28,7 @@ function Program() {
 function Combined() {
   const images = {
     "Strange Garden": sg,
-    "Bunk Puppets": bp,
+    "Shadow Puppets": bp,
     "Lip to Lung, Larynx and Tongue, Beatbox and Beyond.": lip,
     "Brunswick Village Publisher": bvp,
     "Choral Edge": ce,
