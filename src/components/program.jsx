@@ -67,6 +67,7 @@ function Combined() {
           age={item.age}
           presenter={item.presenter}
           website={item.website}
+          website1={item.website1}
           extrainfo={item.extrainfo}
         />
         ))}
@@ -95,7 +96,7 @@ function ProgramComponent(props) {
             flexDirection="column"
             w={["100%", "100%", "100%", "50%"]}
           >
-            <Text className="stretchpro" fontSize={["5vw", "6.7vw", "3.3vw", "30"]}>
+            <Text mt="10px" className="stretchpro" fontSize={["5vw", "6.7vw", "3.3vw", "30"]}>
               {props.name}
             </Text>
             <Text className="faktum-bold" fontSize={["4.8vw", "5vw", "2.6vw", "23"]}>
@@ -151,6 +152,16 @@ function ProgramComponent(props) {
                       </Text>
                     )
                   })}
+                  {props.website1.map((weblink, i) => {
+                    return (
+                      <Text textDecor={"underline"} fontSize={["4vw", "5vw", "2vw", "2xl"]}>
+                        <Link href={`https://${weblink}`} isExternal>
+                          Bunk Puppets
+                        </Link>
+                      </Text>
+                    )
+                  })}
+
                   {/* {props.extrainfo.map((info, i) => {
                     return (
                       <Text key={i} fontSize={["3vw"]}>
