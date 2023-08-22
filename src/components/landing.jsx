@@ -8,7 +8,7 @@ const things = ["Theatre", "Music", "Storytelling", "Workshops", "Installations"
 
 function Landing() {
   return (
-    <Flex id="Home" zIndex={1} maxH={["calc(100vh - 70px)", "calc(100vh - 70px)", "calc(100vh - 140px)", "calc(100vh - 140px)"]} justifyContent="space-between" flexDir={["column", "column", "row-reverse", "row-reverse"]} overflowX={"clip"} mt={["70px", "70px", "140px"]}>
+    <Flex id="Home" zIndex={1} justifyContent="space-between" flexDir={["column", "column", "row-reverse", "row-reverse"]} overflowX={"clip"} mt={["70px", "70px", "140px"]}>
       <SideBar bg="brand.red" />
       <ImageBox />
       <InfoBox />
@@ -23,7 +23,9 @@ function ImageBox() {
         <Flex w="100%" flexDirection={"column"} justifyContent={"space-between"}>
         {things.map((thing, index) => {
             return (
-              <Text w="100%" key={index} className="stretchpro" fontSize={["4.6vw", "5vw", "2.7vw", "2.8vw", "31"]} color="brand.yellow">{thing}</Text>
+              <Text w="100%" key={index} className="stretchpro" fontSize={["4.6vw", "5vw", "2.7vw", "2.8vw", "31"]} color="brand.yellow">
+                {thing}
+              </Text>
             )
         })}
         </Flex>
@@ -43,7 +45,7 @@ function ImageBox() {
         </Flex>
       </Flex>
       <Flex alignSelf="flex-end" justifyContent="flex-end">
-      <Image alignSelf={"flex-end"} src={puppet} h={["calc(100vh - 70px)", "calc(100vh - 70px)", "calc(100vh - 140px)", "calc(100vh - 140px)"]} objectFit={"contain"}/>
+      <Image alignSelf={"flex-end"} src={puppet} h={["none", "none", "none", "calc(100vh - 140px)"]} objectFit={"contain"}/>
       </Flex>
     </Flex>
   )

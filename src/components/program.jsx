@@ -180,6 +180,11 @@ function ProgramComponent(props) {
                       </Text>
                     )
                   })} */}
+                  <Text textDecor={"underline"} fontSize={["4vw", "5vw", "2vw", "2xl"]}>
+                    <Link href={`https://${props.website1}`} isExternal>
+                      Bunk Puppets
+                    </Link>
+                  </Text>
                   <Text fontSize={["3vw"]}>
                     {props.extrainfo}
                   </Text>

@@ -10,7 +10,8 @@
       "description": "Children aged 7-12 will make 3-D cardboard plants and flowers to start their own Strange Garden. These workshops teach young artists about patterns, geometry, sustainability and our relationship with nature.\n\nEliza-Jane Gilchrist is a sculptor, prop/set/puppet builder and puppeteer. In Eliza-Jane's sculpture practice her materials are often the discarded – clothes, found objects, and cardboard. She lavishes detail onto the humble and mundane and makes ugly things beautiful in an attempt to challenge perceptions of insignificance and value.", 
       "age": "Appropriate for ages 7 to 12",
       "presenter": "Presented by Eliza-Jane Gilchrist",
-      "website": ["elizajanegilchrist.com"]
+      "website": ["elizajanegilchrist.com"],
+      "extrainfo": [null]
     },
     {
       "name": "Shadow Puppets",
@@ -22,7 +23,8 @@
       "description": "In this integrated craft and performance workshop, children will create their own individual shadow character made from scraps, crafts, tinsel, tape and teddy bear fluff. Participants will then be guided in performance techniques to draw emotion and drama out of the characters they make.\nParents and adults are welcome to participate, or simply make a puppet along with the child... or just watch and snap photos (!) At the end of the workshop sessions, each participant will have made a ‘talking thumb’ shadow puppet and will have learned some techniques for making the character come alive on screen.", 
       "age": "Appropriate for ages 5 to 12",
       "presenter": "Presented by Bunk Puppets",
-      "website": ["bunk.studio"]
+      "website": ["bunk.studio"],
+      "extrainfo": [null]
     },
     {
       "name": "Lip to Lung, Larynx and Tongue, Beatbox and Beyond.",
@@ -34,7 +36,8 @@
       "description": "Around the world and into your gob, vocal explorer and songwriter Mal Webb takes you on a lip to lung journey through the physics, physiology and phrivolity of all the sounds a face can make. Sideways yodelling, beatbox/mouth drums/vocal percussion, harmonics/throat singing, character voices, mic technique, looping, advanced clapping and vocal distortion (without hurting) are all explored on the way to being a band with your voice and the lead singer too!", 
       "age": "Appropriate for ages 5 and up",
       "presenter": "Presented by Mal Webb",
-      "website": ["malwebb.com"]
+      "website": ["malwebb.com"],
+      "extrainfo": [null]
     },
     {
       "name": "Brunswick Village Publisher",
@@ -46,7 +49,8 @@
       "description": "Tell your own story, create illustrations and be published by the Brunswick Village Publisher – into your own fabulous mini-book. Author Ailsa Wild will support you on your journey to publication.\n\nAilsa Wild was a professional acrobat and whip-cracker who ran away from the circus to become a writer. She is now an author, performer and community artist with a history of deep collaboration. Ailsa has written two junior fiction series: ‘Squishy Taylor’ and ‘The Naughtiest Pixie’ both full of cheekiness and adventure (Hardie Grant Children’s Books). She is the lead writer of Small Friends Books (CSIRO Publishing and Scale Free Network) where she works with microbiologists, virologists and other scientists to translate complex science into compelling illustrated narrative picture-books. Of these ‘Zobi and the Zoox – a story of coral bleaching’ was the first ever children’s book to win the Royal Zoological Society of NSW Whitely Medal. Her collaboration, the science-based YA graphic novel The Invisible War (Scale Free Network, 2016) was a CBCA notable and won several awards.",
       "age": "Appropriate for ages 5 to 12",
       "presenter": "Presented by Author Alisa Wild",
-      "website": ["alisawild.com"]
+      "website": ["alisawild.com"],
+      "extrainfo": [null]
     },
     {
       "name": "Choral Edge",
@@ -57,7 +61,8 @@
       "description": "Choral Edge is one of Melbourne’s most innovative and engaging choirs. Led by director Juliana Kay, this troupe of versatile and talented singers seeks to expand the boundaries of choral music and delight audiences through playful, multi-dimensional projects. They will be gracing the Merri-bek Family Festival as part of our Opening Ceremony, accompanied by attendees of all ages creating lighting effects across the gigantic Brunswick Library roof.",
       "age": "Appropriate for all ages",
       "presenter": "Presented by Choral Edge",
-      "website": ["choraledge.com.au"]
+      "website": ["choraledge.com.au"],
+      "extrainfo": [null]
     },
     {
       "name": "Scavenger Hunt",
@@ -68,7 +73,9 @@
       "description": "Explore the Library precinct with a scavenger hunt devised by Coburg artist Brendan Brown.   You'll need a smartphone, and a good set of searching eyes to find all 26 clues on the list.  The Hunt should take most 7 to 11 year olds 45 min - 60 min to complete, and participants should be accompanied as they wander by an adult (to fend off grumpy unicorns and librarian ghosts).",
       "age": "Appropriate for ages 7 to 11",
       "presenter": "Presented by Brendan Brown",
-      "website": []
+      "website": [],
+      "extrainfo": [null]
+
     },
     {
       "name": "Everyones Absurd Adventure",
@@ -79,7 +86,8 @@
       "description": "You make up the story… The catch is - everyone else does too! What ridiculousness occurs when everybody is making up the same story? Can Ailsa and Robbie wrangle a plot from the chaos – all with a live music score?",
       "age": "Appropriate for all ages",
       "presenter": "Presented by Ailsa Wild and Robbie Divine",
-      "website": ["ailsawild.com", "robertdownie.com"]
+      "website": ["ailsawild.com", "robertdownie.com"],
+      "extrainfo": [null]
     },
     {
       "name": "FRITZ",
@@ -91,7 +99,8 @@
       "description": "Magic, mayhem and many things gone wrong, Fritz the world famous magician's bunny is left behind after their circus home is strangely swept away by an odd and not so natural disaster.\n\nHold onto your hats because this magic act is about to pop right off!\n\nA fusion of object puppets, animation, clown and ridiculousness this charming family show will delight audiences of all ages with its imaginative absurdity, giggles galore and pipping hot popcorn!",
       "age": "Appropriate for ages 4 and up",
       "presenter": "Presented by Emilie Bloom",
-      "website": ["lumibloomi.com"]
+      "website": ["lumibloomi.com"],
+      "extrainfo": [null]
     },
     {
       "name": "Sticks Stones Broken Bones",
@@ -103,19 +112,21 @@
       "description": "A playful world of shadow puppetry, appearing as live cartoons, full of odd-ball characters and surreal events.\n\nHaving toured all over the world, the award-winning Bunk Puppets will bring to life flying Ninjas, sneaky chickens and hilarious brain surgery! It's a visual feast for the imagination!\n\nShadow puppet characters are assembled on the spot from household items, old toys, bits of fluff and card, and transformed into live cartoons on screen. This clever show is a celebration of play and creativity, with the audience seeing puppetry performed in front of the screen and receiving a cheeky peek into how theatrical wizardry is performed.\n\nCome play in the dark!",
       "age": "Appropriate for ages 6 and up",
       "presenter": "Presented by Bunk Puppets",
-      "website1": ["bunk.studio/ssbb.html"]
+      "website1": ["bunk.studio/ssbb.html"],
+      "extrainfo": [null]
     },
     {
       "name": "Spacescape!",
       "type": "Interactive Puppetry Installation",
-      "date": "Saturday 23/9/23\n9am - 3:30pm\nSunday 24/9/23\n1pm - 4pm",
-      "venue": "Brunswick Library",
+      "date": "Sunday 24/9/23\n1pm - 4pm",
+      "venue": "Brunswick Town Hall",
       "tickets": "Ticketed",
       "descriptionShort": "It's an intergalactic town hall takeover! Enjoy video...",
       "description": "It's an intergalactic town hall takeover! Enjoy video projections of alien creatures and space walkers. Make your own starship to fly across the galaxy, faster than the speed of light (no pilot's license required).",
       "age": "Appropriate for ages 5 and up",
-      "presenter": "Presented by Hamish Fletcher",
-      "website": ["www.thingsoffoamandwood.com "]
+      "presenter": "Devised by Hamish Fletcher and Bunk Puppets",
+      "website": ["www.thingsoffoamandwood.com "],
+      "extrainfo": [null]
     },
     {
       "name": "Beasties",
