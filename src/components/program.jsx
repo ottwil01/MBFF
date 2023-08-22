@@ -163,28 +163,11 @@ function ProgramComponent(props) {
                       </Text>
                     )
                   })}
-                  {/* {props.website1.map((weblink, i) => {
-                    return (
-                      <Text textDecor={"underline"} fontSize={["4vw", "5vw", "2vw", "2xl"]}>
-                        <Link href={`https://${weblink}`} isExternal>
-                          Bunk Puppets
-                        </Link>
-                      </Text>
-                    )
-                  })} */}
-
-                  {/* {props.extrainfo.map((info, i) => {
-                    return (
-                      <Text key={i} fontSize={["3vw"]}>
-                        {info}
-                      </Text>
-                    )
-                  })} */}
-                  <Text textDecor={"underline"} fontSize={["4vw", "5vw", "2vw", "2xl"]}>
+                  {/* <Text textDecor={"underline"} fontSize={["4vw", "5vw", "2vw", "2xl"]}>
                     <Link href={`https://${props.website1}`} isExternal>
                       Bunk Puppets
                     </Link>
-                  </Text>
+                  </Text> */}
                   <Text fontSize={["3vw"]}>
                     {props.extrainfo}
                   </Text>
