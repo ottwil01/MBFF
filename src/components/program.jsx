@@ -72,7 +72,6 @@ function Combined() {
           age={item.age}
           presenter={item.presenter}
           website={item.website}
-          website1={item.website1}
           extrainfo={item.extrainfo}
         />
         ))}

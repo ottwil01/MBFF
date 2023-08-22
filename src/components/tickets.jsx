@@ -39,7 +39,7 @@ function TicketContainer() {
           <br />
           Sticks Stones Broken Bones 
           <br />
-          Ultra Galactic Hyper Spacescape
+          Spacescape!
         </Text>
       <Spacer />
       </Box>
