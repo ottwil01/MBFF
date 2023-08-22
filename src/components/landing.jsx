@@ -45,7 +45,7 @@ function ImageBox() {
         </Flex>
       </Flex>
       <Flex zIndex={1} alignSelf="flex-end" justifyContent="flex-end">
-      <Image alignSelf={"flex-end"} src={puppet} h={["none", "none", "none", "calc(100vh - 140px)"]} objectFit={"contain"}/>
+      <Image alignSelf={"flex-end"} src={puppet} h={["none", "none", "none", "none"]} objectFit={"contain"}/>
       </Flex>
     </Flex>
   )
