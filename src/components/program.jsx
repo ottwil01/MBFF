@@ -34,7 +34,7 @@ function Combined() {
     "Brunswick Village Publisher": bvp,
     "Choral Edge": ce,
     "Scavenger Hunt": sh,
-    "Everyones Absurd Adventure": eaa,
+    "Everyone's Absurd Adventure": eaa,
     "FRITZ": fritz,
     "Sticks Stones Broken Bones": ssbb,
     "Spacescape!": space,
