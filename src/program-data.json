@@ -49,12 +49,12 @@
       "website": ["alisawild.com"]
     },
     {
-      "name": "Choral Edge",
+      "name": "Opening Ceremony feat. Choral Edge",
       "type": "Music Performance Accompanied by Light and Projections",
       "date": "Friday 22/9/23\n7pm - 7:30pm\n(30 minutes)",
       "venue": "Brunswick Library",
       "descriptionShort": "Choral Edge is one of Melbourne’s most innovative and...",
-      "description": "Choral Edge is one of Melbourne’s most innovative and engaging choirs. Led by director Juliana Kay, this troupe of versatile and talented singers seeks to expand the boundaries of choral music and delight audiences through playful, multi-dimensional projects. They will be gracing the Merri-bek Family Festival as part of our Opening Ceremony, accompanied by attendees of all ages creating lighting effects across the gigantic Brunswick Library roof.",
+      "description": "Welcome to Country, Speeches, Stories, Lighting effects and a special performance from Choral Edge.\n\nChoral Edge is one of Melbourne’s most innovative and engaging choirs. Led by director Juliana Kay, this troupe of versatile and talented singers seeks to expand the boundaries of choral music and delight audiences through playful, multi-dimensional projects. They will be gracing the Merri-bek Family Festival as part of our Opening Ceremony, accompanied by attendees of all ages creating lighting effects across the gigantic Brunswick Library roof.",
       "age": "Appropriate for all ages",
       "presenter": "Presented by Choral Edge",
       "website": ["choraledge.com.au"]
@@ -70,17 +70,6 @@
       "presenter": "Presented by Brendan Brown"
     },
     {
-      "name": "Everyone's Absurd Adventure",
-      "type": "Interactive & Improvised",
-      "date": "Saturday 23/9/23\n9:15am - 10am\n(45 minutes)\n2pm - 2:45pm\n(45 minutes)",
-      "venue": "Atrium",
-      "descriptionShort": "You make up the story… The catch is - everyone else does...",
-      "description": "You make up the story… The catch is - everyone else does too! What ridiculousness occurs when everybody is making up the same story? Can Ailsa and Robbie wrangle a plot from the chaos – all with a live music score?",
-      "age": "Appropriate for all ages",
-      "presenter": "Presented by Ailsa Wild and Robbie Divine",
-      "website": ["ailsawild.com", "robertdownie.com"]
-    },
-    {
       "name": "FRITZ",
       "type": "Clown and “Magic” Show",
       "date": "Saturday 23/9/23\n10:15am - 11am\n(45 minutes)",
@@ -93,6 +82,24 @@
       "website": ["lumibloomi.com"]
     },
     {
+      "name": "VR Cinema Clowns",
+      "type": "Clown and “Magic” Show",
+      "date": "Saturday 23/9/23\n11am - 3:30pm\nSunday 24/9/23\n1pm - 4pm",
+      "venue": "Brunswick Library",
+      "descriptionShort": "Strap on a Virtual Reality (VR) headset and come experience...",
+      "description": "Strap on a Virtual Reality (VR) headset and come experience Brunswick through the eyes of a special tiny guide.  In this unique immersive 360 degree cinema project, commissioned by MBFF, performers Emilie Bloom, Hamish Fletcher and Meredith Cole dare you to shout 'It's behind you!' ('cause it really is!) VR headset provided. 10 min duration.",
+      "age": "Appropriate for ages 7 and up"
+    },
+    {
+      "name": "Musical Storytime",
+      "type": "Storybook reading accompanied by live music",
+      "date": "Saturday 23/9/23\n11:15am - 11:45am\n(30 minutes)\n1:15pm - 1:45pm\n(30 minutes)",
+      "venue": "Counihan Gallery",
+      "descriptionShort": "Join Brunswick's favourite children's librarian Barbara...",
+      "description": "Join Brunswick's favourite children's librarian Barbara Micozzi as she re-imagines her favourite children's books read with musical interpretation by violinist Stephanie Eldridge (of the Australian Romantic and Classical Orchestra). A musical and story session set in the relaxing art gallery spaces of the Counihan Gallery.",
+      "age": "Appropriate for all ages"
+    },
+    {
       "name": "Sticks Stones Broken Bones",
       "type": "Shadow Puppet Theatre",
       "date": "Saturday 23/9/23\n12:15pm - 1pm\n(45 minutes)\n3pm - 3:45pm\n(45 minutes)",
@@ -102,7 +109,19 @@
       "description": "A playful world of shadow puppetry, appearing as live cartoons, full of odd-ball characters and surreal events.\n\nHaving toured all over the world, the award-winning Bunk Puppets will bring to life flying Ninjas, sneaky chickens and hilarious brain surgery! It's a visual feast for the imagination!\n\nShadow puppet characters are assembled on the spot from household items, old toys, bits of fluff and card, and transformed into live cartoons on screen. This clever show is a celebration of play and creativity, with the audience seeing puppetry performed in front of the screen and receiving a cheeky peek into how theatrical wizardry is performed.\n\nCome play in the dark!",
       "age": "Appropriate for ages 6 and up",
       "presenter": "Presented by Bunk Puppets",
-      "website1 ": ["bunk.studio/ssbb.html"]
+      "website": ["bunk.studio/ssbb.html"],
+      "websteCustom": "Bunk Puppets"
+    },
+    {
+      "name": "Everyone's Absurd Adventure",
+      "type": "Interactive & Improvised",
+      "date": "Saturday 23/9/23\n9:15am - 10am\n(45 minutes)\n2pm - 2:45pm\n(45 minutes)",
+      "venue": "Atrium",
+      "descriptionShort": "You make up the story… The catch is - everyone else does...",
+      "description": "You make up the story… The catch is - everyone else does too! What ridiculousness occurs when everybody is making up the same story? Can Ailsa and Robbie wrangle a plot from the chaos – all with a live music score?",
+      "age": "Appropriate for all ages",
+      "presenter": "Presented by Ailsa Wild and Robbie Divine",
+      "website": ["ailsawild.com", "robertdownie.com"]
     },
     {
       "name": "Spacescape!",
@@ -114,7 +133,7 @@
       "description": "It's an intergalactic town hall takeover! Enjoy video projections of alien creatures and space walkers. Make your own starship to fly across the galaxy, faster than the speed of light (no pilot's license required).",
       "age": "Appropriate for ages 5 and up",
       "presenter": "Devised by Hamish Fletcher and Bunk Puppets",
-      "website": ["www.thingsoffoamandwood.com "]
+      "website": ["www.thingsoffoamandwood.com"]
     },
     {
       "name": "Beasties",
@@ -126,7 +145,7 @@
       "age": "Appropriate for all ages",
       "presenter": "Presented by Kinetic Theatre",
       "website": ["kinetictheatre.com"],
-      "extrainfo": ["And even more to be announced!"]
+      "extrainfo": "And even more to be announced!"
     }
   ]
 }

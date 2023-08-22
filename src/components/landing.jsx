@@ -39,7 +39,7 @@ function ImageBox() {
               isRound={true}
               target="_blank"
               variant="unstlyed"
-              href="https://events.humanitix.com/mbff"
+              href="https://events.humanitix.com/mbff/tickets"
             />
           </motion.div>
         </Flex>

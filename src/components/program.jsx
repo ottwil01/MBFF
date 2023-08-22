@@ -12,6 +12,8 @@ import fritz from "/fritz.png"
 import ssbb from "/ssbb.png"
 import space from "/spacescape.png"
 import beasties from "/beasties.png"
+import vr from "/vr.png"
+import ms from "/musical-storytime.png"
 import { useState } from "react"
 import { motion } from "framer-motion"
 
@@ -32,13 +34,15 @@ function Combined() {
     "Shadow Puppets": bp,
     "Lip to Lung, Larynx and Tongue, Beatbox and Beyond.": lip,
     "Brunswick Village Publisher": bvp,
-    "Choral Edge": ce,
+    "Opening Ceremony feat. Choral Edge": ce,
     "Scavenger Hunt": sh,
     "Everyone's Absurd Adventure": eaa,
     "FRITZ": fritz,
     "Sticks Stones Broken Bones": ssbb,
     "Spacescape!": space,
-    "Beasties": beasties
+    "Beasties": beasties,
+    "VR Cinema Clowns": vr,
+    "Musical Storytime": ms
   }
   return (
     <Flex
@@ -141,7 +145,7 @@ function ProgramComponent(props) {
                           </Button>}
                     target="_blank"
                     variant="unstlyed"
-                    href="https://events.humanitix.com/mbff"
+                    href="https://events.humanitix.com/mbff/tickets"
                   />
                 </motion.div>
               </Flex>
@@ -154,6 +158,11 @@ function ProgramComponent(props) {
                   <Text fontSize={["4vw", "5vw", "2vw", "2xl"]}>
                     {props.presenter}
                   </Text>
+                  {/* <Text textDecor={"underline"} fontSize={["4vw", "5vw", "2vw", "2xl"]}>
+                    <Link href={`https://${props.websiteCustom}`} isExternal>
+                      Bunk Puppets
+                    </Link>
+                  </Text> */}
                   {props.website.map((weblink, i) => {
                     return (
                       <Text textDecor={"underline"} key={i} fontSize={["4vw", "5vw", "2vw", "2xl"]}>
@@ -163,14 +172,11 @@ function ProgramComponent(props) {
                       </Text>
                     )
                   })}
-                  {/* <Text textDecor={"underline"} fontSize={["4vw", "5vw", "2vw", "2xl"]}>
-                    <Link href={`https://${props.website1}`} isExternal>
-                      Bunk Puppets
-                    </Link>
-                  </Text> */}
-                  <Text fontSize={["3vw"]}>
+                  {props.extrainfo &&
+                    <Text fontSize={["4vw", "5vw", "2vw", "2xl"]}>
                     {props.extrainfo}
-                  </Text>
+                    </Text>
+                  }
                 </>
                 }
               <Flex w="100%" justifyContent={"center"}>
