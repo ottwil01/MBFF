@@ -40,7 +40,7 @@ function ImageBox() {
           </motion.div>
         </Flex>
       </Flex>
-      <Flex boxSize="100%" justifyContent="flex-end">
+      <Flex boxSize="100%" alignSelf="flex-end" justifyContent="flex-end">
       <Image alignSelf={"flex-end"} src={puppet} h={["86vw", "87vw", "55vw", "50vw", "3xl"]} objectFit={"contain"}/>
       </Flex>
     </Flex>
