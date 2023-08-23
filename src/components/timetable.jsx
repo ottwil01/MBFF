@@ -26,7 +26,7 @@ function TimetableContainer() {
           </Text>
         <Flex mb="20px" mx="20px" maxW="100%" objectFit={"cover"} justifyContent={"center"}>
           <Image  w="90%" display={["none", "none", "none", "flex", "flex"]} src={[timetableh]} boxSize={"max-content"} alt="horizontal-timetable"/>
-          <Image w="90%" h="100%" display={["flex", "flex", "flex", "none", "none"]} src={[timetablev]} boxSize={"max-content"} alt="vertical-timetable" />
+          <Image w="90%" display={["flex", "flex", "flex", "none", "none"]} src={[timetablev]} boxSize={"max-content"} alt="vertical-timetable" />
         </Flex>
       </Flex>
     );
