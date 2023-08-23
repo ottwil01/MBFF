@@ -1,4 +1,4 @@
-import { Flex, Text, Image, Box } from "@chakra-ui/react"
+import { Flex, Text, Image } from "@chakra-ui/react"
 import { SideBar } from "./util"
 import timetableh from "/timetable-h.png"
 import timetablev from "/timetable-v.png"
