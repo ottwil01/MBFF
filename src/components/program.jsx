@@ -67,6 +67,7 @@ function Combined() {
           date={item.date}
           venue={item.venue}
           tickets={item.tickets}
+          tickets1={item.tickets1}
           descriptionShort={item.descriptionShort}
           description={item.description}
           age={item.age}
@@ -149,40 +150,47 @@ function ProgramComponent(props) {
                 </motion.div>
               </Flex>
             }
-                <Text fontSize={["4vw", "5vw", "2vw", "2xl"]}>
-                  {!isShowMore ? props.descriptionShort : props.description}
+            { props.tickets1 &&
+              <Box px={3} className="arrow_box">
+                <Text className={"stretchpro"} fontSize={["4vw", "4vw", "2.5vw", "18"]}>
+                  {props.tickets1}
                 </Text>
-                {isShowMore &&
-                <>
-                  <Text fontSize={["4vw", "5vw", "2vw", "2xl"]}>
-                    {props.presenter}
-                  </Text>
-                  {/* <Text textDecor={"underline"} fontSize={["4vw", "5vw", "2vw", "2xl"]}>
-                    <Link href={`https://${props.websiteCustom}`} isExternal>
-                      Bunk Puppets
+              </Box>
+            }
+            <Text fontSize={["4vw", "5vw", "2vw", "2xl"]}>
+              {!isShowMore ? props.descriptionShort : props.description}
+            </Text>
+            {isShowMore &&
+            <>
+              <Text fontSize={["4vw", "5vw", "2vw", "2xl"]}>
+                {props.presenter}
+              </Text>
+              {/* <Text textDecor={"underline"} fontSize={["4vw", "5vw", "2vw", "2xl"]}>
+                <Link href={`https://${props.websiteCustom}`} isExternal>
+                  Bunk Puppets
+                </Link>
+              </Text> */}
+              {props.website.map((weblink, i) => {
+                return (
+                  <Text textDecor={"underline"} key={i} fontSize={["4vw", "5vw", "2vw", "2xl"]}>
+                    <Link href={`https://${weblink}`} isExternal>
+                      {weblink}
                     </Link>
-                  </Text> */}
-                  {props.website.map((weblink, i) => {
-                    return (
-                      <Text textDecor={"underline"} key={i} fontSize={["4vw", "5vw", "2vw", "2xl"]}>
-                        <Link href={`https://${weblink}`} isExternal>
-                          {weblink}
-                        </Link>
-                      </Text>
-                    )
-                  })}
-                  {props.extrainfo &&
-                    <Text fontSize={["4vw", "5vw", "2vw", "2xl"]}>
-                    {props.extrainfo}
-                    </Text>
-                  }
-                </>
-                }
-              <Flex w="100%" justifyContent={"center"}>
-                <Button color="brand.blue" fontSize={["4vw", "5vw", "2vw", "2xl"]} variant="unstlyed" onClick={() => setIsShowMore(!isShowMore)}>
-                  {!isShowMore ? "Read More" : "Read Less" }
-                </Button>
-              </Flex>
+                  </Text>
+                )
+              })}
+              {props.extrainfo &&
+                <Text fontSize={["4vw", "5vw", "2vw", "2xl"]}>
+                {props.extrainfo}
+                </Text>
+              }
+            </>
+            }
+            <Flex w="100%" justifyContent={"center"}>
+              <Button color="brand.blue" fontSize={["4vw", "5vw", "2vw", "2xl"]} variant="unstlyed" onClick={() => setIsShowMore(!isShowMore)}>
+                {!isShowMore ? "Read More" : "Read Less" }
+              </Button>
+            </Flex>
           </Flex>
           <Flex w={["100%", "100%", "100%", "45%"]} justifyContent={["center", "center", "center", "end"]}>
             <Image

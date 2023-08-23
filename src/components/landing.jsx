@@ -45,7 +45,7 @@ function ImageBox() {
         </Flex>
       </Flex>
       <Flex zIndex={1} alignSelf="flex-end" justifyContent="flex-end">
-      <Image alignSelf={"flex-end"} src={puppet} h={["none", "none", "none", "none"]} objectFit={"contain"}/>
+      <Image alignSelf={"flex-end"} src={puppet} maxH={["none", "none", "max-content", "max-content", "700px"]} h={["none", "none", "none", "max-content", "-moz-max-content"]} objectFit={"contain"}/>
       </Flex>
     </Flex>
   )
@@ -62,7 +62,7 @@ function RedStar() {
 
 function InfoBox() {
   return (
-    <Flex w={["100%", "100%", "40%"]} bg='brand.green' color="white" px={8} pt={8} pb={8} fontSize={["4vw", "4vw", "2.5vw", "2.4vw", "2.5vw"]}>
+    <Flex w={["100%", "100%", "40%"]} bg='brand.green' color="white" px={8} pt={8} pb={8} fontSize={["4vw", "4vw", "2.5vw", "2.4vw", "3xl"]}>
       <Text verticalAlign={"top"} className="faktum-bold" w="100%">
         High quality art for the whole family, and either low-cost or free!
         <br/><br/>

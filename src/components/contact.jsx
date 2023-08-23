@@ -17,10 +17,10 @@ function ContactForm() {
     setLoading(true)
 
     const params = {
-      to_name: "merribekfamilyfestival@gmail.com",
+      to_name: "mbffcontact@gmail.com",
       from_name: email,
       message: message,
-    };
+    }
 
     emailjs
       .send("service_p2limpf", "template_mlrsiqa", params, "iwfGwdYk2mJ1c1ns0")
@@ -33,7 +33,7 @@ function ContactForm() {
           console.log(error.status, error.text)
           setLoading(false)
         }
-      );
+      )
 
     setEmail("")
     setMessage("")
@@ -91,7 +91,7 @@ function ContactForm() {
           onInput={(e) => handleInput(setMessage, e)}
           mb={5}
         />
-        <Box as="button" ml="3.5" mb="16" alignSelf="baseline" textColor="brand.blue" border={"4px"}borderColor={"brand.blue"} borderRadius={"full"} maxWidth={"max-content"} whiteSpace={"nowrap"} px={3} fontSize={["3.9vw", "3.7vw", "3.3vw", "3xl"]} fontWeight="bold" onClick={handleSubmit} isLoading={loading} isDisabled={!validInput}>
+        <Box as="button" ml="3.5" mb="16" alignSelf="baseline" textColor="brand.blue" border={"4px"} borderColor={"brand.blue"} borderRadius={"full"} maxWidth={"max-content"} whiteSpace={"nowrap"} px={3} fontSize={["3.9vw", "3.7vw", "3.3vw", "3xl"]} fontWeight="bold" onClick={handleSubmit} isLoading={loading} isDisabled={!validInput}>
           Submit!
         </Box>
       </FormControl>
