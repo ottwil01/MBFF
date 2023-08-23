@@ -23,7 +23,7 @@ function ImageBox() {
         <Flex w="100%" flexDirection={"column"} justifyContent={"space-between"}>
         {things.map((thing, index) => {
             return (
-              <Text w="100%" key={index} className="stretchpro" fontSize={["4.6vw", "5vw", "2.7vw", "2.8vw", "31"]} color="brand.yellow">
+              <Text w="100%" key={index} className="stretchpro" fontSize={["4.9vw", "5.6vw", "3.3vw", "2.8vw", "40"]} color="brand.yellow">
                 {thing}
               </Text>
             )
@@ -62,8 +62,8 @@ function RedStar() {
 
 function InfoBox() {
   return (
-    <Flex w={["100%", "100%", "40%"]} bg='brand.green' color="white" px={8} pt={8} pb={8} fontSize={["4vw", "4vw", "2.5vw", "2.4vw", "3xl"]}>
-      <Text verticalAlign={"top"} className="faktum-bold" w="100%">
+    <Flex w={["100%", "100%", "40%"]} bg='brand.green' color="white" px={8} pt={8} pb={8} fontSize={["4vw", "4vw", "2.5vw", "2.4vw", "29.5"]} alignItems={["none", "none", "none", "center"]}>
+      <Text className="faktum-bold" w="100%">
         High quality art for the whole family, and either low-cost or free!
         <br/><br/>
         Running in the Brunswick Library, Brunswick Town Hall and Counihan Gallery from September 18th - 24th.
