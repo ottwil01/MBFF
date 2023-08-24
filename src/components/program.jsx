@@ -105,6 +105,12 @@ function ProgramComponent(props) {
             <Text className="faktum-bold" fontSize={["4.8vw", "5vw", "2.6vw", "23"]}>
               {props.type}
             </Text>
+            <Text  className="faktum-bold" fontWeight={"ex"} fontSize={["4.4vw", "4.6vw", "2.6vw", "23"]}>
+              {props.date}
+            </Text>
+            <Text fontStyle="italic" fontSize={["4vw", "5vw", "2vw", "2xl"]}>
+              {props.age}
+            </Text>
             <Box
               border={"4px"}
               borderColor={"black"}
@@ -117,13 +123,6 @@ function ProgramComponent(props) {
                 {props.venue}
               </Text>
             </Box>
-            <Text  className="faktum-bold" fontWeight={"ex"} fontSize={["4.4vw", "4.6vw", "2.6vw", "23"]}>
-              {props.date}
-            </Text>
-            <Text fontStyle="italic" fontSize={["4vw", "5vw", "2vw", "2xl"]}>
-              {props.age}
-            </Text>
-            <Box justifyItems={"center"}>
               { props.tickets &&
                 <Flex>
                   <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
@@ -150,13 +149,12 @@ function ProgramComponent(props) {
                 </Flex>
               }
               { props.notickets &&
-                <Box px={3} className="arrow_box">
+                <Box ml={["7vw", "4.4vw", "", "", ""]} px={3} className="arrow_box">
                   <Text className={"stretchpro"} textAlign={"justify"} fontSize={["4vw", "4vw", "2.5vw", "18"]}>
                     {props.notickets}
                   </Text>
                 </Box>
               }
-            </Box>
             <Text fontSize={["4vw", "5vw", "2vw", "2xl"]}>
               {!isShowMore ? props.descriptionShort : props.description}
             </Text>
