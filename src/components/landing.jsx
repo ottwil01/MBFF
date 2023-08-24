@@ -1,6 +1,6 @@
 import { Flex, Text, Image, IconButton } from "@chakra-ui/react"
 import redStar from "/red-star.png"
-import puppet from "/puppet-crop-new.png"
+import puppet from "/puppet-crop.png"
 import { SideBar } from "./util"
 import { motion } from "framer-motion"
 
