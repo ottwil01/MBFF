@@ -80,7 +80,7 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                         mr="5px"
                         variant="unstyled"
                         target="_blank"
-                        href={"https://www.facebook.com/events/597900092510902"}
+                        href={"https://www.facebook.com/merribekfamilyfestival"}
                     />
                     <IconButton
                         as="a"
@@ -148,7 +148,7 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                         mr="5px"
                         variant="unstyled"
                         target="_blank"
-                        href={"https://www.facebook.com/events/597900092510902"}
+                        href={"https://www.facebook.com/merribekfamilyfestival"}
                     />
                     <IconButton
                         as="a"
