@@ -1,18 +1,18 @@
 import { Flex, Image, Text, Box, Link, Button, IconButton } from "@chakra-ui/react"
 import ProgramData from "../program-data.json"
 import { SideBar } from "./util"
-import sg from "/strange-garden.png"
-import bp from "/bunk-puppets.png"
-import lip from "/lip-to-lung.png"
-import bvp from "/brunswick-village-publisher.png"
-import ce from "/choral-edge.png"
-import sh from "/scavenger-hunt.png"
-import eaa from "/everyones-absurd-adventure.png"
-import fritz from "/fritz.png"
-import ssbb from "/ssbb.png"
-import space from "/spacescape.png"
-import vr from "/vr.png"
-import ms from "/musical-storytime.png"
+import sg from "/program/strange-garden.png"
+import bp from "/program/bunk-puppets.png"
+import lip from "/program/lip-to-lung.png"
+import bvp from "/program/brunswick-village-publisher.png"
+import ce from "/program/choral-edge.png"
+import sh from "/program/scavenger-hunt.png"
+import eaa from "/program/everyones-absurd-adventure.png"
+import fritz from "/program/fritz.png"
+import ssbb from "/program/ssbb.png"
+import space from "/program/spacescape.png"
+import vr from "/program/vr.png"
+import ms from "/program/musical-storytime.png"
 import { useState } from "react"
 import { motion } from "framer-motion"
 
@@ -33,7 +33,7 @@ function Combined() {
     "Shadow Puppets": bp,
     "Lip to Lung, Larynx and Tongue, Beatbox and Beyond.": lip,
     "Brunswick Village Publisher": bvp,
-    "Festival Opening Ceremony feat. Choral Edge": ce,
+    "Festival Opening feat. Choral Edge": ce,
     "Scavenger Hunt": sh,
     "Everyone's Absurd Adventure": eaa,
     "FRITZ": fritz,

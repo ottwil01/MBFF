@@ -1,7 +1,7 @@
 import { Flex, Text, Image } from "@chakra-ui/react"
 import { SideBar } from "./util"
-import timetableh from "/timetable-h.png"
-import timetablev from "/timetable-v.png"
+import timetableh from "/timetable/timetable-h.png"
+import timetablev from "/timetable/timetable-v.png"
 
 
 function Timetable() {
