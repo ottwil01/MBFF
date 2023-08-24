@@ -11,7 +11,6 @@ import eaa from "/everyones-absurd-adventure.png"
 import fritz from "/fritz.png"
 import ssbb from "/ssbb.png"
 import space from "/spacescape.png"
-import beasties from "/beasties.png"
 import vr from "/vr.png"
 import ms from "/musical-storytime.png"
 import { useState } from "react"
@@ -34,13 +33,12 @@ function Combined() {
     "Shadow Puppets": bp,
     "Lip to Lung, Larynx and Tongue, Beatbox and Beyond.": lip,
     "Brunswick Village Publisher": bvp,
-    "Opening Ceremony feat. Choral Edge": ce,
+    "Festival Opening Ceremony feat. Choral Edge": ce,
     "Scavenger Hunt": sh,
     "Everyone's Absurd Adventure": eaa,
     "FRITZ": fritz,
     "Sticks Stones Broken Bones": ssbb,
     "Spacescape!": space,
-    "Beasties": beasties,
     "VR Cinema Clowns": vr,
     "Musical Storytime": ms
   }

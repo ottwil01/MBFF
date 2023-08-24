@@ -1,6 +1,43 @@
 {
   "data": [
     {
+      "name": "FRITZ",
+      "type": "Clown and “Magic” Show",
+      "date": "Saturday 23/9/23\n10:15am - 11am\n(45 minutes)",
+      "venue": "Brunswick Town Hall",
+      "tickets": "Tickets",
+      "descriptionShort": "Magic, mayhem and many things gone wrong, Fritz the world...",
+      "description": "Magic, mayhem and many things gone wrong, Fritz the world famous magician's bunny is left behind after their circus home is strangely swept away by an odd and not so natural disaster.\n\nHold onto your hats because this magic act is about to pop right off!\n\nA fusion of object puppets, animation, clown and ridiculousness this charming family show will delight audiences of all ages with its imaginative absurdity, giggles galore and pipping hot popcorn!",
+      "age": "Appropriate for ages 4 and up",
+      "presenter": "Presented by Emilie Bloom",
+      "website": ["lumibloomi.com"]
+    },
+    {
+      "name": "Sticks Stones Broken Bones",
+      "type": "Shadow Puppet Theatre",
+      "date": "Saturday 23/9/23\n12:15pm - 1pm\n(45 minutes)\n3pm - 3:45pm\n(45 minutes)",
+      "venue": "Brunswick Town Hall",
+      "tickets": "Tickets",
+      "descriptionShort": "A playful world of shadow puppetry, appearing as live...",
+      "description": "A playful world of shadow puppetry, appearing as live cartoons, full of odd-ball characters and surreal events.\n\nHaving toured all over the world, the award-winning Bunk Puppets will bring to life flying Ninjas, sneaky chickens and hilarious brain surgery! It's a visual feast for the imagination!\n\nShadow puppet characters are assembled on the spot from household items, old toys, bits of fluff and card, and transformed into live cartoons on screen. This clever show is a celebration of play and creativity, with the audience seeing puppetry performed in front of the screen and receiving a cheeky peek into how theatrical wizardry is performed.\n\nCome play in the dark!",
+      "age": "Appropriate for ages 6 and up",
+      "presenter": "Presented by Bunk Puppets",
+      "website": ["bunk.studio/ssbb.html"],
+      "websteCustom": "Bunk Puppets"
+    },
+    {
+      "name": "Spacescape!",
+      "type": "Interactive Puppetry Installation",
+      "date": "Sunday 24/9/23\n1pm - 4pm",
+      "venue": "Brunswick Town Hall",
+      "tickets": "Tickets",
+      "descriptionShort": "It's an intergalactic town hall takeover! Enjoy video...",
+      "description": "It's an intergalactic Town Hall takeover! Enjoy video projections of alien creatures and space walkers. Make your own starship to fly across the galaxy, faster than the speed of light (no pilot's license required). Dodge animatronic alien creatures from Kinetic Theatre, and Oozlum, the giant extraterrestrial bird from Golden Scissor Puppets. Space soundscapes included!",
+      "age": "Appropriate for ages 5 and up",
+      "presenter": "Devised by Bunk Puppets, Hamish Fletcher and Robert Divine",
+      "website": ["www.thingsoffoamandwood.com", "www.kinetictheatre.com"]
+    },
+    {
       "name": "Strange Garden",
       "type": "Cardboard Craft and Sculpture Workshop",
       "date": "Monday 18/9/23\n10:30am - 12pm\n(1 hour 30 mins)",
@@ -49,7 +86,7 @@
       "website": ["alisawild.com"]
     },
     {
-      "name": "Opening Ceremony feat. Choral Edge",
+      "name": "Festival Opening Ceremony feat. Choral Edge",
       "type": "Music Performance Accompanied by Light and Projections",
       "date": "Friday 22/9/23\n7pm - 7:30pm\n(30 minutes)",
       "venue": "Brunswick Library",
@@ -71,18 +108,6 @@
       "age": "Appropriate for ages 7 to 11",
       "presenter": "Presented by Brendan Brown",
       "website": []
-    },
-    {
-      "name": "FRITZ",
-      "type": "Clown and “Magic” Show",
-      "date": "Saturday 23/9/23\n10:15am - 11am\n(45 minutes)",
-      "venue": "Brunswick Town Hall",
-      "tickets": "Tickets",
-      "descriptionShort": "Magic, mayhem and many things gone wrong, Fritz the world...",
-      "description": "Magic, mayhem and many things gone wrong, Fritz the world famous magician's bunny is left behind after their circus home is strangely swept away by an odd and not so natural disaster.\n\nHold onto your hats because this magic act is about to pop right off!\n\nA fusion of object puppets, animation, clown and ridiculousness this charming family show will delight audiences of all ages with its imaginative absurdity, giggles galore and pipping hot popcorn!",
-      "age": "Appropriate for ages 4 and up",
-      "presenter": "Presented by Emilie Bloom",
-      "website": ["lumibloomi.com"]
     },
     {
       "name": "VR Cinema Clowns",
@@ -107,19 +132,6 @@
       "website": []
     },
     {
-      "name": "Sticks Stones Broken Bones",
-      "type": "Shadow Puppet Theatre",
-      "date": "Saturday 23/9/23\n12:15pm - 1pm\n(45 minutes)\n3pm - 3:45pm\n(45 minutes)",
-      "venue": "Brunswick Town Hall",
-      "tickets": "Tickets",
-      "descriptionShort": "A playful world of shadow puppetry, appearing as live...",
-      "description": "A playful world of shadow puppetry, appearing as live cartoons, full of odd-ball characters and surreal events.\n\nHaving toured all over the world, the award-winning Bunk Puppets will bring to life flying Ninjas, sneaky chickens and hilarious brain surgery! It's a visual feast for the imagination!\n\nShadow puppet characters are assembled on the spot from household items, old toys, bits of fluff and card, and transformed into live cartoons on screen. This clever show is a celebration of play and creativity, with the audience seeing puppetry performed in front of the screen and receiving a cheeky peek into how theatrical wizardry is performed.\n\nCome play in the dark!",
-      "age": "Appropriate for ages 6 and up",
-      "presenter": "Presented by Bunk Puppets",
-      "website": ["bunk.studio/ssbb.html"],
-      "websteCustom": "Bunk Puppets"
-    },
-    {
       "name": "Everyone's Absurd Adventure",
       "type": "Interactive & Improvised",
       "date": "Saturday 23/9/23\n9:15am - 10am\n(45 minutes)\n2pm - 2:45pm\n(45 minutes)",
@@ -130,31 +142,6 @@
       "age": "Appropriate for all ages",
       "presenter": "Presented by Ailsa Wild and Robbie Divine",
       "website": ["ailsawild.com", "robertdownie.com"]
-    },
-    {
-      "name": "Spacescape!",
-      "type": "Interactive Puppetry Installation",
-      "date": "Sunday 24/9/23\n1pm - 4pm",
-      "venue": "Brunswick Town Hall",
-      "tickets": "Tickets",
-      "descriptionShort": "It's an intergalactic town hall takeover! Enjoy video...",
-      "description": "It's an intergalactic town hall takeover! Enjoy video projections of alien creatures and space walkers. Make your own starship to fly across the galaxy, faster than the speed of light (no pilot's license required).",
-      "age": "Appropriate for ages 5 and up",
-      "presenter": "Devised by Hamish Fletcher and Bunk Puppets",
-      "website": ["www.thingsoffoamandwood.com"]
-    },
-    {
-      "name": "Beasties",
-      "type": "Animatronic Puppetry Installation",
-      "date": "Sunday 24/9/23\n1pm - 4pm\n(3 hours)",
-      "venue": "Atrium",
-      "tickets1": "Not Ticketed",
-      "descriptionShort": "A square cow quacking for biscuits, a squirting pig, a one...",
-      "description": "A square cow quacking for biscuits, a squirting pig, a one eyed blue cat, dancing carrots, and a giant roaming poo, Beasties is a petting zoo with a difference.. This strange but endearing assortment of electronic “animals” will keep young and old enchanted and highly amused. Set up to be partly observational and partly interactive, there’s fish birds to feed and Deloras will sing for you if you pat her enough. There’s also a pair of keepers to oversee the animals, answer your questions, and keep the poo from following you home.",
-      "age": "Appropriate for all ages",
-      "presenter": "Presented by Kinetic Theatre",
-      "website": ["kinetictheatre.com"],
-      "extrainfo": "And even more to be announced!"
     }
   ]
 }
