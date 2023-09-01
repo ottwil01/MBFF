@@ -1,7 +1,7 @@
 import { Box, Flex, Text, Image } from "@chakra-ui/react"
-import mbLogo from "/merri-bek.png"
-import vicLogo from "/vic-gov.png"
-import arts from "/arts-merri-bek.png"
+import mbLogo from "/footer/merri-bek.png"
+import vicLogo from "/footer/vic-gov.png"
+import arts from "/footer/arts-merri-bek.png"
 
 const logos = [mbLogo, arts, vicLogo]
 

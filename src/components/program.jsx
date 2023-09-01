@@ -5,6 +5,7 @@ import sg from "/program/strange-garden.png"
 import bp from "/program/bunk-puppets.png"
 import lip from "/program/lip-to-lung.png"
 import bvp from "/program/brunswick-village-publisher.png"
+import fp from "/program/finding-a-poem.png"
 import ce from "/program/choral-edge.png"
 import sh from "/program/scavenger-hunt.png"
 import eaa from "/program/everyones-absurd-adventure.png"
@@ -15,8 +16,6 @@ import vr from "/program/vr.png"
 import ms from "/program/musical-storytime.png"
 import { useState } from "react"
 import { motion } from "framer-motion"
-
-
 
 function Program() {
   return (
@@ -33,6 +32,7 @@ function Combined() {
     "Shadow Puppets": bp,
     "Lip to Lung, Larynx and Tongue, Beatbox and Beyond.": lip,
     "Brunswick Village Publisher": bvp,
+    "Finding a Poem": fp,
     "Festival Opening feat. Choral Edge": ce,
     "Scavenger Hunt": sh,
     "Everyone's Absurd Adventure": eaa,
@@ -149,7 +149,7 @@ function ProgramComponent(props) {
                 </Flex>
               }
               { props.notickets &&
-                <Box ml={["7vw", "4.4vw", "", "", ""]} px={3} className="arrow_box">
+                <Box ml={["7vw", "4.4zvw", "", "", ""]} px={3} className="arrow_box">
                   <Text className={"stretchpro"} textAlign={"justify"} fontSize={["4vw", "4vw", "2.5vw", "18"]}>
                     {props.notickets}
                   </Text>
