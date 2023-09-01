@@ -14,6 +14,7 @@ import ssbb from "/program/ssbb.png"
 import space from "/program/spacescape.png"
 import vr from "/program/vr.png"
 import ms from "/program/musical-storytime.png"
+import "/timetable.pdf"
 import { useState } from "react"
 import { motion } from "framer-motion"
 
@@ -42,6 +43,19 @@ function Combined() {
     "VR Cinema Clowns": vr,
     "Musical Storytime": ms
   }
+  // const onButtonClick = () => {
+  //   // using Java Script method to get PDF file
+  //   fetch('/timetable.pdf').then(response => {
+  //       response.blob().then(blob => {
+  //           // Creating new object of PDF file
+  //           const fileURL = window.URL.createObjectURL(blob)
+  //           // Setting various property values
+  //           let alink = document.createElement('a')
+  //           alink.href = fileURL
+  //           alink.download = 'SamplePDF.pdf'
+  //           alink.click()
+  //       })
+  //     }
   return (
     <Flex
       flexDirection="column"
@@ -74,6 +88,31 @@ function Combined() {
           extrainfo={item.extrainfo}
         />
         ))}
+      <Flex mb="-30px">
+        <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+          <IconButton
+            as="a"
+            aria-label="program-pdf"
+            icon={<Button
+                    border={"4px"}
+                    borderRadius={"full"}
+                    whiteSpace={"nowrap"}
+                    px={7}
+                    color={"black"}
+                    maxW={"max-content"}
+                    background={"brand.blue"}
+                    h="55px"
+                  >
+                    <Text className={"stretchpro"} textColor="white" fontSize={["4vw", "3vw", "2.5vw", "18"]} mt="4px">
+                      DOWNLOAD<br/>PROGRAM AS PDF
+                    </Text>
+                  </Button>}
+            target="_blank"
+            variant="unstlyed"
+            href="/timetable.pdf"
+          />
+        </motion.div>
+      </Flex>
     </Flex>
   )
 }
@@ -163,11 +202,6 @@ function ProgramComponent(props) {
               <Text fontSize={["4vw", "5vw", "2vw", "2xl"]}>
                 {props.presenter}
               </Text>
-              {/* <Text textDecor={"underline"} fontSize={["4vw", "5vw", "2vw", "2xl"]}>
-                <Link href={`https://${props.websiteCustom}`} isExternal>
-                  Bunk Puppets
-                </Link>
-              </Text> */}
               {props.website.map((weblink, i) => {
                 return (
                   <Text textDecor={"underline"} key={i} fontSize={["4vw", "5vw", "2vw", "2xl"]}>
