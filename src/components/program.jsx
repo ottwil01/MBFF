@@ -149,7 +149,7 @@ function ProgramComponent(props) {
                 </Flex>
               }
               { props.notickets &&
-                <Box ml={["7vw", "4.4zvw", "", "", ""]} px={3} className="arrow_box">
+                <Box ml={["7vw", "2vw", "2vw", "2vw", "20px"]} px={3} className="arrow_box">
                   <Text className={"stretchpro"} textAlign={"justify"} fontSize={["4vw", "4vw", "2.5vw", "18"]}>
                     {props.notickets}
                   </Text>
