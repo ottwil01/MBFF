@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import emailjs from "@emailjs/browser"
 import { Footer } from "./util"
-import { Flex, FormControl, FormLabel, Input, Textarea, Text, Box } from "@chakra-ui/react"
+import { Flex, FormControl, Input, Textarea, Text, Button, Spacer, Box } from "@chakra-ui/react"
 
 function ContactForm() {
   const [email, setEmail] = useState("")
@@ -17,7 +17,7 @@ function ContactForm() {
     setLoading(true)
 
     const params = {
-      to_name: "merribekfamilyfestival@gmail.com",
+      to_name: "MBFF",
       from_name: email,
       message: message,
     }
@@ -62,22 +62,21 @@ function ContactForm() {
         display="flex"
         flexDirection="column"
         w={["90%", "90%", "55%"]}
+        isRequired={true}
       >
-        <FormLabel>Email Address</FormLabel>
         <Input
           type="email"
           bg="brand.blue"
           placeholder="Your email address:"
           w="66%"
           size="lg"
-          isRequired
           fontSize={["3.9vw", "3.7vw", "3.3vw", "3xl"]}
           fontWeight="bold"
           _placeholder={{ color: "white" }}
           value={email}
           onInput={(e) => handleInput(setEmail, e)}
         />
-        <FormLabel>Message</FormLabel>
+        <Box h={8}/>
         <Textarea
           type="text"
           bg="brand.blue"
@@ -92,9 +91,9 @@ function ContactForm() {
           onInput={(e) => handleInput(setMessage, e)}
           mb={5}
         />
-        <Box as="button" ml="3.5" mb="16" alignSelf="baseline" textColor="brand.blue" border={"4px"} borderColor={"brand.blue"} borderRadius={"full"} maxWidth={"max-content"} whiteSpace={"nowrap"} px={3} fontSize={["3.9vw", "3.7vw", "3.3vw", "3xl"]} fontWeight="bold" onClick={handleSubmit} isLoading={loading} loadingText="Submitting" isDisabled={!validInput}>
+        <Button type="submit" ml="3.5" mb="16" alignSelf="baseline" textColor="brand.blue" border={"4px"} borderColor={"brand.blue"} borderRadius={"full"} maxWidth={"max-content"} whiteSpace={"nowrap"} px={3} fontSize={["3.9vw", "3.7vw", "3.3vw", "3xl"]} fontWeight="bold" onClick={handleSubmit} isLoading={loading} loadingText="Submitting" isDisabled={!validInput}>
           Submit!
-        </Box>
+        </Button>
       </FormControl>
       <Footer />
     </Flex>
