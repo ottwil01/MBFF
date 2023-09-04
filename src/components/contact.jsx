@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react"
 import emailjs from "@emailjs/browser"
 import { Footer } from "./util"
-import { Flex, FormControl, Input, Textarea, Text, Button, Spacer, Box } from "@chakra-ui/react"
+import { Flex, FormControl, Input, Textarea, Text, Button, Box } from "@chakra-ui/react"
 
 function ContactForm() {
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
   const [loading, setLoading] = useState(false)
+  const [success, setSuccess] = useState(false)
   const [validInput, setValidInput] = useState(false)
 
   function handleInput(target, event) {
@@ -27,6 +28,7 @@ function ContactForm() {
       .then(
         (result) => {
           console.log(result.status, result.text)
+          setSuccess(true)
           setLoading(false)
         },
         (error) => {
@@ -91,9 +93,16 @@ function ContactForm() {
           onInput={(e) => handleInput(setMessage, e)}
           mb={5}
         />
-        <Button type="submit" ml="3.5" mb="16" alignSelf="baseline" textColor="brand.blue" border={"4px"} borderColor={"brand.blue"} borderRadius={"full"} maxWidth={"max-content"} whiteSpace={"nowrap"} px={3} fontSize={["3.9vw", "3.7vw", "3.3vw", "3xl"]} fontWeight="bold" onClick={handleSubmit} isLoading={loading} loadingText="Submitting" isDisabled={!validInput}>
+        <Flex gap={3} flexDir={"column"}>
+        <Button type="submit" ml="3.5" alignSelf="baseline" textColor="brand.blue" border={"4px"} borderColor={"brand.blue"} borderRadius={"full"} maxWidth={"max-content"} whiteSpace={"nowrap"} px={3} fontSize={["3.9vw", "3.7vw", "3.3vw", "3xl"]} fontWeight="bold" onClick={handleSubmit} isLoading={loading} loadingText="Submitting" isDisabled={!validInput}>
           Submit!
         </Button>
+        {/* <Box w="100%" h={["30px", "50px", "70px", "80px", "100px"]} my="10px">
+        <Text display="none" fontStyle={"italic"} ml="3.5" fontSize={["3.5vw", "3vw", "17", "21", "21"]} color={"black"}>
+          Email successfully submitted to<br/>merribekfamilyfestival@gmail.com!
+        </Text>
+        </Box> */}
+        </Flex>
       </FormControl>
       <Footer />
     </Flex>
