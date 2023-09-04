@@ -55,7 +55,7 @@ const links = ["Home", "Program", "Timetable", "Tickets", "Contact"]
                     </Flex>
                         <Flex className="faktum" justifyContent={"space-between"} display={[ "none", "none", "none", "flex", "flex"]}>
                             {links.map((link, index) => {
-                                return <Button fontSize={["1.7vw", "1.7vw", "1.7vw", "2vw", "30"]} key={index} variant="unstyled" >
+                                return <Button fontSize={["1.7vw", "1.7vw", "1.7vw", "2vw", "30"]} key={index} colorScheme="white" variant="link" >
                                             <Link to={link} spy={true} smooth={true} offset={-140} duration={500}>{link}</Link>
                                         </Button>
                             })}

@@ -31,7 +31,7 @@ function TicketContainer() {
           <br /><br />
           However, for our workshops, bookings are essential as space is limited. Reserve your booking via the ticket link.  
           <br /><br />
-          All tickets to Town Hall Program are $13 + bf. 
+          All tickets to Town Hall Program are $13 + bf.
           <br />
           Town Hall Program includes: 
           <br />
@@ -69,7 +69,7 @@ function TicketContainer() {
         </motion.div>
       </Flex>
     </Flex>
-  );
+  )
 }
 
 export default Tickets
