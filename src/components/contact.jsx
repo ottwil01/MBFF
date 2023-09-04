@@ -30,6 +30,7 @@ function ContactForm() {
           console.log(result.status, result.text)
           setSuccess(true)
           setLoading(false)
+          console.log(success)
         },
         (error) => {
           console.log(error.status, error.text)
@@ -64,7 +65,6 @@ function ContactForm() {
         display="flex"
         flexDirection="column"
         w={["90%", "90%", "55%"]}
-        isRequired={true}
       >
         <Input
           type="email"
@@ -97,11 +97,13 @@ function ContactForm() {
         <Button type="submit" ml="3.5" alignSelf="baseline" textColor="brand.blue" border={"4px"} borderColor={"brand.blue"} borderRadius={"full"} maxWidth={"max-content"} whiteSpace={"nowrap"} px={3} fontSize={["3.9vw", "3.7vw", "3.3vw", "3xl"]} fontWeight="bold" onClick={handleSubmit} isLoading={loading} loadingText="Submitting" isDisabled={!validInput}>
           Submit!
         </Button>
-        {/* <Box w="100%" h={["30px", "50px", "70px", "80px", "100px"]} my="10px">
-        <Text display="none" fontStyle={"italic"} ml="3.5" fontSize={["3.5vw", "3vw", "17", "21", "21"]} color={"black"}>
+        <Box w="100%" h={["30px", "50px", "70px", "80px", "100px"]} my="10px">
+        {success &&
+          <Text fontStyle={"italic"} ml="3.5" fontSize={["3.5vw", "3vw", "17", "21", "21"]} color={"black"}>
           Email successfully submitted to<br/>merribekfamilyfestival@gmail.com!
-        </Text>
-        </Box> */}
+          </Text>
+        }
+        </Box>
         </Flex>
       </FormControl>
       <Footer />
@@ -114,19 +116,5 @@ function validateEmail(email) {
 
   return String(email).toLowerCase().match(validReg)
 }
-
-// function validate(email) {
-//   if (email.length < 1) {
-//     return false
-//   }
-
-//   if (validateEmail(email) === false) {
-//     return false
-//   }
-//   if (validateEmail(email) === null) {
-//     return false
-//   }
-//   return true
-// }
 
 export default ContactForm
