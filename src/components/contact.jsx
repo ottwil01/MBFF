@@ -17,13 +17,13 @@ function ContactForm() {
     setLoading(true)
 
     const params = {
-      to_name: "mbffcontact@gmail.com",
+      to_name: "merribekfamilyfestival@gmail.com",
       from_name: email,
       message: message,
     }
 
     emailjs
-      .send("service_p2limpf", "template_mlrsiqa", params, "iwfGwdYk2mJ1c1ns0")
+      .send("service_ogz3xso", "template_7xe2quf", params, "_kmggaxJsHKTLK7qj")
       .then(
         (result) => {
           console.log(result.status, result.text)
@@ -70,6 +70,7 @@ function ContactForm() {
           placeholder="Your email address:"
           w="66%"
           size="lg"
+          isRequired
           fontSize={["3.9vw", "3.7vw", "3.3vw", "3xl"]}
           fontWeight="bold"
           _placeholder={{ color: "white" }}
@@ -82,6 +83,7 @@ function ContactForm() {
           bg="brand.blue"
           placeholder="Type message here...."
           h={64}
+          isRequired
           resize="vertical"
           fontSize={["3.9vw", "3.7vw", "3.3vw", "3xl"]}
           fontWeight="bold"
